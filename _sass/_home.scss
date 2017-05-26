@@ -58,6 +58,18 @@ section#agenda {
       height: 33%;
     }
   }
+
+  .agenda-item {
+    display: none;
+
+    .agenda-date {
+      text-transform: uppercase;
+    }
+
+    &.active {
+      display: block;
+    }
+  }
 }
 
 section#tracks {

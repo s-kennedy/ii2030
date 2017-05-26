@@ -17,6 +17,12 @@
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Roboto:300,500" rel="stylesheet">
 
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="{{ site.baseurl }}/assets/js/smooth-scroll.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/custom.js"></script>
 </head>
 
 <body>
@@ -34,7 +40,7 @@
               <p class="bold">An Endeva initiative</p>
               <p>Oct 18 - 19, 2017<br>Berlin, Germany</p>
             </div>
-            <a href="#overview"><button class="btn white animate">Learn more</button></a>
+            <a data-scroll href="#overview"><button class="btn white animate">Learn more</button></a>
             <a href="{{ site.registration_page_url }}"><button class="btn orange animate">Register</button></a>
           </div>
         </div>
@@ -48,7 +54,7 @@
   <section id="overview">
     <header>
       <h2 class="subtitle"><span class="underlined">Conference Overview</span></h2>
-      <p class="headline">ii2030 will bring together innovators from <span id="cycle-participants">corporates</span> to create solutions for a more inclusive society by 2030</p>
+      <p class="headline">ii2030 will bring together innovators from <br><span id="cycle-participants" class="bold">corporates</span><br> to create solutions for a more inclusive society by 2030</p>
     </header>
     <div class="outer-container">
       <div class="pure-g background-container">
@@ -70,8 +76,8 @@
       <h2 class="subtitle"><span class="underlined">Agenda</span></h2>
       <div class="headline">
         <div class="day-selector">
-          <button class="btn btn-day1 white active">Day 1: Tour</button>
-          <button class="btn btn-day2 white">Day 2: Factory</button>
+          <button data-day="day-1" class="btn btn-day1 white active day-1">Day 1: Tour</button>
+          <button data-day="day-2" class="btn btn-day2 white day-2">Day 2: Factory</button>
         </div>
       </div>
     </header>
@@ -84,17 +90,24 @@
             <img src="{{ site.baseurl }}/assets/images/factory-icon.png" alt="">
           </div>
         </div>
-        <div class="pure-u-md-1-2 vert-center">
+        {% for event in site.data.agenda %}
+        {% if forloop.first %}
+        <div data-day="day-{{ forloop.index }}" class="pure-u-md-1-2 agenda-item vert-center active day-{{ forloop.index }}">
+        {% else %}
+        <div class="pure-u-md-1-2 agenda-item vert-center day-{{ forloop.index }}">
+        {% endif %}
           <div class="text vert-spacing horiz-spacing">
             <div class="text">
               <div class="vert-spacing">
-                <h3 class="agenda-title">Inclusive Innovation Tour</h3>
-                <small class="agenda-date bold">OCT 19, 2017 — ALL AROUND BERLIN</small>
-                <p class="agenda-description vert-spacing">Several tour guides will take participants on an exploration of Berlin’s buzzing inclusive innovation scene to provide inspiration and information around the ii2030 challenges.</p>
+                <h3 class="agenda-title">{{ event.name }}</h3>
+                <small class="agenda-date bold">{{ event.date }} — {{ event.location }}</small>
+                <p class="agenda-description vert-spacing">{{ event.description }}</p>
               </div>
-              <button href="/tour" class="btn orange animate">Learn more</button>
+              <button href="{{ event.link }}" class="btn orange animate">Learn more</button>
             </div>
           </div>
+        </div>
+        {% endfor %}
       </div>
     </div>
   </section>
@@ -107,22 +120,17 @@
     <div class="content">
       <div class="pure-g tracks vert-spacing">
         {% for track in site.data.tracks %}
+          <div class="pure-u-md-1-5">
         {% if forloop.first %}
-          <div class="pure-u-md-1-5">
             <div class="track active">
-              <p class="hide-unless-active">How can we</p>
-              <p class="vert-spacing">{{ track.topic }}</p>
-              <button class="btn white animate">Learn more</button>
-            </div>
-          </div>
         {% else %}
-          <div class="pure-u-md-1-5">
             <div class="track">
+        {% endif %}
               <p class="hide-unless-active">How can we</p>
               <p class="vert-spacing">{{ track.topic }}</p>
+              <button class="btn white animate hide-unless-active">Learn more</button>
             </div>
           </div>
-        {% endif %}
         {% endfor %}
       </div>
     </div>
@@ -140,8 +148,12 @@
     </div>
   </section>
 
-  {% include footer.html %}
 </main>
 
+{% include footer.html %}
+
+<script>
+    smoothScroll.init();
+</script>
 </body>
 </html>
