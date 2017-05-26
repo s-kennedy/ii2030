@@ -1,3 +1,22 @@
+section {
+  margin: $lg-spacing 0;
+}
+
+header {
+  padding: $md-spacing $lg-spacing;
+}
+
+.container {
+  padding: 0 $lg-spacing;
+  margin: $lg-spacing 0;
+  background: $off-white;
+  width: 100%;
+}
+
+.oversize {
+  position: absolute;
+}
+
 .btn {
   border-radius: 2em;
   text-transform: uppercase;
