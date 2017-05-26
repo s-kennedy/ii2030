@@ -1,0 +1,29 @@
+
+/* COLOURS */
+
+$orange: #DA900A;
+$light-blue: #AAC3DC;
+$dark-blue: #2F4858;
+$dark-red: #AB3911;
+$off-white: #F5EFED;
+$black: #0F0A0A;
+$white: #FFFFFF;
+
+
+/* FONTS AND SIZES */
+
+$primary-font: 'Roboto', Helvetica, Arial, sans-serif;
+$title-font: 'Amatic SC', Courier, serif;
+
+$base-size: 24px;
+$lg-size: 1.4em;
+$sm-size: 0.8em;
+
+$h1-size: 84px;
+$h2-size: ceil($h1-size * 0.75);
+
+/* PADDING AND MARGINS */
+
+$sm-spacing: 10px;
+$md-spacing: 20px;
+$lg-spacing: 40px;

@@ -1,0 +1,22 @@
+nav {
+  font-size: $sm-size;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $sm-size;
+  background-color: $white;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  .pure-menu-link {
+    padding: 0.4em 1em;
+    border-radius: 2em;
+  }
+}
+
+main {
+  margin-top: 74px;
+}

@@ -1,0 +1,14 @@
+<nav class="pure-menu pure-menu-horizontal">
+  <div class="navbar-left">
+    <a href="#" class="pure-menu-heading pure-menu-link">ii2030 | Berlin | Oct 19 - 20, 2017</a>
+  </div>
+
+  <div class="navbar-right">
+    <ul class="pure-menu-list">
+      {% for page in site.data.pages %}
+        <li class="pure-menu-item"><a href="{{ page.url }}" class="pure-menu-link">{{ page.name }}</a></li>
+      {% endfor %}
+    </ul>
+      <a href="{{ site.registration_page }}" class="btn orange">Register</a>
+  </div>
+</nav>

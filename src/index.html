@@ -1,0 +1,83 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+{% include navbar.html %}
+
+<main>
+  <section id="landing">
+    <h1><span class="underlined">Building a more inclusive 2030</span></h1>
+    <h3>Inclusive Innovation Tour & Factory</h3>
+    <p>Oct 19 - 20, 2017</p>
+    <p>Berlin, Germany</p>
+    <a href="#" class="btn dark arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </section>
+
+  <section id="overview">
+    <header>
+      <h2>Conference Overview</h2>
+      <h3 class="headline">ii2030 will bring together innovators from <span id="cycle-participants">corporates</span> to create solutions for a more inclusive society by 2030</h3>
+    </header>
+    <div class="content">
+      <div class="background">
+        <div class="photo">
+          <img src="" alt="" class="pure-img">
+        </div>
+        <div class="text">
+          <p>Over two exciting days, participants from every sector will connect, collaborate and construct new ideas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="agenda">
+    <header>
+      <h2>Agenda</h2>
+      <div class="day-selector">
+        <span>Day 1: Tour</span>
+        <span>Day 2: Factory</span>
+      </div>
+    </header>
+    <div class="content">
+      <div class="background">
+        <div class="photo">
+          <img src="" alt="" class="pure-img">
+        </div>
+        <div class="text">
+          <p class="agenda-title">Inclusive Innovation Tour</p>
+          <p class="agenda-date">OCT 19, 2017 — ALL AROUND BERLIN</p>
+          <p class="agenda-description">Several tour guides will take participants on an exploration of Berlin’s buzzing inclusive innovation scene to provide inspiration and information around the ii2030 challenges.</p>
+          <a href="/tour" class="btn orange">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="partners">
+    <header>
+      <h2>Partners</h2>
+    </header>
+  </section>
+
+  {% include footer.html %}
+</main>
+
+</body>
+</html>
