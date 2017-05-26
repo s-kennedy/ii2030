@@ -1,5 +1,5 @@
-- name: tour
-  url: /tour
+- name: agenda
+  url: agenda
 
-- name: factory
-  url: /factory
+- name: tracks
+  url: tracks

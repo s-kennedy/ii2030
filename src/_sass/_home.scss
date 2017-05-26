@@ -1,10 +1,79 @@
 section#landing {
   .container {
-    margin-top: 120px;
+    /*justify-content: space-around;*/
   }
 
   img.oversize {
     max-height: 90vh;
     top: 50px;
+  }
+}
+
+section#overview {
+  .image.oversize {
+    height: 90vh;
+    width: 40vw;
+    background: url(../images/conference-group.png) center center no-repeat;
+  }
+}
+
+section#agenda {
+  .day-selector {
+    display: flex;
+    justify-content: center;
+    font-size: $sm-size;
+
+    .btn.white {
+      background: $white;
+    }
+
+    .btn.active {
+      background: $orange;
+      color: $white;
+    }
+
+    .btn-day1 {
+      border-radius: 2em 0 0 2em;
+    }
+
+    .btn-day2 {
+      border-radius: 0 2em 2em 0;
+    }
+  }
+
+  .oversize.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    img {
+      height: 33%;
+    }
+  }
+}
+
+section#tracks {
+  .tracks {
+    .track {
+      padding: $md-spacing;
+      text-align: center;
+
+      .hide-unless-active {
+        visibility: hidden;
+        text-transform: uppercase;
+        font-weight: $bold;
+      }
+
+      &.active {
+        background: $orange;
+        color: $white;
+
+        .hide-unless-active {
+          visibility: visible;
+        }
+      }
+    }
   }
 }
