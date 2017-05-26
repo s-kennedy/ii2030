@@ -15,22 +15,22 @@ $white: #FFFFFF;
 $primary-font: 'Roboto', Helvetica, Arial, sans-serif;
 $title-font: 'Amatic SC', Courier, serif;
 
-$base-size: 24px;
+$base-size: 20px;
 $lg-size: 1.4em;
 $sm-size: 0.8em;
 
-$h1-size: 84px;
-$h2-size: ceil($h1-size * 0.75);
+$h1-size: 72px;
+$h2-size: ceil($h1-size * 0.80);
 
 $light: 100;
 $bold: 400;
 $extrabold: 700;
 
-$base-line-height: 1.5;
+$base-line-height: 1.4;
 
 /* PADDING AND MARGINS */
 
 $sm-spacing: 10px;
 $md-spacing: 20px;
 $lg-spacing: 40px;
-$xl-spacing: 120px;
+$xl-spacing: 100px;

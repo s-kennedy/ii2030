@@ -1,11 +1,9 @@
 section#landing {
-  .container {
-    /*justify-content: space-around;*/
-  }
+  padding-top: 80px;
 
   img.oversize {
     max-height: 90vh;
-    top: 50px;
+    top: -$xl-spacing;
   }
 }
 
@@ -14,6 +12,14 @@ section#overview {
     height: 90vh;
     width: 40vw;
     background: url(../images/conference-group.png) center center no-repeat;
+  }
+
+  .background-container {
+    margin: $xl-spacing 0;
+
+    .text {
+      margin: $xl-spacing 0;
+    }
   }
 }
 
@@ -46,7 +52,7 @@ section#agenda {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 
     img {
       height: 33%;
@@ -73,6 +79,10 @@ section#tracks {
         .hide-unless-active {
           visibility: visible;
         }
+      }
+
+      .btn {
+        margin-bottom: $md-spacing;
       }
     }
   }

@@ -1,6 +1,6 @@
 section {
   margin-bottom: $lg-spacing;
-  margin-top: $xl-spacing;
+  padding-top: $xl-spacing;
 }
 
 header {
@@ -9,16 +9,15 @@ header {
 
 .outer-container {
   position: relative;
-  display: flex;
 
   .background-container {
-    position: absolute;
-    z-index: -1;
-    height: 60%;
-    align-self: center;
     width: 100%;
     background: $off-white;
   }
+}
+
+.oversize {
+  position: absolute;
 }
 
 .vert-center {
@@ -48,6 +47,7 @@ header {
   padding: 0.4em 1em;
   text-decoration: none;
   border: 2px solid $orange;
+  margin-bottom: $lg-spacing;
 
   &.animate {
     -webkit-transform: perspective(1px) translateZ(0);
