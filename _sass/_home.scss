@@ -18,8 +18,30 @@ section#overview {
     margin: $xl-spacing 0;
 
     .text {
-      margin: $xl-spacing 0;
+      margin: $lg-spacing 0;
     }
+  }
+
+  header {
+    .headline {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .headline-container {
+        text-align: left;
+        width: 740px;
+
+        #cycle-participants {
+          opacity: 0;
+          transition: opacity 0.3s ease-in-out;
+          &.fade-in {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
   }
 }
 
@@ -60,14 +82,8 @@ section#agenda {
   }
 
   .agenda-item {
-    display: none;
-
     .agenda-date {
       text-transform: uppercase;
-    }
-
-    &.active {
-      display: block;
     }
   }
 }
@@ -77,9 +93,11 @@ section#tracks {
     .track {
       padding: $md-spacing;
       text-align: center;
+      transition: background 0.3s ease-in-out;
 
       .hide-unless-active {
-        visibility: hidden;
+        transition: opacity 0.3s ease-in-out;
+        opacity: 0;
         text-transform: uppercase;
         font-weight: $bold;
       }
@@ -89,7 +107,7 @@ section#tracks {
         color: $white;
 
         .hide-unless-active {
-          visibility: visible;
+          opacity: 1;
         }
       }
 
