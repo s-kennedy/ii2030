@@ -13,7 +13,7 @@ function activateButton() {
 };
 
 function cycleParticipants() {
-  var textSpan = $('#cycle-participants');
+  var textSpan = $('#cycle-participants')
   var currentText = textSpan.text();
   var currentTextIndex = PARTICIPANT_TYPES.indexOf(currentText);
   var newPosition = currentTextIndex >= (PARTICIPANT_TYPES.length -1) ? 0 : currentTextIndex + 1
@@ -32,4 +32,5 @@ $(function(){
   $('.day-selector button').on('click', activateButton);
   $('.track').on('mouseover', activateTrack)
   window.setInterval(cycleParticipants, 2500);
+
 });

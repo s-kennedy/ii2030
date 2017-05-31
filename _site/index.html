@@ -20,6 +20,8 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+
   <script src="/assets/js/smooth-scroll.min.js"></script>
   <script src="/assets/js/custom.js"></script>
 </head>
@@ -46,7 +48,7 @@
   <section id="landing">
     <div class="outer-container">
       <div class="pure-g background-container">
-        <div class="pure-u-md-1-2">
+        <div class="pure-u-1 pure-u-md-1-2">
           <div class="horiz-spacing vert-spacing">
             <h1><span class="underlined">Innovating for a more inclusive 2030</span></h1>
             <div class="vert-spacing">
@@ -58,7 +60,7 @@
             <a href="www.example.com"><button class="btn orange animate">Register</button></a>
           </div>
         </div>
-        <div class="pure-u-md-1-2">
+        <div class="pure-u-1 pure-u-md-1-2 image-container">
           <img src="/assets/images/head.png" alt="Robot head" class="pure-img oversize">
         </div>
       </div>
@@ -69,18 +71,24 @@
     <header>
       <h2 class="subtitle"><span class="underlined">Conference Overview</span></h2>
       <div class="headline">
-        <span class="headline-container">ii2030 will bring together innovators from
-          <span id="cycle-participants" class="bold fade-in">corporates</span><br> to create solutions for a more inclusive society by 2030
+        <span class="headline-container desktop">ii2030 will bring together innovators from
+          <span id="cycle-participants" class="bold fade-in">
+            corporates
+          </span>
+          <br> to create solutions for a more inclusive society by 2030
+        </span>
+        <span class="headline-container mobile">
+          ii2030 will bring together innovators from corporates, startups, the public sector, NGOs, and science to create solutions for a more inclusive society by 2030
         </span>
       </div>
     </header>
     <div class="outer-container">
       <div class="pure-g background-container">
-        <div class="pure-u-md-1-2 vert-center horiz-center">
+        <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
           <div class="image oversize">
           </div>
         </div>
-        <div class="pure-u-md-1-2 vert-center slide-container">
+        <div class="pure-u-1 pure-u-md-1-2 vert-center slide-container">
           <div class="text vert-spacing horiz-spacing">
             <p>Over two exciting days, participants from every sector will <span class="bold">connect</span>, <span class="bold">collaborate</span> and <span class="bold">construct</span> new ideas.</p>
           </div>
@@ -107,14 +115,14 @@
     </header>
     <div class="outer-container">
       <div class="pure-g background-container">
-        <div class="pure-u-md-1-2 vert-center horiz-center">
+        <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
           <div class="image oversize">
             <img src="/assets/images/head-icon.png" alt="">
             <img src="/assets/images/tour-icon.png" alt="">
             <img src="/assets/images/factory-icon.png" alt="">
           </div>
         </div>
-          <div class="pure-u-md-1-2 agenda-item vert-center slide-container">
+          <div class="pure-u-1 pure-u-md-1-2 agenda-item vert-center slide-container">
           
             <div class="text vert-spacing horiz-spacing">
               <div class="text">
@@ -151,7 +159,7 @@
     <div class="content">
       <div class="pure-g tracks vert-spacing">
         
-          <div class="pure-u-md-1-5">
+          <div class="pure-u-1 pure-u-md-1-5">
         
             <div class="track active">
         
@@ -161,7 +169,7 @@
             </div>
           </div>
         
-          <div class="pure-u-md-1-5">
+          <div class="pure-u-1 pure-u-md-1-5">
         
             <div class="track">
         
@@ -171,7 +179,7 @@
             </div>
           </div>
         
-          <div class="pure-u-md-1-5">
+          <div class="pure-u-1 pure-u-md-1-5">
         
             <div class="track">
         
@@ -181,7 +189,7 @@
             </div>
           </div>
         
-          <div class="pure-u-md-1-5">
+          <div class="pure-u-1 pure-u-md-1-5">
         
             <div class="track">
         
@@ -191,7 +199,7 @@
             </div>
           </div>
         
-          <div class="pure-u-md-1-5">
+          <div class="pure-u-1 pure-u-md-1-5">
         
             <div class="track">
         
@@ -246,7 +254,7 @@
     nextArrow: $("#agenda .day-selector .day-2"),
     swipe: true,
     infinite: false,
-  })
+  });
 
   $('#overview .slide-container').slick({
     dots: true,
@@ -256,7 +264,25 @@
     autoplaySpeed: 3000,
     swipe: true,
     pauseOnHover: true,
-  })
+  });
+
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) || $(window).width() < 480) {
+
+    var controller = new ScrollMagic.Controller();
+    var tracks = document.querySelectorAll('.track');
+
+    tracks.forEach(function(track) {
+      var duration = track.scrollHeight;
+      new ScrollMagic.Scene({
+            triggerElement: track,
+        })
+        .setClassToggle(track, "active")
+        .duration(duration)
+        .addTo(controller)
+    });
+  }
+
+</script>
 
 </script>
 </body>

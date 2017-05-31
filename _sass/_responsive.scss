@@ -1,0 +1,59 @@
+@media screen and (max-width: 48em) {
+  .pure-g {
+    letter-spacing: normal;
+  }
+
+  .oversize {
+    position: relative;
+  }
+
+  section {
+    padding-top: $md-spacing;
+  }
+
+  section#landing {
+    .background-container {
+      background: none;
+
+      > div:not(.image-container) {
+        background: $off-white;
+      }
+
+      img.oversize {
+        top: 0;
+      }
+    }
+  }
+
+  section#overview {
+    header {
+      .headline {
+        .headline-container {
+          &.mobile {
+            display: block;
+            text-align: center;
+          }
+
+          &.desktop {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .background-container {
+      margin: $md-spacing 0;
+
+      .image.oversize {
+        height: 50vh;
+        width: 100vw;
+      }
+    }
+  }
+
+  section#agenda {
+    .image.oversize {
+      display: none;
+    }
+  }
+}
