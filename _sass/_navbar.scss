@@ -1,30 +1,139 @@
-nav {
+main {
+  margin-top: $lg-spacing;
+}
+
+.custom-wrapper {
+  -webkit-font-smoothing: antialiased;
+  height: 2.6em;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: height 0.5s;
   z-index: 999;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: $sm-size;
   background-color: $white;
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   top: 0;
+}
 
+.custom-wrapper.open {
+  height: 11em;
+}
+
+.custom-menu-3 {
+  text-align: right;
+}
+
+.custom-toggle {
+  width: 34px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.custom-toggle .bar {
+  background-color: #777;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 100px;
+  position: absolute;
+  top: 18px;
+  right: 7px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.pure-menu {
+  &.pull-right {
+    text-align: right;
+  }
+}
+
+.menu-heading {
+  color: $orange;
+  font-weight: $bold;
+}
+
+.pure-menu-item {
+  vertical-align: top;
+  margin-left: 1em;
+}
+
+.pure-menu-heading {
+  text-transform: lowercase;
+}
+
+.pure-menu-link {
+  padding: 0.4em 1em;
+  border-radius: 2em;
+  display: inline-block;
+}
+
+.registration {
   .pure-menu-link {
-    padding: 0.4em 1em;
-    border-radius: 2em;
-  }
+    padding-left: 0;
 
-  .menu-heading {
-    color: $orange;
-    font-weight: $bold;
+    &:hover {
+      background: none;
+    }
   }
-
   .btn {
     margin-bottom: 0;
   }
 }
 
-main {
-  margin-top: 74px;
+
+@media (max-width: 47.999em) {
+
+  .custom-wrapper {
+    height: 2.1em;
+  }
+
+  .custom-menu-3 {
+    text-align: left;
+  }
+
+  .custom-toggle {
+    display: block;
+  }
+
+  .pure-menu-item {
+    vertical-align: middle;
+  }
+
+  .pure-menu {
+    &.pull-right {
+      text-align: left;
+    }
+  }
 }
+
