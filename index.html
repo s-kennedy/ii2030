@@ -15,34 +15,83 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
 
-  <link rel="stylesheet" href="/ii2030/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 
-  <script src="/ii2030/assets/js/smooth-scroll.min.js"></script>
-  <script src="/ii2030/assets/js/custom.js"></script>
+  <script src="/assets/js/smooth-scroll.min.js"></script>
+  <script src="/assets/js/custom.js"></script>
 </head>
 
 <body>
-<nav class="pure-menu pure-menu-horizontal">
-  <div class="navbar-left">
-    <a data-scroll href="/#" class="pure-menu-link menu-heading">ii2030 | Berlin | Oct 18 - 19, 2017</a>
-  </div>
+<div class="custom-wrapper pure-g" id="menu">
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-menu">
+            <a href="#" class="pure-menu-heading menu-heading">ii2030</a>
+            <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+        </div>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-menu pure-menu-horizontal custom-can-transform pull-right">
+            <ul class="pure-menu-list">
+              
+                <li class="pure-menu-item"><a data-scroll href="#agenda" class="pure-menu-link">agenda</a></li>
+              
+                <li class="pure-menu-item"><a data-scroll href="#tracks" class="pure-menu-link">tracks</a></li>
+              
+              <li class="pure-menu-item registration"><a href="www.example.com" class="pure-menu-link"><button class="btn orange animate">Register</button></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-  <div class="navbar-right">
-    <ul class="pure-menu-list">
-      
-        <li class="pure-menu-item"><a data-scroll href="#agenda" class="pure-menu-link">agenda</a></li>
-      
-        <li class="pure-menu-item"><a data-scroll href="#tracks" class="pure-menu-link">tracks</a></li>
-      
-    </ul>
-      <a href="www.example.com"><button class="btn orange animate">Register</button></a>
-  </div>
-</nav>
+
+      <script>
+      (function (window, document) {
+      var menu = document.getElementById('menu'),
+          WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+
+      function toggleHorizontal() {
+          [].forEach.call(
+              document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+              function(el){
+                  el.classList.toggle('pure-menu-horizontal');
+              }
+          );
+      };
+
+      function toggleMenu() {
+          // set timeout so that the panel has a chance to roll up
+          // before the menu switches states
+          if (menu.classList.contains('open')) {
+              setTimeout(toggleHorizontal, 500);
+          }
+          else {
+              toggleHorizontal();
+          }
+          menu.classList.toggle('open');
+          document.getElementById('toggle').classList.toggle('x');
+      };
+
+      function closeMenu() {
+          if (menu.classList.contains('open')) {
+              toggleMenu();
+          }
+      }
+
+      document.getElementById('toggle').addEventListener('click', function (e) {
+          toggleMenu();
+          e.preventDefault();
+      });
+
+      window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+      })(this, this.document);
+
+      </script>
+
 
 <main>
   <section id="landing">
@@ -61,7 +110,7 @@
           </div>
         </div>
         <div class="pure-u-1 pure-u-md-1-2 image-container">
-          <img src="/ii2030/assets/images/head.png" alt="Robot head" class="pure-img oversize">
+          <img src="/assets/images/head.png" alt="Robot head" class="pure-img oversize">
         </div>
       </div>
     </div>
@@ -117,9 +166,9 @@
       <div class="pure-g background-container">
         <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
           <div class="image oversize">
-            <img src="/ii2030/assets/images/head-icon.png" alt="">
-            <img src="/ii2030/assets/images/tour-icon.png" alt="">
-            <img src="/ii2030/assets/images/factory-icon.png" alt="">
+            <img src="/assets/images/head-icon.png" alt="">
+            <img src="/assets/images/tour-icon.png" alt="">
+            <img src="/assets/images/factory-icon.png" alt="">
           </div>
         </div>
           <div class="pure-u-1 pure-u-md-1-2 agenda-item vert-center slide-container">
