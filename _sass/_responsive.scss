@@ -44,6 +44,10 @@
     .background-container {
       margin: $md-spacing 0;
 
+      .text {
+        margin-bottom: $sm-spacing;
+      }
+
       .image.oversize {
         height: 50vh;
         width: 100vw;
@@ -54,6 +58,14 @@
   section#agenda {
     .image.oversize {
       display: none;
+    }
+  }
+
+  footer {
+    padding: 0;
+    .footer-left, .footer-right {
+      text-align: center;
+      padding: $sm-spacing 0;
     }
   }
 }
