@@ -1,0 +1,65 @@
+.w-question {
+  text-align: right;
+  border-right: 8px solid $light-blue;
+  padding-right: 20px;
+
+  p {
+    font-size: 2em;
+  }
+}
+
+#tour {
+
+  section#intro {
+
+  }
+
+  section#tour-stops {
+    .tour-stops {
+      .image-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .overlay {
+          position: absolute;
+
+          h1 {
+            font-family: $numbers-font;
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+          }
+        }
+
+        .background-image {
+          height: 300px;
+          width: 300px;
+          border-radius: 50%;
+          background: url(/assets/images/conference-group.png) center center;
+          filter: brightness(40%);
+          transition: filter 0.3s ease-in-out;
+          clip-path: circle(140px at center);
+        }
+
+        &:hover {
+          .background-image {
+            filter: none;
+          }
+
+          .overlay {
+            h1 {
+              opacity: 0;
+            }
+          }
+        }
+      }
+
+      .content-container {
+        text-align: center;
+        padding: $sm-spacing;
+      }
+    }
+
+  }
+}

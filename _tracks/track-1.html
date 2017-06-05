@@ -1,0 +1,79 @@
+---
+layout: track
+title: Precision Agriculture for Smallholder Farmers
+subtitle: How can we increase smallholder yields through precision agriculture?
+track_description: This is a great description.
+tour_stops:
+  - organization: The World Food Programme
+    description: A humanitarian organization that works with smallholder farmers around the world to overcome hunger and promote food security.
+  - organization: SAP Berlin
+    description: A leading global company developing software to seamlessly connect people and technology in real-time to develop their businesses and drive impact and growth globally.
+  - organization: Bosch
+    description: A German multinational engineering and electronics company, developing and supplying farmers around the world with smarter and more advanced machinery.
+---
+
+<div id="tour">
+  <section id="intro">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Day 1: Inclusive Innovation Tour</span></h2>
+      <div class="headline">
+        Hit the road on our Inclusive Innovation Tour of Berlin!
+      </div>
+    </header>
+    <div class="outer-container">
+      <div class="pure-g background-container vert-spacing">
+        <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+          <div class="image oversize">
+            <img src="{{ site.baseurl }}/assets/images/conference-group.png" alt="Conference group">
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 vert-center slide-container">
+          <div class="text vert-spacing horiz-spacing">
+            <p>Our tour guides will take participants on an exploration of Berlin’s buzzing inclusive innovation scene to provide inspiration and information for each track.</p>
+          </div>
+          <div class="text vert-spacing horiz-spacing">
+            <p>The 4-hour tour will take participants to 3 visionary organizations, where hosts will lead a discussion on how greater inclusion in the agriculture sector will impact society in 2030</p>
+          </div>
+          <div class="text vert-spacing horiz-spacing">
+            <p>The day will end with a “Meet & Greet” networking dinner. Participants from all tracks will reconvene over dinner to share what they have learned and get to know one another.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tour-stops">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Tour Stops</span></h2>
+    </header>
+    <div class="pure-g tour-stops">
+      {% for tour_stop in page.tour_stops %}
+      <div class="pure-u-1 pure-u-md-1-3">
+        <div class="image-container">
+          <div class="background-image">
+          </div>
+          <div class="overlay"><h1>{{ forloop.index }}</h1></div>
+        </div>
+        <div class="content-container">
+          <h3>{{ tour_stop.organization }}</h3>
+          <p>{{ tour_stop.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<script>
+  $('#tour .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    swipe: true,
+    pauseOnHover: true,
+  });
+</script>

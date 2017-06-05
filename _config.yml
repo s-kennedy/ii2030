@@ -23,6 +23,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # External links
 registration_page_url: www.example.com
 
+collections:
+  tracks:
+    output: true
+
 
 #SASS settings
 sass:
