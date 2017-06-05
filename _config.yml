@@ -34,6 +34,7 @@ markdown: kramdown
 permalink: pretty
 gems:
   - jekyll-feed
+  - octopress-autoprefixer
 exclude:
   - Gemfile
   - Gemfile.lock
