@@ -50,28 +50,6 @@ section#overview {
 }
 
 section#agenda {
-  .day-selector {
-    display: flex;
-    justify-content: center;
-    font-size: $sm-size;
-
-    .btn.white {
-      background: $white;
-    }
-
-    .btn.active {
-      background: $orange;
-      color: $white;
-    }
-
-    .btn-day1 {
-      border-radius: 2em 0 0 2em;
-    }
-
-    .btn-day2 {
-      border-radius: 0 2em 2em 0;
-    }
-  }
 
   .oversize.image {
     display: flex;

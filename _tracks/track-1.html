@@ -3,6 +3,23 @@ layout: track
 title: Precision Agriculture for Smallholder Farmers
 subtitle: How can we increase smallholder yields through precision agriculture?
 track_description: This is a great description.
+intro_slides:
+  - question: What is disruptive technology doing for agriculture?
+    answer: Precision Agriculture uses sensors, Big Data and digitized farming equipment to enable farmers to observe, measure and respond to variabilities in their environment (e.g. climate, soil composition, crop practices and disease). With this technology, farmers around the world are able to conserve valuable resources, such as water and fertilizer, while increasing both quality and quantity of their yields.
+  - question: Why do we need more inclusive solutions?
+    answer: At present, precision agriculture is largely out of the reach of smallholder farmers. Individual services to inform farmers of weather patterns, soil structure, agricultural practices etc. exist, but are mostly isolated. Moreover, farmers have difficulty implementing the recommendations since the often lack access to better inputs, machinery or markets. Making precision agriculture and the required inputs available to farmers could magnify their yields and earnings, while saving resources and conserving the environment.
+  - question: Who would we like to attend?
+    answer: At ii2030, we’ll bring together
+    list:
+      - item: A social entrepreneur using smartphone applications to provide smallholders with more accurate farm information and access to other actors in the agricultural ecosystem.
+      - item: An NGO working locally with smallholder farmers to increase their business capacity and skills.
+      - item: A major company developing digitized and smart farming machinery and equipment.
+      - item: Agricultural product off-takers, who require end-to-end traceability to know exactly what went into production.
+      - item: The head of a smallholder farmer cooperative, who can advise the team on the needs and usability of the solution.
+  - question: How will we create impact?
+    answer: At the conclusion of the workshop in Berlin, the team will walk away with a concrete strategy to make digital farming affordable and accessible to smallholder farmers. The ii2030 online platform will continue to be used by the team following the workshop, to develop a prototype and test the solution with smallholder farmers in the field, with guidance and support from Endeva. Together, the team will implement a solution that will drive economic growth and impact not only for smallholder farmers and agribusiness, but for all those affected by hunger and malnutrition.
+
+
 tour_stops:
   - organization: The World Food Programme
     description: A humanitarian organization that works with smallholder farmers around the world to overcome hunger and promote food security.
@@ -14,6 +31,12 @@ tour_stops:
 
 <div id="tour">
   <section id="intro">
+    <div class="headline">
+      <div class="day-selector">
+        <button data-day="day-1" class="btn btn-day1 white active day-1">Day 1: Tour</button>
+        <button data-day="day-2" class="btn btn-day2 white day-2">Day 2: Factory</button>
+      </div>
+    </div>
     <header>
       <h2 class="subtitle"><span class="underlined">Day 1: Inclusive Innovation Tour</span></h2>
       <div class="headline">
@@ -24,7 +47,7 @@ tour_stops:
       <div class="pure-g background-container vert-spacing">
         <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
           <div class="image oversize">
-            <img src="{{ site.baseurl }}/assets/images/conference-group.png" alt="Conference group">
+            <img src="{{ site.baseurl }}/assets/images/conference-group.png" alt="Conference group" class="pure-img">
           </div>
         </div>
         <div class="pure-u-1 pure-u-md-1-2 vert-center slide-container">
@@ -62,12 +85,86 @@ tour_stops:
       {% endfor %}
     </div>
   </section>
+
+  <section class="schedule">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Schedule</span></h2>
+    </header>
+    <div class="schedule-grid">
+      <div class="pure-g background-container">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="time">
+            <div class="text">
+              <h3>Midday</h3>
+              <p>12:30 - 13:00</p>
+            </div>
+            <div class="clock midday">
+              <svg viewBox="0 0 32 32">
+                <circle r="16" cx="16" cy="16" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="content">
+            <h3>Registration & inclusive goodie bag pick-up</h3>
+            <p>Get the low-down on the day with a kick-off presentation and instructions for your track</p>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g background-container">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="time">
+            <div class="text">
+              <h3>Afternoon</h3>
+              <p>14:00 - 18:00</p>
+            </div>
+            <div class="clock afternoon">
+              <svg viewBox="0 0 32 32">
+                <circle r="16" cx="16" cy="16" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="content">
+            <h3>Inclusive Innovation Tour</h3>
+            <p>Explore Berlin’s buzzing social innovation scene with a 4-hour tour of local inclusive businesses, innovative companies and leading think thanks.</p>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g background-container">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="time">
+            <div class="text">
+              <h3>Evening</h3>
+              <p>18:00 - 22:00</p>
+            </div>
+            <div class="clock evening">
+              <svg viewBox="0 0 32 32">
+                <circle r="16" cx="16" cy="16" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="content">
+            <h3>Meet & Greet Dinner</h3>
+            <p>Meet and connect with other participants of the tour and conference</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="factory-button">
+    <a href="#" class="btn animate orange">Day 2: Factory<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
 </div>
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 <script>
-  $('#tour .slide-container').slick({
+  $('#intro .slide-container').slick({
     dots: true,
     infinite: true,
     arrows: false,
@@ -76,4 +173,16 @@ tour_stops:
     swipe: true,
     pauseOnHover: true,
   });
+
+  $('#track-description .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    swipe: true,
+    pauseOnHover: true,
+    adaptiveHeight: true,
+  })
+
 </script>

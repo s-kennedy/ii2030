@@ -9,15 +9,11 @@ header {
 
 .outer-container {
   position: relative;
-
-  .background-container {
-    width: 100%;
-    background: $off-white;
-  }
 }
 
-.oversize {
-  position: absolute;
+.background-container {
+  width: 100%;
+  background: $off-white;
 }
 
 .vert-center {
@@ -87,6 +83,31 @@ header {
       }
     }
   }
-
 }
 
+.day-selector {
+  display: flex;
+  justify-content: center;
+  font-size: $sm-size;
+
+  .btn.white {
+    background: $white;
+  }
+
+  .btn.active {
+    background: $orange;
+    color: $white;
+  }
+
+  .btn-day1 {
+    border-radius: 2em 0 0 2em;
+  }
+
+  .btn-day2 {
+    border-radius: 0 2em 2em 0;
+  }
+}
+
+i.fa {
+  margin-left: 12px;
+}

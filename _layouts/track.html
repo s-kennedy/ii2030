@@ -3,7 +3,7 @@ layout: default
 ---
 
 <main>
-  <section id="landing">
+  <section id="track-landing">
     <div class="outer-container">
       <div class="pure-g">
         <div class="pure-u-1 pure-u-md-1-2">
@@ -18,21 +18,32 @@ layout: default
     </div>
   </section>
 
-  <section id="description">
-    <div class="outer-container">
-      <div class="pure-g background-container vert-spacing">
-        <div class="pure-u-1 pure-u-md-1-2">
-          <div class="w-question">
-            <p><span class="bold"></span>What is disruptive technology doing for agriculture?</p>
-            <button href="#" class="btn orange animate">Why</button>
+  <section id="track-description">
+    <div class="outer-container slide-container background-container">
+      {% for slide in page.intro_slides %}
+        <div class="slide">
+          <div class="pure-g vert-spacing">
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="w-question">
+                <p><span class="bold"></span>{{ slide.question }}</p>
+                <button href="#" class="btn orange animate">Why<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2 vert-center">
+              <div class="text vert-spacing horiz-spacing">
+                <p>{{ slide.answer }}</p>
+                {% if slide.list %}
+                <ul>
+                  {% for list_item in slide.list %}
+                  <li>{{ list_item.item }}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </div>
+            </div>
           </div>
         </div>
-        <div class="pure-u-1 pure-u-md-1-2 vert-center slide-container">
-          <div class="text vert-spacing horiz-spacing">
-            <p>Precision Agriculture uses sensors, Big Data and digitized farming equipment to enable farmers to observe, measure and respond to variabilities in their environment (e.g. climate, soil composition, crop practices and disease). With this technology, farmers around the world are able to conserve valuable resources, such as water and fertilizer, while increasing both quality and quantity of their yields.</p>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </section>
   <div>

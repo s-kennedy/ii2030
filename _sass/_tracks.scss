@@ -1,19 +1,19 @@
-.w-question {
-  text-align: right;
-  border-right: 8px solid $light-blue;
-  padding-right: 20px;
+section#track-description {
+  .w-question {
+    text-align: right;
+    padding-right: 20px;
 
-  p {
-    font-size: 2em;
+    p {
+      font-size: 2em;
+    }
+  }
+
+  .text {
+    border-left: 8px solid $light-blue;
   }
 }
 
 #tour {
-
-  section#intro {
-
-  }
-
   section#tour-stops {
     .tour-stops {
       .image-container {
@@ -60,6 +60,79 @@
         padding: $sm-spacing;
       }
     }
-
   }
+
+  section.schedule {
+    .schedule-grid {
+
+      .background-container {
+        margin-bottom: $lg-spacing;
+      }
+
+      .time, .content {
+        padding: $lg-spacing;
+      }
+
+      .time {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        > div {
+          flex-grow: 1;
+        }
+
+        .clock {
+          svg {
+            width: 50px; height: 50px;
+            background: $dark-red;
+            border-radius: 50%;
+
+            circle {
+              fill: $dark-red;
+              stroke: $orange;
+              stroke-width: 32;
+            }
+          }
+
+          &.midday {
+            svg {
+              transform: rotate(-75deg); /*hour starting point from 3:00 - (360/12 * hour) */
+
+              circle {
+                stroke-dasharray: 4 100; /*duration as percentage: 100/12 * hours */
+              }
+            }
+          }
+
+          &.afternoon {
+            svg {
+              transform: rotate(-30deg);
+
+              circle {
+                stroke-dasharray: 33 100;
+              }
+            }
+          }
+
+          &.evening {
+            svg {
+              transform: rotate(90deg);
+
+              circle {
+                stroke-dasharray: 33 100;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.factory-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $lg-spacing;
 }
