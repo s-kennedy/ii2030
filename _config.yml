@@ -22,6 +22,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # External links
 registration_page_url: www.example.com
+url: s-kennedy.github.io/ii2030
 
 collections:
   tracks:
