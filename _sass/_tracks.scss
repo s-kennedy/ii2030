@@ -16,6 +16,10 @@ section#track-description {
     }
   }
 
+  li {
+    font-size: $sm-size;
+  }
+
   .text {
     border-left: 8px solid $light-blue;
   }
