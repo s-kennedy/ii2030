@@ -27,10 +27,24 @@ function activateTrack() {
   $(this).addClass('active');
 }
 
+function activateAnimation() {
+  console.log
+  $('#agenda .image .animate-buzz-out.active').removeClass('active')
+  var day = $(this).data('day');
+  if (day === 'day-1') {
+    $('#agenda .image .animate-buzz-out:nth-of-type(2)').addClass('active');
+  } else if (day === 'day-2') {
+    $('#agenda .image .animate-buzz-out:nth-of-type(3)').addClass('active');
+  } else {
+    $('#agenda .image .animate-buzz-out:nth-of-type(1)').addClass('active');
+  }
+}
+
 
 $(function(){
   $('.day-selector button').on('click', activateButton);
-  $('.track').on('mouseover', activateTrack)
+  $('.track').on('mouseover', activateTrack);
+  $('#agenda .day-selector .btn').on('click', activateAnimation);
   window.setInterval(cycleParticipants, 2500);
 
 });

@@ -3,7 +3,6 @@ section#landing {
 
   img.oversize {
     max-height: 90vh;
-    top: -$xl-spacing;
   }
 
   h1 {
@@ -15,7 +14,7 @@ section#overview {
 
   .background-container {
 
-    .text {
+    .outer-container {
       margin: $lg-spacing 0;
     }
   }
@@ -62,6 +61,12 @@ section#agenda {
   .agenda-item {
     .agenda-date {
       text-transform: uppercase;
+    }
+  }
+
+  .day-selector {
+    .btn {
+      margin-bottom: 0;
     }
   }
 }
