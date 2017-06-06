@@ -16,6 +16,14 @@ header {
   background: $off-white;
 }
 
+.oversize {
+  max-width: 100%;
+
+  img {
+    max-width: 100%;
+  }
+}
+
 .vert-center {
   display: flex;
   align-items: center;
@@ -27,11 +35,23 @@ header {
 }
 
 .vert-spacing {
-  padding: $md-spacing 0;
+  padding-top: $lg-spacing;
+  padding-bottom: $lg-spacing;
+}
+
+.vert-spacing-lg {
+  padding-top: $lg-spacing;
+  padding-bottom: $lg-spacing;
+}
+
+.vert-spacing-sm {
+  padding-top: $md-spacing;
+  padding-bottom: $md-spacing;
 }
 
 .horiz-spacing {
-  padding: 0 $md-spacing;
+  padding-left: $lg-spacing;
+  padding-right: $lg-spacing;
 }
 
 .btn {

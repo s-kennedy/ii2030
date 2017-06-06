@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/images/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/images/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/images/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/images/favicons/mstile-310x310.png" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+
+
+  <title>Precision Agriculture for Smallholder Farmers</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+  <!--<![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Roboto:300,500|Roboto+Slab:700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/ab5e247e92.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+
+  <script src="/assets/js/smooth-scroll.min.js"></script>
+  <script src="/assets/js/custom.js"></script>
+</head>
+
+<body>
+<div class="custom-wrapper pure-g" id="menu">
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-menu">
+            <a href="#" class="pure-menu-heading menu-heading">ii2030</a>
+            <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+        </div>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-menu pure-menu-horizontal custom-can-transform pull-right">
+            <ul class="pure-menu-list">
+              
+                <li class="pure-menu-item"><a data-scroll href="#agenda" class="pure-menu-link">agenda</a></li>
+              
+                <li class="pure-menu-item"><a data-scroll href="#tracks" class="pure-menu-link">tracks</a></li>
+              
+              <li class="pure-menu-item registration"><a href="www.example.com" class="pure-menu-link"><button class="btn orange animate">Register</button></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+      <script>
+      (function (window, document) {
+      var menu = document.getElementById('menu'),
+          WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+
+      function toggleHorizontal() {
+          [].forEach.call(
+              document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+              function(el){
+                  el.classList.toggle('pure-menu-horizontal');
+              }
+          );
+      };
+
+      function toggleMenu() {
+          // set timeout so that the panel has a chance to roll up
+          // before the menu switches states
+          if (menu.classList.contains('open')) {
+              setTimeout(toggleHorizontal, 500);
+          }
+          else {
+              toggleHorizontal();
+          }
+          menu.classList.toggle('open');
+          document.getElementById('toggle').classList.toggle('x');
+      };
+
+      function closeMenu() {
+          if (menu.classList.contains('open')) {
+              toggleMenu();
+          }
+      }
+
+      document.getElementById('toggle').addEventListener('click', function (e) {
+          toggleMenu();
+          e.preventDefault();
+      });
+
+      window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+      })(this, this.document);
+
+      </script>
+
+
+<main>
+  <section id="track-landing">
+    <div class="outer-container">
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2">
+          <div class="horiz-spacing vert-spacing">
+            <h1><span class="underlined">Precision Agriculture for Smallholder Farmers</span></h1>
+            <div class="vert-spacing">
+              <h3>How can we increase smallholder yields through precision agriculture?</h3>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2">
+          <div class="track-icon">
+            <img src="/assets/images/agri-icon.png" alt="Precision Agriculture for Smallholder Farmers" class="pure-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="track-description">
+    <div class="outer-container background-container vert-spacing-lg">
+      <div class="slide-container">
+      
+        <div class="slide">
+          <div class="pure-g vert-spacing-lg">
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="w-question">
+                <p><span class="bold"></span><span class="bold">What</span> is disruptive technology doing for agriculture?</p>
+                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="text vert-spacing-sm horiz-spacing">
+                <p>Precision Agriculture uses sensors, Big Data and digitized farming equipment to enable farmers to observe, measure and respond to variabilities in their environment (e.g. climate, soil composition, crop practices and disease). With this technology, farmers around the world are able to conserve valuable resources, such as water and fertilizer, while increasing both quality and quantity of their yields.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="slide">
+          <div class="pure-g vert-spacing-lg">
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="w-question">
+                <p><span class="bold"></span><span class="bold">Why</span> do we need more inclusive solutions?</p>
+                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="text vert-spacing-sm horiz-spacing">
+                <p>At present, precision agriculture is largely out of the reach of smallholder farmers. Individual services to inform farmers of weather patterns, soil structure, agricultural practices etc. exist, but are mostly isolated. Moreover, farmers have difficulty implementing the recommendations since the often lack access to better inputs, machinery or markets. Making precision agriculture and the required inputs available to farmers could magnify their yields and earnings, while saving resources and conserving the environment.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="slide">
+          <div class="pure-g vert-spacing-lg">
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="w-question">
+                <p><span class="bold"></span><span class="bold">Who</span> would we like to attend?</p>
+                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="text vert-spacing-sm horiz-spacing">
+                <p>At ii2030, we’ll bring together</p>
+                
+                <ul>
+                  
+                  <li>A social entrepreneur using smartphone applications to provide smallholders with more accurate farm information and access to other actors in the agricultural ecosystem.</li>
+                  
+                  <li>An NGO working locally with smallholder farmers to increase their business capacity and skills.</li>
+                  
+                  <li>A major company developing digitized and smart farming machinery and equipment.</li>
+                  
+                  <li>Agricultural product off-takers, who require end-to-end traceability to know exactly what went into production.</li>
+                  
+                  <li>The head of a smallholder farmer cooperative, who can advise the team on the needs and usability of the solution.</li>
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="slide">
+          <div class="pure-g vert-spacing-lg">
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="w-question">
+                <p><span class="bold"></span><span class="bold">How</span> will we create impact?</p>
+                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="text vert-spacing-sm horiz-spacing">
+                <p>At the conclusion of the workshop in Berlin, the team will walk away with a concrete strategy to make digital farming affordable and accessible to smallholder farmers. The ii2030 online platform will continue to be used by the team following the workshop, to develop a prototype and test the solution with smallholder farmers in the field, with guidance and support from Endeva. Together, the team will implement a solution that will drive economic growth and impact not only for smallholder farmers and agribusiness, but for all those affected by hunger and malnutrition.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  <div>
+    <div id="factory">
+  <section id="intro">
+    <div class="headline">
+      <div class="day-selector">
+        <a href="/tracks/precision-agriculture/tour">
+          <button data-day="day-1" class="btn btn-day1 white day-1">Day 1: Tour</button>
+        </a>
+        <button data-day="day-2" class="btn btn-day2 white day-2 active">Day 2: Factory</button>
+      </div>
+    </div>
+    <header>
+      <h2 class="subtitle"><span class="underlined">Day 2: Inclusive Innovation Factory</span></h2>
+      <div class="headline vert-spacing">
+        The Factory is all about manufacturing solutions through cross-sector collaboration!
+      </div>
+    </header>
+
+    <div class="outer-container slide-container">
+      
+      <div class="slide background-container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="/assets/images/conf-pic-8.jpg" alt="ii2030" class="pure-img">
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>In a design-thinking workshop of up to 10 participants, we will work out how technology can drive inclusive innovation, and what is needed to achieve a solution. Participants are carefully selected to bring together those actors who can make the change.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slide background-container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="/assets/images/conf-pic-9.jpg" alt="ii2030" class="pure-img">
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>Throughout the day, a networking assembly line, factory whistle speeches and a canteen exhibition will allow participants to get inspired and connect outside their workshop.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slide background-container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="/assets/images/conf-pic-10.jpg" alt="ii2030" class="pure-img">
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>An ii2030 online platform will be used for participants to start connecting and preparing for the workshop prior to the event and to continue their collaboration following the co-creation workshop. In the follow-up, the team will receive support from Endeva as they work on improving and implementing the solution in the field.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slide background-container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="/assets/images/conf-pic-11.jpg" alt="ii2030" class="pure-img">
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>Design-thinking methodology is a collaborative solution-based approach to solving complex challenges. The strategic process will guide the team of like-minded partners in co-creating concrete, innovative and user-friendly solutions in a 1-day, action-packed workshop.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="factory-outputs">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Factory Outputs</span></h2>
+    </header>
+    <div class="text vert-spacing-lg horiz-spacing">
+      <p>During a 1-day co-creation workshop, participants will design a plan to use digital technology to create a smarter and more integrated agricultural ecosystem. The team will devise a solution to harness on and off-farm data collected from mobile apps, remote sensing and publically available sources to:</p>
+      <ul>
+        <li>connect farmers to better markets and inputs (seeds, fertilizers, finance, etc.)</li>
+        <li>make digitized farming equipment available and affordable to smallholder farmers</li>
+        <li>use end-to-end traceability to track distribution and production methods</li>
+      </ul>
+    </div>
+    <div class="track-lead">
+      <div class="background-container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2">
+            <img src="/assets/images/krishna.png" alt="Krishna Chandra Mishra" class="pure-img">
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2">
+            <div class="text vert-spacing horiz-spacing">
+              <h3>Track lead:</h3>
+              <p>Krishna Chandra Mishra</p>
+              <p>Founder of eKutir Social Business</p>
+              <p class="quote">Designing new solutions and collaborating with other like-minded partners will impact billions of people in the world. Making the world a better place to live and making it happier and more prosperous drives me to work hard and come up with innovations to agriculture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="schedule">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Schedule</span></h2>
+    </header>
+    <div class="schedule-grid">
+      <div class="labels">
+        <div class="pure-g">
+          <div class="pure-u-md-1-3"></div>
+          <div class="pure-u-md-1-3 label">
+            <h3>Main program</h3>
+          </div>
+          <div class="pure-u-md-1-3 label">
+            <h3>Side program</h3>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="main-program">
+            <div class="pure-g background-container">
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div class="time">
+                  <div class="text">
+                    <h3>Morning</h3>
+                    <p>9:30 - 13:00</p>
+                  </div>
+                  <div class="clock morning">
+                    <svg viewBox="0 0 32 32">
+                      <circle r="16" cx="16" cy="16" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div class="content">
+                  <h3>Opening Ceremony</h3>
+                  <p>Inspiring keynote speeches, given from the perspective of 2030</p>
+                  <h3>Co-creation Labs 1</h3>
+                  <p>Work with new partners to create innovative solutions on a specific, pre-defined challenge of inclusive markets and society</p>
+                </div>
+              </div>
+            </div>
+            <div class="pure-g background-container">
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div class="time">
+                  <div class="text">
+                    <h3>Lunch</h3>
+                    <p>13:00 - 14:30</p>
+                  </div>
+                  <div class="clock lunch">
+                    <svg viewBox="0 0 32 32">
+                      <circle r="16" cx="16" cy="16" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div class="content">
+                  <h3>Networking Lunch</h3>
+                  <p>Over a delicious catered lunch, participants will connect with one another in our curated networking format</p>
+                </div>
+              </div>
+            </div>
+            <div class="pure-g background-container">
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div class="time">
+                  <div class="text">
+                    <h3>Afternoon</h3>
+                    <p>14:30 - 18:00</p>
+                  </div>
+                  <div class="clock afternoon">
+                    <svg viewBox="0 0 32 32">
+                      <circle r="16" cx="16" cy="16" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div class="content">
+                  <h3>Co-creation Labs 2</h3>
+                  <p>Work with new partners to create innovative solutions on a specific, pre-defined challenge of inclusive markets and society</p>
+                  <h3>Closing Talk</h3>
+                  <p>Speaker/topic TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="pure-u-1 pure-u-md-1-3 side-program">
+            <div class="background-container">
+              <div class="content">
+                <h3>On Stage</h3>
+                <p>Additional talks from leading experts in inclusive innovation, documentary screening and lightning talks</p>
+                <h3>On Display</h3>
+                <p>Innovative product demonstrations, exhibit of design products of INDEX Award (tbc)</p>
+                <h3>Collaboration Station</h3>
+                <p>Inspiring spaces will be available throughout the day for participants to solidify new connections and discuss next steps beyond the conference</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pure-g background-container">
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="time">
+              <div class="text">
+                <h3>Evening</h3>
+                <p>18:00 - 22:00</p>
+              </div>
+              <div class="clock evening">
+                <svg viewBox="0 0 32 32">
+                  <circle r="16" cx="16" cy="16" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-2-3">
+            <div class="content">
+              <h3>Optional Events</h3>
+              <p>Networking dinner and other social events in Berlin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="factory-button">
+    <a href="/tracks/precision-agriculture/tour" class="btn animate orange">Day 1: Tour<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<script>
+  $('#intro .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    swipe: true,
+    pauseOnHover: true,
+  });
+
+  $('#track-description .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    swipe: true,
+    pauseOnHover: true,
+    adaptiveHeight: true,
+  })
+
+  $('#track-description .next-btn').click(function() {
+    $('#track-description .slide-container').slick('slickNext');
+  })
+
+</script>
+  </div>
+</main>
+
+<footer class="pure-g">
+  <div class="footer-left pure-u-1 pure-u-md-1-2">
+    <div class="horiz-spacing">
+      <p class ="ii2030">ii2030</p>
+      <p>Oct 18 - 19, 2017</p>
+      <p>Berlin, Germany</p>
+    </div>
+  </div>
+  <div class="footer-right pure-u-1 pure-u-md-1-2">
+    <div class="horiz-spacing">
+      <p>For more information contact:</p>
+      <p>Megan Leahy-Wright</p>
+      <p>m.leahy@endeva.org</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

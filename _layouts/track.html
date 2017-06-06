@@ -14,23 +14,29 @@ layout: default
             </div>
           </div>
         </div>
+        <div class="pure-u-1 pure-u-md-1-2">
+          <div class="track-icon">
+            <img src="{{ site.baseurl }}{{ page.icon_path }}" alt="{{ page.title }}" class="pure-img">
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="track-description">
-    <div class="outer-container slide-container background-container">
+    <div class="outer-container background-container vert-spacing-lg">
+      <div class="slide-container">
       {% for slide in page.intro_slides %}
         <div class="slide">
-          <div class="pure-g vert-spacing">
+          <div class="pure-g vert-spacing-lg">
             <div class="pure-u-1 pure-u-md-1-2">
               <div class="w-question">
                 <p><span class="bold"></span>{{ slide.question }}</p>
-                <button href="#" class="btn orange animate">Why<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
               </div>
             </div>
-            <div class="pure-u-1 pure-u-md-1-2 vert-center">
-              <div class="text vert-spacing horiz-spacing">
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="text vert-spacing-sm horiz-spacing">
                 <p>{{ slide.answer }}</p>
                 {% if slide.list %}
                 <ul>
@@ -44,6 +50,7 @@ layout: default
           </div>
         </div>
       {% endfor %}
+      </div>
     </div>
   </section>
   <div>

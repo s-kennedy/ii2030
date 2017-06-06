@@ -1,3 +1,11 @@
+section#track-landing {
+  .track-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 section#track-description {
   .w-question {
     text-align: right;

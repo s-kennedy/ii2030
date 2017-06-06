@@ -2,13 +2,14 @@
 layout: track
 title: Precision Agriculture for Smallholder Farmers
 subtitle: How can we increase smallholder yields through precision agriculture?
+icon_path: /assets/images/agri-icon.png
 track_description: This is a great description.
 intro_slides:
-  - question: What is disruptive technology doing for agriculture?
+  - question: <span class="bold">What</span> is disruptive technology doing for agriculture?
     answer: Precision Agriculture uses sensors, Big Data and digitized farming equipment to enable farmers to observe, measure and respond to variabilities in their environment (e.g. climate, soil composition, crop practices and disease). With this technology, farmers around the world are able to conserve valuable resources, such as water and fertilizer, while increasing both quality and quantity of their yields.
-  - question: Why do we need more inclusive solutions?
+  - question: <span class="bold">Why</span> do we need more inclusive solutions?
     answer: At present, precision agriculture is largely out of the reach of smallholder farmers. Individual services to inform farmers of weather patterns, soil structure, agricultural practices etc. exist, but are mostly isolated. Moreover, farmers have difficulty implementing the recommendations since the often lack access to better inputs, machinery or markets. Making precision agriculture and the required inputs available to farmers could magnify their yields and earnings, while saving resources and conserving the environment.
-  - question: Who would we like to attend?
+  - question: <span class="bold">Who</span> would we like to attend?
     answer: At ii2030, we’ll bring together
     list:
       - item: A social entrepreneur using smartphone applications to provide smallholders with more accurate farm information and access to other actors in the agricultural ecosystem.
@@ -16,9 +17,18 @@ intro_slides:
       - item: A major company developing digitized and smart farming machinery and equipment.
       - item: Agricultural product off-takers, who require end-to-end traceability to know exactly what went into production.
       - item: The head of a smallholder farmer cooperative, who can advise the team on the needs and usability of the solution.
-  - question: How will we create impact?
+  - question: <span class="bold">How</span> will we create impact?
     answer: At the conclusion of the workshop in Berlin, the team will walk away with a concrete strategy to make digital farming affordable and accessible to smallholder farmers. The ii2030 online platform will continue to be used by the team following the workshop, to develop a prototype and test the solution with smallholder farmers in the field, with guidance and support from Endeva. Together, the team will implement a solution that will drive economic growth and impact not only for smallholder farmers and agribusiness, but for all those affected by hunger and malnutrition.
 
+tour_slides:
+  - img_path: /assets/images/conf-pic-4.jpg
+    text: Our tour guides will take participants on an exploration of Berlin’s buzzing inclusive innovation scene to provide inspiration and information for each track.
+  - img_path: /assets/images/conf-pic-5.jpg
+    text: The 4-hour tour will take participants to 3 visionary organizations, where hosts will lead a discussion on how greater inclusion in the agriculture sector will impact society in 2030.
+  - img_path: /assets/images/conf-pic-6.jpg
+    text: The day will end with a “Meet & Greet” networking dinner. Participants from all tracks will reconvene over dinner to share what they have learned and get to know one another.
+  - img_path: /assets/images/conf-pic-7.jpg
+    text: Participants will gain inspiration from and knowledge on the various perspectives of how inclusive innovation in agriculture will create positive change. They will gain an up-close-and-personal look into the three organizations, connect with their leaders and use the inspiration to guide and motivate them through their co-creation journey at the Inclusive Innovation Factory and beyond.
 
 tour_stops:
   - organization: The World Food Programme
@@ -34,34 +44,35 @@ tour_stops:
     <div class="headline">
       <div class="day-selector">
         <button data-day="day-1" class="btn btn-day1 white active day-1">Day 1: Tour</button>
-        <button data-day="day-2" class="btn btn-day2 white day-2">Day 2: Factory</button>
+        <a href="{{ site.baseurl }}/tracks/precision-agriculture/factory">
+          <button data-day="day-2" class="btn btn-day2 white day-2">Day 2: Factory</button>
+        </a>
       </div>
     </div>
     <header>
       <h2 class="subtitle"><span class="underlined">Day 1: Inclusive Innovation Tour</span></h2>
-      <div class="headline">
+      <div class="headline vert-spacing">
         Hit the road on our Inclusive Innovation Tour of Berlin!
       </div>
     </header>
-    <div class="outer-container">
-      <div class="pure-g background-container vert-spacing">
-        <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
-          <div class="image oversize">
-            <img src="{{ site.baseurl }}/assets/images/conference-group.png" alt="Conference group" class="pure-img">
+
+    <div class="outer-container slide-container">
+      {% for slide in page.tour_slides %}
+      <div class="slide background-container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="{{ site.baseurl }}{{ slide.img_path }}" alt="ii2030" class="pure-img">
+            </div>
           </div>
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2 vert-center slide-container">
-          <div class="text vert-spacing horiz-spacing">
-            <p>Our tour guides will take participants on an exploration of Berlin’s buzzing inclusive innovation scene to provide inspiration and information for each track.</p>
-          </div>
-          <div class="text vert-spacing horiz-spacing">
-            <p>The 4-hour tour will take participants to 3 visionary organizations, where hosts will lead a discussion on how greater inclusion in the agriculture sector will impact society in 2030</p>
-          </div>
-          <div class="text vert-spacing horiz-spacing">
-            <p>The day will end with a “Meet & Greet” networking dinner. Participants from all tracks will reconvene over dinner to share what they have learned and get to know one another.</p>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>{{ slide.text }}</p>
+            </div>
           </div>
         </div>
       </div>
+      {% endfor %}
     </div>
   </section>
 
@@ -157,7 +168,7 @@ tour_stops:
     </div>
   </section>
   <div class="factory-button">
-    <a href="#" class="btn animate orange">Day 2: Factory<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    <a href="{{ site.baseurl }}/tracks/precision-agriculture/factory" class="btn animate orange">Day 2: Factory<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </div>
 </div>
 
@@ -182,7 +193,10 @@ tour_stops:
     autoplaySpeed: 3000,
     swipe: true,
     pauseOnHover: true,
-    adaptiveHeight: true,
+  })
+
+  $('#track-description .next-btn').click(function() {
+    $('#track-description .slide-container').slick('slickNext');
   })
 
 </script>

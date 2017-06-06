@@ -1,5 +1,5 @@
 section#landing {
-  padding-top: 80px;
+  padding-top: $lg-spacing;
 
   img.oversize {
     max-height: 90vh;
@@ -12,14 +12,8 @@ section#landing {
 }
 
 section#overview {
-  .image.oversize {
-    height: 90vh;
-    width: 40vw;
-    background: url(../images/conference-group.png) center center no-repeat;
-  }
 
   .background-container {
-    margin: $xl-spacing 0;
 
     .text {
       margin: $lg-spacing 0;
@@ -56,10 +50,12 @@ section#agenda {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 70vh;
 
     img {
-      height: 33%;
+      &.animate {
+
+      }
     }
   }
 
@@ -104,4 +100,12 @@ section#tracks {
   .pure-g, .pure-u-1 {
     display: flex;
   }
+}
+
+.background-container-sm {
+  background: $off-white;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  z-index: -1;
 }
