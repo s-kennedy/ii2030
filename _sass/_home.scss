@@ -2,11 +2,15 @@ section#landing {
   padding-top: $lg-spacing;
 
   img.oversize {
-    max-height: 90vh;
+    max-height: 80vh;
   }
 
   h1 {
     line-height: 1.6em;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
@@ -50,12 +54,6 @@ section#agenda {
     justify-content: center;
     align-items: center;
     height: 70vh;
-
-    img {
-      &.animate {
-
-      }
-    }
   }
 
   .agenda-item {

@@ -15,11 +15,6 @@ body {
       text-align: center;
       margin-bottom: $lg-spacing;
     }
-
-    .underlined {
-      border-bottom: 8px solid $light-blue;
-      padding-bottom: $sm-spacing;
-    }
   }
 
   h1 {
@@ -54,5 +49,10 @@ body {
 
   .small {
     font-size: $sm-size
+  }
+
+  .underlined {
+    border-bottom: 2px solid $light-blue;
+    padding-bottom: $sm-spacing;
   }
 }

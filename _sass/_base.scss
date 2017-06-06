@@ -1,6 +1,6 @@
 section {
   margin-bottom: $lg-spacing;
-  padding-top: $xl-spacing;
+  padding-top: $lg-spacing;
 }
 
 header {
@@ -75,6 +75,12 @@ header {
     color: $white;
   }
 
+  &.red {
+    background: $dark-red;
+    color: $white;
+    border: 2px solid $dark-red;
+  }
+
   &.arrow {
     padding: 0.5em 0.7em;
     font-weight: $light;
@@ -100,6 +106,12 @@ header {
     &.orange {
       &:hover, &:focus, &:active {
         background: transparentize($orange, 0.1);;
+      }
+    }
+
+    &.red {
+      &:hover, &:focus, &:active {
+        background: transparentize($dark-red, 0.1);;
       }
     }
   }
@@ -131,3 +143,4 @@ header {
 i.fa {
   margin-left: 12px;
 }
+
