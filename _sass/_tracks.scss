@@ -56,7 +56,7 @@ section#track-description {
           height: 300px;
           width: 300px;
           border-radius: 50%;
-          background: url('/assets/images/conference-group.png') center center;
+          background: url($baseurl + '/assets/images/conference-group.png') center center;
           filter: brightness(40%);
           transition: filter 0.3s ease-in-out;
           clip-path: circle(140px at center);
