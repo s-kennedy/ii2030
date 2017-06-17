@@ -24,7 +24,7 @@ layout: default
   </section>
 
   <section id="track-description">
-    <div class="outer-container background-container vert-spacing-lg">
+    <div class="outer-container background-container dark vert-spacing-lg">
       <div class="slide-container">
       {% for slide in page.intro_slides %}
         <div class="slide">
@@ -44,6 +44,9 @@ layout: default
                   <li>{{ list_item.item }}</li>
                   {% endfor %}
                 </ul>
+                {% endif %}
+                {% if slide.callToAction %}
+                <p>{{ slide.callToAction }}</p>
                 {% endif %}
               </div>
             </div>

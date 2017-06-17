@@ -1,13 +1,22 @@
 
 section#track-landing {
+  margin-bottom: 0;
+  @include background-pattern;
+
   .track-icon {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    img {
+      width: 70%;
+    }
   }
 }
 
 section#track-description {
+  padding-top: 0;
+
   .w-question {
     text-align: right;
     padding-right: 20px;

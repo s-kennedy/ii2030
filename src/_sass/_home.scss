@@ -1,12 +1,13 @@
 section#landing {
   padding-top: $lg-spacing;
+  @include background-pattern;
 
   img.oversize {
     max-height: 80vh;
   }
 
   h1 {
-    line-height: 1.6em;
+    line-height: 1.2em;
   }
 
   a {
@@ -48,12 +49,15 @@ section#overview {
 
 section#agenda {
 
+  @include background-pattern;
+
   .oversize.image {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
+    transform: translateY(20px);
+    justify-content: flex-end;
   }
 
   .agenda-item {
@@ -83,9 +87,17 @@ section#tracks {
         font-weight: $bold;
       }
 
+      img {
+        margin-top: $md-spacing;
+      }
+
       &.active {
         background: $dark-red;
         color: $white;
+
+        img {
+          filter: brightness(100);
+        }
 
         .hide-unless-active {
           opacity: 1;
@@ -102,6 +114,25 @@ section#tracks {
 
   .pure-g, .pure-u-1 {
     display: flex;
+  }
+}
+
+section#partners {
+  .partner-group {
+    display: flex;
+    max-height: 2.8em;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 60px;
+
+    h3 {
+      margin: 0;
+    }
+
+    img {
+      max-height: 2.8em;
+      margin-left: 40px;
+    }
   }
 }
 

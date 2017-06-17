@@ -1,6 +1,6 @@
 section {
-  margin-bottom: $lg-spacing;
   padding-top: $lg-spacing;
+  padding-bottom: $lg-spacing;
 }
 
 header {
@@ -14,6 +14,11 @@ header {
 .background-container {
   width: 100%;
   background: $off-white;
+
+  &.dark {
+    background: $dark-blue;
+    color: $white;
+  }
 }
 
 .oversize {
@@ -42,8 +47,8 @@ header {
 }
 
 .vert-spacing {
-  padding-top: $lg-spacing;
-  padding-bottom: $lg-spacing;
+  padding-top: $md-spacing;
+  padding-bottom: $md-spacing;
 }
 
 .vert-spacing-lg {
@@ -52,8 +57,8 @@ header {
 }
 
 .vert-spacing-sm {
-  padding-top: $md-spacing;
-  padding-bottom: $md-spacing;
+  padding-top: $sm-spacing;
+  padding-bottom: $sm-spacing;
 }
 
 .horiz-spacing {

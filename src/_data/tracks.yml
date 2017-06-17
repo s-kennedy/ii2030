@@ -1,10 +1,15 @@
-- topic: deliver basic goods and services to remote areas using drones?
-  link: '#'
 - topic: increase smallholder yields through remote sensing?
   link: /tracks/precision-agriculture/tour
+  icon: /assets/icons/agri-red.svg
 - topic: source data on low-income markets through artificial intelligence?
-  link: '#'
+  link: '/tracks/ai/tour'
+  icon: '/assets/icons/ai-red.svg'
+- topic: deliver basic goods and services to remote areas using drones?
+  link: '/tracks/drones/tour'
+  icon: '/assets/icons/drone-red.svg'
 - topic: localize manufacturing in Africa with 3D printing?
-  link: '#'
+  link:
+  icon: '/assets/icons/3d-red.svg'
 - topic: improve remote diagnosis through image recognition?
-  link: '#'
+  link:
+  icon: '/assets/icons/eye-red.svg'

@@ -1,0 +1,214 @@
+---
+layout: track
+title: Drones in Sub-Saharan Africa
+subtitle: How can we efficiently and profitably deliver essential products and services in remote areas in Sub-Saharan Africa using a multifunctional drone network?
+icon_path: /assets/icons/drone-red.svg
+track_description: This is a great description.
+intro_slides:
+  - question: <span class="bold">What</span> can drones do to improve the lives of low income consumers in Sub-Saharan Africa?
+    answer: Drones can deliver critical medical supplies to remote areas offering timely access all year round. They can detect and safely detonate landmines and play a critical role in search and rescue missions after natural disasters. Drones are able to offer a more efficient way to deliver products to consumers through last mile distribution, enable farmers to survey and optimize their land and resources allowing them to maximize their output or facilitate reforestation and the conservation of wildlife. The possibilities and opportunities provided through the use of drones are endless.
+  - question: <span class="bold">Why</span> do we need more inclusive solutions?
+    answer: Although the use of drones for good is likely to drive significant growth and offer seismic impact in the future, few drone solutions are in place at present. Several barriers are preventing entrepreneurs from quickly developing and delivering drone solutions. A key challenge is that it is expensive and requires specialized know how. Each entrepreneur must create and manage a drone network as well as the details related to the delivery of a specific solution. If we could create an efficient drone network that is multifunctional and modular we could make it much easier for local entrepreneurs to attach a wide range of solutions to an existing network. Enabling an infinite range of opportunities to improve the outcomes of low-income consumers.
+  - question: <span class="bold">Who</span> would we like to attend?
+    answer: At ii2030, we’ll bring together
+    list:
+      - item: Companies that manufactures drones
+      - item: Entrepreneurs already working on a range of drone solutions
+      - item: Car manufacturing company working on assembly and manufacturing
+      - item: African telecommunication company with regional coverage
+      - item: Potential investors
+      - item: Drone experts
+      - item: Large companies working in the logistics sector
+      - item: NGO working closely with low income consumers in multiple countries
+    callToAction: If you fit one of these profiles, please apply for an invitation through our registration process.
+  - question: <span class="bold">How</span> will we create impact?
+    answer: At the conclusion of the workshop in Berlin, participants will have the following
+    list:
+      - item: 'CONCRETE IDEAS: Have concrete ideas on how to create the ultimate multifunctional drones network in Sub-Saharan Africa to allow African entrepreneurs to create businesses that unleash the potential of drones for good'
+      - item: 'PARTNERS: Have closely worked with potential partners and know if they want to continue developing the idea together'
+      - item: 'FUNDING: Have met with potential funding partners and investors that can invest in making this idea a reality'
+      - item: 'WAY FORWARD: ii2030 is more than just an event, interactions and progress will continue beyond the close of the event. This will also be facilitated by an online platform to be used by teams to continue to develop a prototype and test the solution in the field, with ongoing support from Endeva and our network partners.'
+      - item: 'WAY FORWARD: ii2030 is more than just an event, interactions and progress will continue beyond the close of the event. This will also be facilitated by an online platform to be used by teams to continue to develop a prototype and test the solution in the field, with ongoing support from Endeva and our network  partners.'
+
+tour_slides:
+  - img_path: /assets/images/conf-pic-4.jpg
+    text: Our tour guides will take participants on an exploration of Berlin’s buzzing inclusive innovation scene to provide inspiration and information for each track.
+  - img_path: /assets/images/conf-pic-5.jpg
+    text: The 4-hour tour will take participants to 3 visionary organizations, where hosts will lead a discussion on how greater inclusion in the agriculture sector will impact society in 2030.
+  - img_path: /assets/images/conf-pic-6.jpg
+    text: The day will end with a “Meet & Greet” networking dinner. Participants from all tracks will reconvene over dinner to share what they have learned and get to know one another.
+  - img_path: /assets/images/conf-pic-7.jpg
+    text: Participants will gain inspiration from and knowledge on the various perspectives of how inclusive innovation in agriculture will create positive change. They will gain an up-close-and-personal look into the three organizations, connect with their leaders and use the inspiration to guide and motivate them through their co-creation journey at the Inclusive Innovation Factory and beyond.
+
+tour_stops_headline: 'The Drones in Sub-Saharan Africa track will take participants on a tour of the following three organizations:'
+tour_stops:
+  - organization: The World Food Programme
+    description: A humanitarian organization that works with smallholder farmers around the world to overcome hunger and promote food security.
+  - organization: SAP Berlin
+    description: A leading global company developing software to seamlessly connect people and technology in real-time to develop their businesses and drive impact and growth globally.
+  - organization: Bosch
+    description: A German multinational engineering and electronics company, developing and supplying farmers around the world with smarter and more advanced machinery.
+---
+
+<div id="tour">
+  <section id="intro">
+    <div class="headline">
+      <div class="day-selector">
+        <button data-day="day-1" class="btn btn-day1 white active day-1">Day 1: Tour</button>
+        <a href="{{ site.baseurl }}/tracks/precision-agriculture/factory">
+          <button data-day="day-2" class="btn btn-day2 white day-2">Day 2: Factory</button>
+        </a>
+      </div>
+    </div>
+    <header>
+      <h2 class="subtitle"><span class="underlined">Day 1: Inclusive Innovation Tour</span></h2>
+      <div class="headline vert-spacing">
+        Hit the road on our Inclusive Innovation Tour of Berlin!
+      </div>
+    </header>
+
+    <div class="outer-container slide-container">
+      {% for slide in page.tour_slides %}
+      <div class="slide background-container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="{{ site.baseurl }}{{ slide.img_path }}" alt="ii2030" class="pure-img">
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>{{ slide.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="tour-stops">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Tour Stops</span></h2>
+      <p class="headline vert-spacing">{{ page.tour_stops_headline }}</p>
+    </header>
+    <div class="pure-g tour-stops">
+      {% for tour_stop in page.tour_stops %}
+      <div class="pure-u-1 pure-u-md-1-3">
+        <div class="track-container">
+          <div class="background-image">
+          </div>
+          <div class="overlay"><h1>{{ forloop.index }}</h1></div>
+        </div>
+        <div class="content-container">
+          <h3>{{ tour_stop.organization }}</h3>
+          <p>{{ tour_stop.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="schedule">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Schedule</span></h2>
+    </header>
+    <div class="schedule-grid">
+      <div class="pure-g background-container">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="time">
+            <div class="text">
+              <h3>Midday</h3>
+              <p>12:30 - 13:00</p>
+            </div>
+            <div class="clock midday">
+              <svg viewBox="0 0 32 32">
+                <circle r="16" cx="16" cy="16" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="content">
+            <h3>Registration & inclusive goodie bag pick-up</h3>
+            <p>Get the low-down on the day with a kick-off presentation and instructions for your track</p>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g background-container">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="time">
+            <div class="text">
+              <h3>Afternoon</h3>
+              <p>14:00 - 18:00</p>
+            </div>
+            <div class="clock afternoon">
+              <svg viewBox="0 0 32 32">
+                <circle r="16" cx="16" cy="16" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="content">
+            <h3>Inclusive Innovation Tour</h3>
+            <p>Explore Berlin’s buzzing social innovation scene with a 4-hour tour of local inclusive businesses, innovative companies and leading think thanks.</p>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g background-container">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="time">
+            <div class="text">
+              <h3>Evening</h3>
+              <p>18:00 - 22:00</p>
+            </div>
+            <div class="clock evening">
+              <svg viewBox="0 0 32 32">
+                <circle r="16" cx="16" cy="16" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="content">
+            <h3>Meet & Greet Dinner</h3>
+            <p>Meet and connect with other participants of the tour and conference</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="factory-button">
+    <a href="{{ site.baseurl }}/tracks/precision-agriculture/factory" class="btn animate orange">Day 2: Factory<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<script>
+  $('#intro .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    swipe: true,
+    pauseOnHover: true,
+  });
+
+  $('#track-description .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    swipe: true,
+    pauseOnHover: true,
+  })
+
+  $('#track-description .next-btn').click(function() {
+    $('#track-description .slide-container').slick('slickNext');
+  })
+
+</script>

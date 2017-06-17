@@ -1,0 +1,205 @@
+---
+layout: track
+title: Artificial Intelligence for BoP market research
+subtitle: How can existing data on the BoP market be collected and analyzed using artificial intelligence?
+icon_path: /assets/icons/ai-red.svg
+track_description: This is a great description.
+intro_slides:
+  - question: <span class="bold">What</span> can artificial intelligence do for market research?
+    answer: Artificial intelligence provides algorithms to automatically identify relevant information on the internet and analyze its content for specific uses. It enables enterprises to make better informed business decisions and develop services or products that exactly meet the needs of their target group. It can complement or even save businesses costly and time-intensive market research.
+  - question: <span class="bold">Why</span> do we need BoP market data?
+    answer: Companies and investors still cite the lack of market data as one of the major impediments to investing in low-income markets. Without a solid understanding of the income and spending patterns, preferences and challenges of the low-income target group, it is difficult to calculate a robust business case, find the appropriate price point, or identify the best market segment. As a result, companies either stay away from the market, or face high upfront costs for market research that they may not be able to recuperate if they don't find the expected market demand. <br>At the same time, data on low-income markets already exists. Public organizations like the World Bank or national governments commission hundreds of reports each year that highlight earnings, spending and consumption patterns of people living at the BoP. This data, however, is often difficult to access and too high-level. <br>In addition, inclusive businesses have started to collect data on their customers. Energy companies, for example, have already reached around 440 million households at the BoP with their services. Many of them regularly collect detailed data as part of their customer interactions, including via mobile transactions. They are keen to monetize this valuable data, but so far no means to market it effectively. <br>Combining the data sets of public and private players would make the BoP market a lot more transparent and accessible for companies and investors.
+  - question: <span class="bold">Who</span> would we like to attend?
+    answer: The artificial intelligence for BoP market research track will l bring together
+    list:
+      - item: Inclusive energy businesses that collect millions of data points on spending and consumption patterns of their customers every year
+      - item: Public sector agencies commissioning BoP market research
+      - item: Artificial intelligence experts from the academic and corporate world
+      - item: Market research institutes that could market the data
+      - item: Investors, banks and businesses that are interested in aggregated data for BoP markets
+    callToAction: If you fit one of these profiles, please apply for an invitation through our registration process.
+  - question: <span class="bold">How</span> will we create impact?
+    answer: The purpose of the track is to develop concrete solutions to make use of the large amount of data that is already available on BoP markets. Ideally, an integrated solution will combine existing BoP market data from public research projects with a large set of different data sets that are collected by companies in developing and emerging markets every second. <br>After the event, participants are invited to continue the collaboration with facilitation from the ii2030 team.
+
+tour_slides:
+  - img_path: /assets/images/conf-pic-4.jpg
+    text: Our tour guides will take participants on an exploration of Berlin’s buzzing inclusive innovation scene to provide inspiration and information for each track.
+  - img_path: /assets/images/conf-pic-5.jpg
+    text: The 4-hour tour will take participants to 3 visionary organizations, where hosts will lead a discussion on how greater inclusion in the agriculture sector will impact society in 2030.
+  - img_path: /assets/images/conf-pic-6.jpg
+    text: The day will end with a “Meet & Greet” networking dinner. Participants from all tracks will reconvene over dinner to share what they have learned and get to know one another.
+  - img_path: /assets/images/conf-pic-7.jpg
+    text: Participants will gain inspiration from and knowledge on the various perspectives of how inclusive innovation in agriculture will create positive change. They will gain an up-close-and-personal look into the three organizations, connect with their leaders and use the inspiration to guide and motivate them through their co-creation journey at the Inclusive Innovation Factory and beyond.
+
+tour_stops_headline: 'The AI for BoP Market Research track will take participants on a tour of the following three organizations:'
+tour_stops:
+  - organization: The World Food Programme
+    description: A humanitarian organization that works with smallholder farmers around the world to overcome hunger and promote food security.
+  - organization: SAP Berlin
+    description: A leading global company developing software to seamlessly connect people and technology in real-time to develop their businesses and drive impact and growth globally.
+  - organization: Bosch
+    description: A German multinational engineering and electronics company, developing and supplying farmers around the world with smarter and more advanced machinery.
+---
+
+<div id="tour">
+  <section id="intro">
+    <div class="headline">
+      <div class="day-selector">
+        <button data-day="day-1" class="btn btn-day1 white active day-1">Day 1: Tour</button>
+        <a href="{{ site.baseurl }}/tracks/precision-agriculture/factory">
+          <button data-day="day-2" class="btn btn-day2 white day-2">Day 2: Factory</button>
+        </a>
+      </div>
+    </div>
+    <header>
+      <h2 class="subtitle"><span class="underlined">Day 1: Inclusive Innovation Tour</span></h2>
+      <div class="headline vert-spacing">
+        Hit the road on our Inclusive Innovation Tour of Berlin!
+      </div>
+    </header>
+
+    <div class="outer-container slide-container">
+      {% for slide in page.tour_slides %}
+      <div class="slide background-container dark">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="{{ site.baseurl }}{{ slide.img_path }}" alt="ii2030" class="pure-img">
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>{{ slide.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="tour-stops">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Tour Stops</span></h2>
+      <p class="headline vert-spacing">{{ page.tour_stops_headline }}</p>
+    </header>
+    <div class="pure-g tour-stops">
+      {% for tour_stop in page.tour_stops %}
+      <div class="pure-u-1 pure-u-md-1-3">
+        <div class="track-container">
+          <div class="background-image">
+          </div>
+          <div class="overlay"><h1>{{ forloop.index }}</h1></div>
+        </div>
+        <div class="content-container">
+          <h3>{{ tour_stop.organization }}</h3>
+          <p>{{ tour_stop.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="schedule">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Schedule</span></h2>
+    </header>
+    <div class="schedule-grid">
+      <div class="pure-g background-container">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="time">
+            <div class="text">
+              <h3>Midday</h3>
+              <p>12:30 - 13:00</p>
+            </div>
+            <div class="clock midday">
+              <svg viewBox="0 0 32 32">
+                <circle r="16" cx="16" cy="16" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="content">
+            <h3>Registration & inclusive goodie bag pick-up</h3>
+            <p>Get the low-down on the day with a kick-off presentation and instructions for your track</p>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g background-container">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="time">
+            <div class="text">
+              <h3>Afternoon</h3>
+              <p>14:00 - 18:00</p>
+            </div>
+            <div class="clock afternoon">
+              <svg viewBox="0 0 32 32">
+                <circle r="16" cx="16" cy="16" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="content">
+            <h3>Inclusive Innovation Tour</h3>
+            <p>Explore Berlin’s buzzing social innovation scene with a 4-hour tour of local inclusive businesses, innovative companies and leading think thanks.</p>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g background-container">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="time">
+            <div class="text">
+              <h3>Evening</h3>
+              <p>18:00 - 22:00</p>
+            </div>
+            <div class="clock evening">
+              <svg viewBox="0 0 32 32">
+                <circle r="16" cx="16" cy="16" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="content">
+            <h3>Meet & Greet Dinner</h3>
+            <p>Meet and connect with other participants of the tour and conference</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="factory-button">
+    <a href="{{ site.baseurl }}/tracks/precision-agriculture/factory" class="btn animate orange">Day 2: Factory<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<script>
+  $('#intro .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    swipe: true,
+    pauseOnHover: true,
+  });
+
+  $('#track-description .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    swipe: true,
+    pauseOnHover: true,
+  })
+
+  $('#track-description .next-btn').click(function() {
+    $('#track-description .slide-container').slick('slickNext');
+  })
+
+</script>
