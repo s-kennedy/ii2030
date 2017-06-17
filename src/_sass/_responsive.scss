@@ -12,16 +12,8 @@
   }
 
   section#landing {
-    .background-container {
-      background: none;
-
-      > div:not(.image-container) {
-        background: $off-white;
-      }
-
-      img.oversize {
-        top: 0;
-      }
+    .image-container {
+      display: none;
     }
   }
 
@@ -72,6 +64,14 @@
     .tracks {
       .track {
         width: 100%
+      }
+    }
+  }
+
+  section#partners {
+    .partner-group {
+      h3 {
+        width: 100%;
       }
     }
   }

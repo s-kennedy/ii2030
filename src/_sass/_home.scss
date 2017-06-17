@@ -2,8 +2,45 @@ section#landing {
   padding-top: $lg-spacing;
   @include background-pattern;
 
-  img.oversize {
-    max-height: 80vh;
+  .image-container {
+    position: relative;
+    align-items: baseline;
+    display: flex;
+    justify-content: flex-start;
+    transform: translateX(-60px);
+
+    img.oversize {
+      max-height: 80vh;
+    }
+
+    .ii2030-bubble {
+      background: $dark-red;
+      height: 130px;
+      width: 200px;
+      min-width: 160px;
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:before {
+        content: '';
+        height: 0px;
+        width: 0px;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 30px solid $dark-red;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        transform: rotate(-30deg);
+      }
+
+      h2 {
+        color: $white;
+      }
+    }
   }
 
   h1 {
@@ -120,7 +157,7 @@ section#tracks {
 section#partners {
   .partner-group {
     display: flex;
-    max-height: 2.8em;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
     margin-bottom: 60px;
@@ -132,6 +169,7 @@ section#partners {
     img {
       max-height: 2.8em;
       margin-left: 40px;
+      margin-top: 20px;
     }
   }
 }
