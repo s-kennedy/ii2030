@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/ii2030/assets/images/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ii2030/assets/images/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ii2030/assets/images/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ii2030/assets/images/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/ii2030/assets/images/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/ii2030/assets/images/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/ii2030/assets/images/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/ii2030/assets/images/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/ii2030/assets/images/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/ii2030/assets/images/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/ii2030/assets/images/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/ii2030/assets/images/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/ii2030/assets/images/favicons/mstile-310x310.png" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+
+
+  <title>Drones in Sub-Saharan Africa</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+  <!--<![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400|Unica+One|Roboto:300,500|Roboto+Slab:700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/ab5e247e92.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+  <link rel="stylesheet" href="/ii2030/assets/css/main.css">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+
+  <script src="/ii2030/assets/js/smooth-scroll.min.js"></script>
+  <script src="/ii2030/assets/js/custom.js"></script>
+</head>
+
+<body>
+<div class="custom-wrapper pure-g" id="menu">
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-menu">
+            <a href="/" class="pure-menu-heading menu-heading">ii2030</a>
+            <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+        </div>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-menu pure-menu-horizontal custom-can-transform pull-right">
+            <ul class="pure-menu-list">
+              
+                <li class="pure-menu-item"><a data-scroll href="#agenda" class="pure-menu-link">agenda</a></li>
+              
+                <li class="pure-menu-item"><a data-scroll href="#tracks" class="pure-menu-link">tracks</a></li>
+              
+              <li class="pure-menu-item registration"><a href="www.example.com" class="pure-menu-link"><button class="btn orange animate">Register</button></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+      <script>
+      (function (window, document) {
+      var menu = document.getElementById('menu'),
+          WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+
+      function toggleHorizontal() {
+          [].forEach.call(
+              document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+              function(el){
+                  el.classList.toggle('pure-menu-horizontal');
+              }
+          );
+      };
+
+      function toggleMenu() {
+          // set timeout so that the panel has a chance to roll up
+          // before the menu switches states
+          if (menu.classList.contains('open')) {
+              setTimeout(toggleHorizontal, 500);
+          }
+          else {
+              toggleHorizontal();
+          }
+          menu.classList.toggle('open');
+          document.getElementById('toggle').classList.toggle('x');
+      };
+
+      function closeMenu() {
+          if (menu.classList.contains('open')) {
+              toggleMenu();
+          }
+      }
+
+      document.getElementById('toggle').addEventListener('click', function (e) {
+          toggleMenu();
+          e.preventDefault();
+      });
+
+      window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+      })(this, this.document);
+
+      </script>
+
+
+<main>
+  <section id="track-landing">
+    <div class="outer-container">
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2">
+          <div class="horiz-spacing vert-spacing">
+            <h1 class="underlined">Drones in Sub-Saharan Africa</h1>
+            <div class="vert-spacing">
+              <h3>How can we efficiently and profitably deliver essential products and services in remote areas in Sub-Saharan Africa using a multifunctional drone network?</h3>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2">
+          <div class="track-icon image-container">
+            <img src="/ii2030/assets/icons/drone-red.svg" alt="Drones in Sub-Saharan Africa" class="pure-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="track-description">
+    <div class="outer-container background-container dark vert-spacing-lg">
+      <div class="slide-container">
+      
+        <div class="slide">
+          <div class="pure-g vert-spacing-lg">
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="w-question">
+                <p><span class="bold"></span><span class="bold">What</span> can drones do to improve the lives of low income consumers in Sub-Saharan Africa?</p>
+                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="text vert-spacing-sm horiz-spacing">
+                <p>Drones can deliver critical medical supplies to remote areas offering timely access all year round. They can detect and safely detonate landmines and play a critical role in search and rescue missions after natural disasters. Drones are able to offer a more efficient way to deliver products to consumers through last mile distribution, enable farmers to survey and optimize their land and resources allowing them to maximize their output or facilitate reforestation and the conservation of wildlife. The possibilities and opportunities provided through the use of drones are endless.</p>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="slide">
+          <div class="pure-g vert-spacing-lg">
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="w-question">
+                <p><span class="bold"></span><span class="bold">Why</span> do we need more inclusive solutions?</p>
+                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="text vert-spacing-sm horiz-spacing">
+                <p>Although the use of drones for good is likely to drive significant growth and offer seismic impact in the future, few drone solutions are in place at present. Several barriers are preventing entrepreneurs from quickly developing and delivering drone solutions. A key challenge is that it is expensive and requires specialized know how. Each entrepreneur must create and manage a drone network as well as the details related to the delivery of a specific solution. If we could create an efficient drone network that is multifunctional and modular we could make it much easier for local entrepreneurs to attach a wide range of solutions to an existing network. Enabling an infinite range of opportunities to improve the outcomes of low-income consumers.</p>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="slide">
+          <div class="pure-g vert-spacing-lg">
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="w-question">
+                <p><span class="bold"></span><span class="bold">Who</span> would we like to attend?</p>
+                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="text vert-spacing-sm horiz-spacing">
+                <p>At ii2030, we’ll bring together</p>
+                
+                <ul>
+                  
+                  <li>Companies that manufactures drones</li>
+                  
+                  <li>Entrepreneurs already working on a range of drone solutions</li>
+                  
+                  <li>Car manufacturing company working on assembly and manufacturing</li>
+                  
+                  <li>African telecommunication company with regional coverage</li>
+                  
+                  <li>Potential investors</li>
+                  
+                  <li>Drone experts</li>
+                  
+                  <li>Large companies working in the logistics sector</li>
+                  
+                  <li>NGO working closely with low income consumers in multiple countries</li>
+                  
+                </ul>
+                
+                
+                <p>If you fit one of these profiles, please apply for an invitation through our registration process.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="slide">
+          <div class="pure-g vert-spacing-lg">
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="w-question">
+                <p><span class="bold"></span><span class="bold">How</span> will we create impact?</p>
+                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2">
+              <div class="text vert-spacing-sm horiz-spacing">
+                <p>At the conclusion of the workshop in Berlin, participants will have the following</p>
+                
+                <ul>
+                  
+                  <li>CONCRETE IDEAS: Have concrete ideas on how to create the ultimate multifunctional drones network in Sub-Saharan Africa to allow African entrepreneurs to create businesses that unleash the potential of drones for good</li>
+                  
+                  <li>PARTNERS: Have closely worked with potential partners and know if they want to continue developing the idea together</li>
+                  
+                  <li>FUNDING: Have met with potential funding partners and investors that can invest in making this idea a reality</li>
+                  
+                  <li>WAY FORWARD: ii2030 is more than just an event, interactions and progress will continue beyond the close of the event. This will also be facilitated by an online platform to be used by teams to continue to develop a prototype and test the solution in the field, with ongoing support from Endeva and our network partners.</li>
+                  
+                  <li>WAY FORWARD: ii2030 is more than just an event, interactions and progress will continue beyond the close of the event. This will also be facilitated by an online platform to be used by teams to continue to develop a prototype and test the solution in the field, with ongoing support from Endeva and our network  partners.</li>
+                  
+                </ul>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  <div>
+    <div id="tour">
+  <section id="intro">
+    <div class="headline">
+      <div class="day-selector">
+        <button data-day="day-1" class="btn btn-day1 white active day-1">Day 1: Tour</button>
+        <a href="/ii2030/tracks/precision-agriculture/factory">
+          <button data-day="day-2" class="btn btn-day2 white day-2">Day 2: Factory</button>
+        </a>
+      </div>
+    </div>
+    <header>
+      <h2 class="subtitle"><span class="underlined">Day 1: Inclusive Innovation Tour</span></h2>
+      <div class="headline vert-spacing">
+        Hit the road on our Inclusive Innovation Tour of Berlin!
+      </div>
+    </header>
+
+    <div class="outer-container slide-container">
+      
+      <div class="slide background-container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="/ii2030/assets/images/conf-pic-4.jpg" alt="ii2030" class="pure-img">
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>Our tour guides will take participants on an exploration of Berlin’s buzzing inclusive innovation scene to provide inspiration and information for each track.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slide background-container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="/ii2030/assets/images/conf-pic-5.jpg" alt="ii2030" class="pure-img">
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>The 4-hour tour will take participants to 3 visionary organizations, where hosts will lead a discussion on how greater inclusion in the agriculture sector will impact society in 2030.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slide background-container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="/ii2030/assets/images/conf-pic-6.jpg" alt="ii2030" class="pure-img">
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>The day will end with a “Meet & Greet” networking dinner. Participants from all tracks will reconvene over dinner to share what they have learned and get to know one another.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slide background-container">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="/ii2030/assets/images/conf-pic-7.jpg" alt="ii2030" class="pure-img">
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>Participants will gain inspiration from and knowledge on the various perspectives of how inclusive innovation in agriculture will create positive change. They will gain an up-close-and-personal look into the three organizations, connect with their leaders and use the inspiration to guide and motivate them through their co-creation journey at the Inclusive Innovation Factory and beyond.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="tour-stops">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Tour Stops</span></h2>
+      <p class="headline vert-spacing">The Drones in Sub-Saharan Africa track will take participants on a tour of the following three organizations:</p>
+    </header>
+    <div class="pure-g tour-stops">
+      
+      <div class="pure-u-1 pure-u-md-1-3">
+        <div class="track-container">
+          <div class="background-image">
+          </div>
+          <div class="overlay"><h1>1</h1></div>
+        </div>
+        <div class="content-container">
+          <h3>The World Food Programme</h3>
+          <p>A humanitarian organization that works with smallholder farmers around the world to overcome hunger and promote food security.</p>
+        </div>
+      </div>
+      
+      <div class="pure-u-1 pure-u-md-1-3">
+        <div class="track-container">
+          <div class="background-image">
+          </div>
+          <div class="overlay"><h1>2</h1></div>
+        </div>
+        <div class="content-container">
+          <h3>SAP Berlin</h3>
+          <p>A leading global company developing software to seamlessly connect people and technology in real-time to develop their businesses and drive impact and growth globally.</p>
+        </div>
+      </div>
+      
+      <div class="pure-u-1 pure-u-md-1-3">
+        <div class="track-container">
+          <div class="background-image">
+          </div>
+          <div class="overlay"><h1>3</h1></div>
+        </div>
+        <div class="content-container">
+          <h3>Bosch</h3>
+          <p>A German multinational engineering and electronics company, developing and supplying farmers around the world with smarter and more advanced machinery.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="schedule">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Schedule</span></h2>
+    </header>
+    <div class="schedule-grid">
+      <div class="pure-g background-container">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="time">
+            <div class="text">
+              <h3>Midday</h3>
+              <p>12:30 - 13:00</p>
+            </div>
+            <div class="clock midday">
+              <svg viewBox="0 0 32 32">
+                <circle r="16" cx="16" cy="16" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="content">
+            <h3>Registration & inclusive goodie bag pick-up</h3>
+            <p>Get the low-down on the day with a kick-off presentation and instructions for your track</p>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g background-container">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="time">
+            <div class="text">
+              <h3>Afternoon</h3>
+              <p>14:00 - 18:00</p>
+            </div>
+            <div class="clock afternoon">
+              <svg viewBox="0 0 32 32">
+                <circle r="16" cx="16" cy="16" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="content">
+            <h3>Inclusive Innovation Tour</h3>
+            <p>Explore Berlin’s buzzing social innovation scene with a 4-hour tour of local inclusive businesses, innovative companies and leading think thanks.</p>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g background-container">
+        <div class="pure-u-1 pure-u-md-1-3">
+          <div class="time">
+            <div class="text">
+              <h3>Evening</h3>
+              <p>18:00 - 22:00</p>
+            </div>
+            <div class="clock evening">
+              <svg viewBox="0 0 32 32">
+                <circle r="16" cx="16" cy="16" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="content">
+            <h3>Meet & Greet Dinner</h3>
+            <p>Meet and connect with other participants of the tour and conference</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="factory-button">
+    <a href="/ii2030/tracks/precision-agriculture/factory" class="btn animate orange">Day 2: Factory<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<script>
+  $('#intro .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    swipe: true,
+    pauseOnHover: true,
+  });
+
+  $('#track-description .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    swipe: true,
+    pauseOnHover: true,
+  })
+
+  $('#track-description .next-btn').click(function() {
+    $('#track-description .slide-container').slick('slickNext');
+  })
+
+</script>
+  </div>
+</main>
+
+<footer class="pure-g">
+  <div class="footer-left pure-u-1 pure-u-md-1-2">
+    <div class="horiz-spacing">
+      <p class ="ii2030">ii2030</p>
+      <p>Oct 18 - 19, 2017</p>
+      <p>Berlin, Germany</p>
+    </div>
+  </div>
+  <div class="footer-right pure-u-1 pure-u-md-1-2">
+    <div class="horiz-spacing">
+      <p>For more information contact:</p>
+      <p>Megan Leahy-Wright</p>
+      <p>m.leahy@endeva.org</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

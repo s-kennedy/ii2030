@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/ii2030/assets/images/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ii2030/assets/images/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ii2030/assets/images/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ii2030/assets/images/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/ii2030/assets/images/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/ii2030/assets/images/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/ii2030/assets/images/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/ii2030/assets/images/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="/ii2030/assets/images/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/ii2030/assets/images/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/ii2030/assets/images/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/ii2030/assets/images/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/ii2030/assets/images/favicons/mstile-310x310.png" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/ii2030/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+
+
+  <title>Inclusive Innovation 2030 | ii2030</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+  <!--<![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400|Unica+One|Roboto:300,500|Roboto+Slab:700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/ab5e247e92.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+  <link rel="stylesheet" href="/ii2030/assets/css/main.css">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+
+  <script src="/ii2030/assets/js/smooth-scroll.min.js"></script>
+  <script src="/ii2030/assets/js/custom.js"></script>
+</head>
+
+<body>
+<div class="custom-wrapper pure-g" id="menu">
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-menu">
+            <a href="/" class="pure-menu-heading menu-heading">ii2030</a>
+            <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+        </div>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-menu pure-menu-horizontal custom-can-transform pull-right">
+            <ul class="pure-menu-list">
+              
+                <li class="pure-menu-item"><a data-scroll href="#agenda" class="pure-menu-link">agenda</a></li>
+              
+                <li class="pure-menu-item"><a data-scroll href="#tracks" class="pure-menu-link">tracks</a></li>
+              
+              <li class="pure-menu-item registration"><a href="www.example.com" class="pure-menu-link"><button class="btn orange animate">Register</button></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+      <script>
+      (function (window, document) {
+      var menu = document.getElementById('menu'),
+          WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+
+      function toggleHorizontal() {
+          [].forEach.call(
+              document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+              function(el){
+                  el.classList.toggle('pure-menu-horizontal');
+              }
+          );
+      };
+
+      function toggleMenu() {
+          // set timeout so that the panel has a chance to roll up
+          // before the menu switches states
+          if (menu.classList.contains('open')) {
+              setTimeout(toggleHorizontal, 500);
+          }
+          else {
+              toggleHorizontal();
+          }
+          menu.classList.toggle('open');
+          document.getElementById('toggle').classList.toggle('x');
+      };
+
+      function closeMenu() {
+          if (menu.classList.contains('open')) {
+              toggleMenu();
+          }
+      }
+
+      document.getElementById('toggle').addEventListener('click', function (e) {
+          toggleMenu();
+          e.preventDefault();
+      });
+
+      window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+      })(this, this.document);
+
+      </script>
+
+
+<main>
+  <section id="landing">
+    <div class="outer-container vert-center">
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 vert-center">
+          <div class="horiz-spacing vert-spacing">
+            <h1 class="underlined">Innovating for a more inclusive 2030</h1>
+            <div class="vert-spacing">
+              <h3>Inclusive Innovation Tour & Factory</h3>
+              <p class="bold">An Endeva initiative</p>
+              <p>Oct 18 - 19, 2017<br>Berlin, Germany</p>
+            </div>
+            <a data-scroll href="#overview">
+              <button class="btn red animate">Learn more</button>
+            </a>
+            <a href="www.example.com">
+              <button class="btn orange animate">Register</button>
+            </a>
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 image-container animate-buzz-out">
+          <img src="/ii2030/assets/images/head.png" alt="Robot head" class="pure-img oversize">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="overview">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Event Overview</span></h2>
+      <div class="headline vert-spacing">
+        <span class="headline-container desktop">ii2030 will bring together innovators from
+          <span id="cycle-participants" class="bold fade-in">
+            corporates
+          </span>
+          <br> to create solutions for a more inclusive society by 2030
+        </span>
+        <span class="headline-container mobile">
+          ii2030 will bring together innovators from corporates, startups, the public sector, NGOs, and science to create solutions for a more inclusive society by 2030
+        </span>
+      </div>
+    </header>
+    <div class="outer-container slide-container">
+      
+      <div class="slide background-container dark">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="/ii2030/assets/images/conf-pic-1.jpg" alt="ii2030" class="pure-img">
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>Over two exciting days, participants from every sector will <span class="bold">connect</span>, <span class="bold">collaborate</span> and <span class="bold">construct</span> new ideas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slide background-container dark">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="/ii2030/assets/images/conf-pic-2.jpg" alt="ii2030" class="pure-img">
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>The conference will foster mutual learning, as well as the creation of <span class="bold">valuable partnerships</span> to enhance and share knowledge.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slide background-container dark">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+            <div class="image oversize">
+              <img src="/ii2030/assets/images/conf-pic-3.jpg" alt="ii2030" class="pure-img">
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 vert-center">
+            <div class="text horiz-spacing vert-spacing">
+              <p>ii2030 will be a first step in exploring not only why these challenges to inclusion exist, but also how we can apply <span class="bold">cutting-edge technology</span> and solutions to interrupt them and build a more inclusive society by 2030.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="agenda">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Agenda</span></h2>
+      <div class="headline">
+        <div class="day-selector">
+          <button data-day="day-1" class="btn btn-day1 white active day-1">Day 1: Tour</button>
+          <button data-day="day-2" class="btn btn-day2 white day-2">Day 2: Factory</button>
+        </div>
+      </div>
+    </header>
+    <div class="outer-container vert-center">
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+          <div class="image oversize">
+            <img src="/ii2030/assets/images/head-icon-standardized.png" alt="Robot head" class="pure-img animate-buzz-out">
+            <img src="/ii2030/assets/images/tour-icon-standardized.png" alt="Robot body" class="pure-img animate-buzz-out">
+            <img src="/ii2030/assets/images/factory-icon-standardized.png" alt="Robot feet" class="pure-img animate-buzz-out">
+          </div>
+        </div>
+          <div class="pure-u-1 pure-u-md-1-2 agenda-item vert-center slide-container">
+          
+            <div class="text vert-spacing horiz-spacing">
+              <div class="text">
+                <div class="vert-spacing">
+                  <h3 class="agenda-title">Inclusive Innovation Tour</h3>
+                  <small class="agenda-date bold">Oct 18, 2017 — All around Berlin</small>
+                  <p class="agenda-description vert-spacing">Several tour guides will take participants on an exploration of Berlin’s buzzing inclusive innovation scene to provide inspiration and information around the ii2030 challenges.</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="text vert-spacing horiz-spacing">
+              <div class="text">
+                <div class="vert-spacing">
+                  <h3 class="agenda-title">Inclusive Innovation Factory</h3>
+                  <small class="agenda-date bold">Oct 19, 2017 — Neue Mälzerei, Berlin</small>
+                  <p class="agenda-description vert-spacing">In design-thinking labs of up to 10 participants, we will work out how technology can drive inclusive innovation, and what is needed to realize solutions. Participants are carefully selected to bring together those actors who can make the change - and only those.</p>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tracks">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Tracks</span></h2>
+      <p class="headline vert-spacing">The interactive, by-invitation-only event will employ technology as the engine to manufacture solutions for <span class="bold">tomorrow’s biggest challenges.</span></p>
+    </header>
+    <div class="content background-container">
+      <div class="pure-g tracks">
+        
+          <div class="pure-u-1 pure-u-md-1-5">
+        
+            <div class="track active">
+        
+              <img src="/ii2030/assets/icons/agri-red.svg" alt="icon">
+              <p class="hide-unless-active">How can we</p>
+              <p class="vert-spacing">increase smallholder yields through remote sensing?</p>
+              
+              <a href="/ii2030/tracks/precision-agriculture/tour"><button class="btn white animate hide-unless-active">Learn more</button></a>
+              
+            </div>
+          </div>
+        
+          <div class="pure-u-1 pure-u-md-1-5">
+        
+            <div class="track">
+        
+              <img src="/ii2030/assets/icons/ai-red.svg" alt="icon">
+              <p class="hide-unless-active">How can we</p>
+              <p class="vert-spacing">source data on low-income markets through artificial intelligence?</p>
+              
+              <a href="/ii2030/tracks/ai/tour"><button class="btn white animate hide-unless-active">Learn more</button></a>
+              
+            </div>
+          </div>
+        
+          <div class="pure-u-1 pure-u-md-1-5">
+        
+            <div class="track">
+        
+              <img src="/ii2030/assets/icons/drone-red.svg" alt="icon">
+              <p class="hide-unless-active">How can we</p>
+              <p class="vert-spacing">deliver basic goods and services to remote areas using drones?</p>
+              
+              <a href="/ii2030/tracks/drones/tour"><button class="btn white animate hide-unless-active">Learn more</button></a>
+              
+            </div>
+          </div>
+        
+          <div class="pure-u-1 pure-u-md-1-5">
+        
+            <div class="track">
+        
+              <img src="/ii2030/assets/icons/3d-red.svg" alt="icon">
+              <p class="hide-unless-active">How can we</p>
+              <p class="vert-spacing">localize manufacturing in Africa with 3D printing?</p>
+              
+              <a>Coming soon</a>
+              
+            </div>
+          </div>
+        
+          <div class="pure-u-1 pure-u-md-1-5">
+        
+            <div class="track">
+        
+              <img src="/ii2030/assets/icons/eye-red.svg" alt="icon">
+              <p class="hide-unless-active">How can we</p>
+              <p class="vert-spacing">improve remote diagnosis through image recognition?</p>
+              
+              <a>Coming soon</a>
+              
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="partners">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Partners</span></h2>
+    </header>
+    <div class="host partner-group headline">
+      <h3>Hosted by </h3>
+      <img src="/ii2030/assets/images/logos/endeva.png" alt="Endeva logo">
+    </div>
+    <div class="partner-group headline">
+      <h3>Co-hosted by </h3>
+      <img src="/ii2030/assets/images/logos/iba.jpg" alt="IBA logo">
+      <img src="/ii2030/assets/images/logos/iban.png" alt="IBAN logo">
+      <img src="/ii2030/assets/images/logos/ixds.png" alt="IXDS logo">
+    </div>
+    <div class="partner-group headline">
+      <h3>Track Partners</h3>
+      <img src="/ii2030/assets/images/logos/ekutir.png" alt="eKutir logo">
+      <img src="/ii2030/assets/images/logos/inclusive-rising-north.jpg" alt="Inclusive/Rising North logo">
+      <img src="/ii2030/assets/images/logos/airbus.png" alt="Airbus logo">
+      <img src="/ii2030/assets/images/logos/dfki.jpg" alt="DFKI logo">
+    </div>
+  </section>
+
+</main>
+
+<script>
+    smoothScroll.init();
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript">
+  $('#agenda .slide-container').slick({
+    prevArrow: $("#agenda .day-selector .day-1"),
+    nextArrow: $("#agenda .day-selector .day-2"),
+    swipe: true,
+    infinite: false,
+  });
+
+  $('#overview .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    // autoplay: true,
+    autoplaySpeed: 3000,
+    swipe: true,
+    pauseOnHover: true,
+  });
+
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) || $(window).width() < 480) {
+
+    var controller = new ScrollMagic.Controller();
+    var tracks = document.querySelectorAll('.track');
+
+    tracks.forEach(function(track) {
+      var duration = track.scrollHeight;
+      new ScrollMagic.Scene({
+            triggerElement: track,
+        })
+        .setClassToggle(track, "active")
+        .duration(duration)
+        .addTo(controller)
+    });
+  }
+
+</script>
+
+<footer class="pure-g">
+  <div class="footer-left pure-u-1 pure-u-md-1-2">
+    <div class="horiz-spacing">
+      <p class ="ii2030">ii2030</p>
+      <p>Oct 18 - 19, 2017</p>
+      <p>Berlin, Germany</p>
+    </div>
+  </div>
+  <div class="footer-right pure-u-1 pure-u-md-1-2">
+    <div class="horiz-spacing">
+      <p>For more information contact:</p>
+      <p>Megan Leahy-Wright</p>
+      <p>m.leahy@endeva.org</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
