@@ -35,6 +35,7 @@ sass:
   style: :compressed
 
 # Build settings
+source: src
 markdown: kramdown
 permalink: pretty
 gems:
