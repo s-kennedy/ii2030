@@ -15,9 +15,9 @@ section#landing {
 
     .ii2030-bubble {
       background: $dark-red;
-      height: 130px;
-      width: 200px;
-      min-width: 160px;
+      height: 200px;
+      width: 300px;
+      min-width: 180px;
       border-radius: 50%;
       position: relative;
       display: flex;
@@ -33,7 +33,7 @@ section#landing {
         border-left: 30px solid $dark-red;
         position: absolute;
         right: 0px;
-        top: 10px;
+        top: 30px;
         transform: rotate(-30deg);
       }
 
@@ -113,6 +113,7 @@ section#tracks {
 
       img {
         margin-top: $md-spacing;
+        height: 100px;
       }
 
       &.active {
@@ -129,9 +130,15 @@ section#tracks {
       }
 
       .btn {
-        margin-bottom: $md-spacing;
         color: $dark-red;
         border-color: $dark-red;
+        margin-bottom: $md-spacing;
+        margin-top: $md-spacing;
+      }
+
+      .disabled {
+        color: $light-gray;
+        cursor: auto;
       }
     }
   }

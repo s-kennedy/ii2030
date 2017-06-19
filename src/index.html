@@ -93,6 +93,8 @@ overview_slides:
                   <h3 class="agenda-title">{{ event.name }}</h3>
                   <small class="agenda-date bold">{{ event.date }} — {{ event.location }}</small>
                   <p class="agenda-description vert-spacing">{{ event.description }}</p>
+                  <p>For more details, select a track.</p>
+                  <a data-scroll href="/#tracks"><button class="btn orange animate">Tracks</button></a>
                 </div>
               </div>
             </div>
@@ -117,12 +119,12 @@ overview_slides:
             <div class="track">
         {% endif %}
               <img src="{{ site.baseurl }}{{ track.icon }}" alt="icon">
-              <p class="hide-unless-active">How can we</p>
-              <p class="vert-spacing">{{ track.topic }}</p>
+              <h3>{{ track.title }}</h3>
+              <p>{{ track.topic }}</p>
               {% if track.link %}
               <a href="{{ site.baseurl }}{{ track.link }}"><button class="btn white animate hide-unless-active">Learn more</button></a>
               {% else %}
-              <a>Coming soon</a>
+              <a><button class="btn white hide-unless-active disabled">Learn more</button></a>
               {% endif %}
             </div>
           </div>
