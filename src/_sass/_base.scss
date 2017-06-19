@@ -117,13 +117,13 @@ header {
 
     &.orange {
       &:hover, &:focus, &:active {
-        background: transparentize($orange, 0.1);;
+        background: transparentize($orange, 0.1);
       }
     }
 
     &.red {
       &:hover, &:focus, &:active {
-        background: transparentize($dark-red, 0.1);;
+        background: transparentize($dark-red, 0.1);
       }
     }
   }

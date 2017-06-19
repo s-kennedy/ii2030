@@ -1,0 +1,27 @@
+- name: Overview
+  sub_navs:
+    - name: Event Overview
+      link: /#overview
+    - name: Agenda
+      link: /#agenda
+    - name: Tracks
+      link: /#tracks
+    - name: Partners
+      link: /#partners
+- name: Tracks
+  sub_navs:
+    - name: Precision Agriculture for Smallholder Farmers
+      icon: /assets/icons/agri-red.svg
+      link: /tracks/precision-agriculture/tour
+    - name: Artificial Intelligence for BoP Market Research
+      icon: '/assets/icons/ai-red.svg'
+      link: '/tracks/ai/tour'
+    - name: Drones in Sub-Saharan Africa
+      icon: '/assets/icons/drone-red.svg'
+      link: /tracks/drones/tour'
+    - name: 3D Printing for Localized Manufacturing
+      icon: '/assets/icons/3d-red.svg'
+      link:
+    - name: Remote Diagnosis through Image Recognition
+      icon: '/assets/icons/eye-red.svg'
+      link:

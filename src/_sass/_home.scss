@@ -66,19 +66,6 @@ section#overview {
       display: flex;
       align-items: center;
       justify-content: center;
-
-      .headline-container {
-        text-align: left;
-        width: 740px;
-
-        &.mobile {
-          display: none;
-        }
-
-        &.desktop {
-          display: block;
-        }
-      }
     }
 
   }

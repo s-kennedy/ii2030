@@ -1,19 +1,37 @@
 <div class="custom-wrapper pure-g" id="menu">
     <div class="pure-u-1 pure-u-md-1-2">
-        <div class="pure-menu">
+        <div class="pure-menu pure-menu-horizontal custom-can-transform">
             <a href="/" class="pure-menu-heading menu-heading">ii2030</a>
             <a href="#" class="custom-toggle" id="toggle"><s class="bar"></s><s class="bar"></s></a>
+            <ul class="pure-menu-list">
+              {% for top_nav in site.data.nav %}
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                  <a class="pure-menu-link">{{ top_nav.name }}</a>
+                  <ul class="pure-menu-children">
+                  {% for sub_nav in top_nav.sub_navs %}
+                  {% if sub_nav.link %}
+                  <li class="pure-menu-item">
+                  {% else %}
+                  <li class="pure-menu-item pure-menu-disabled">
+                  {% endif %}
+                    {% if sub_nav.icon %}
+                    <img src="{{ sub_nav.icon }}" alt="icon" />
+                    {% endif %}
+                    <a data-scroll href="{{ sub_nav.link }}" class="pure-menu-link">
+                      {{ sub_nav.name }}
+                    </a>
+                  </li>
+                  {% endfor %}
+                  </ul>
+                </li>
+              {% endfor %}
+            </ul>
         </div>
     </div>
     <div class="pure-u-1 pure-u-md-1-2">
-        <div class="pure-menu pure-menu-horizontal custom-can-transform pull-right">
-            <ul class="pure-menu-list">
-              {% for page in site.data.pages %}
-                <li class="pure-menu-item"><a data-scroll href="#{{ page.url }}" class="pure-menu-link">{{ page.name }}</a></li>
-              {% endfor %}
-              <li class="pure-menu-item registration"><a href="{{ site.registration_page_url }}" class="pure-menu-link"><button class="btn orange animate">Register</button></a></li>
-            </ul>
-        </div>
+      <div class="pure-menu pure-menu-horizontal custom-can-transform pull-right">
+        <a href="{{ site.registration_page_url }}" class="pure-menu-heading registration">Register</a>
+      </div>
     </div>
 </div>
 

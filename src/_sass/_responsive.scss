@@ -63,7 +63,7 @@
   section#tracks {
     .tracks {
       .track {
-        width: 100%
+        width: 100%;
       }
     }
   }
@@ -76,6 +76,13 @@
     }
   }
 
+  section#track-description {
+    .w-question {
+      text-align: left;
+      padding-left: $sm-spacing;
+    }
+  }
+
   .vert-spacing {
     padding-top: $sm-spacing;
     padding-bottom: $sm-spacing;
@@ -84,5 +91,10 @@
   .horiz-spacing {
     padding-left: $sm-spacing;
     padding-right: $sm-spacing;
+  }
+
+  .vert-spacing-lg {
+    padding-top: $md-spacing;
+    padding-bottom: $md-spacing;
   }
 }

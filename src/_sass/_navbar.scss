@@ -4,8 +4,6 @@ main {
 
 .custom-wrapper {
   -webkit-font-smoothing: antialiased;
-  height: 2.6em;
-  overflow: hidden;
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
   -ms-transition: height 0.5s;
@@ -73,6 +71,7 @@ main {
 }
 
 .pure-menu {
+  font-size: $sm-size;
   &.pull-right {
     text-align: right;
   }
@@ -83,32 +82,44 @@ main {
   font-weight: 800;
 }
 
-.pure-menu-item {
-  vertical-align: top;
-  margin-left: 1em;
+.pure-menu-list {
+  text-align: left;
+
+  .pure-menu-item {
+    margin-left: 1em;
+    padding-right: 0.4em;
+
+    img {
+      height: 1em;
+    }
+
+    .pure-menu-link:hover {
+      background-color: $off-white;
+    }
+  }
+
+  .pure-menu-disabled {
+    padding: 0;
+  }
 }
+
 
 .pure-menu-heading {
   text-transform: lowercase;
 }
 
 .pure-menu-link {
-  padding: 0.4em 1em;
-  border-radius: 2em;
   display: inline-block;
-  font-size: $sm-size;
 }
 
-.registration {
-  .pure-menu-link {
-    padding-left: 0;
+.pure-menu-heading.registration {
+  background-color: $orange;
+  color: $white;
+  text-transform: none;
+  font-weight: 800;
 
-    &:hover {
-      background: none;
-    }
-  }
-  .btn {
-    margin-bottom: 0;
+  &:hover {
+    background: transparentize($orange, 0.1);
   }
 }
 
