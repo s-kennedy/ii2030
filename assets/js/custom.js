@@ -29,14 +29,14 @@ function activateTrack() {
 
 function activateAnimation() {
   console.log
-  $('#agenda .image .animate-buzz-out.active').removeClass('active')
+  $('#agenda .image .animate-move-right.active').removeClass('active')
   var day = $(this).data('day');
   if (day === 'day-1') {
-    $('#agenda .image .animate-buzz-out:nth-of-type(2)').addClass('active');
+    $('#agenda .image .animate-move-right:nth-of-type(2)').addClass('active');
   } else if (day === 'day-2') {
-    $('#agenda .image .animate-buzz-out:nth-of-type(3)').addClass('active');
+    $('#agenda .image .animate-move-right:nth-of-type(3)').addClass('active');
   } else {
-    $('#agenda .image .animate-buzz-out:nth-of-type(1)').addClass('active');
+    $('#agenda .image .animate-move-right:nth-of-type(1)').addClass('active');
   }
 }
 
