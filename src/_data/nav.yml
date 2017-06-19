@@ -15,10 +15,10 @@
       link: /tracks/precision-agriculture/tour
     - name: Artificial Intelligence for BoP Market Research
       icon: '/assets/icons/ai-red.svg'
-      link: '/tracks/ai/tour'
+      link: /tracks/ai/tour
     - name: Drones in Sub-Saharan Africa
       icon: '/assets/icons/drone-red.svg'
-      link: /tracks/drones/tour'
+      link: /tracks/drones/tour
     - name: 3D Printing for Localized Manufacturing
       icon: '/assets/icons/3d-red.svg'
       link:

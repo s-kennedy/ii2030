@@ -1,16 +1,29 @@
 <footer class="pure-g">
   <div class="footer-left pure-u-1 pure-u-md-1-2">
-    <div class="horiz-spacing">
-      <p class ="ii2030">ii2030</p>
-      <p>Oct 18 - 19, 2017</p>
-      <p>Berlin, Germany</p>
+    <p class="column-header">ii2030</p>
+    <p>Oct 18 - 19, 2017 | Berlin, Germany</p>
+    <p class="contact">For more information contact:</p>
+    <p class="contact">Megan Leahy-Wright</p>
+    <p class="contact">m.leahy@endeva.org</p>
+  </div>
+  <div class="pure-u-1 pure-u-md-1-2">
+    <p class="column-header">Site map</p>
+    <div class="pure-g">
+      {% for top_nav in site.data.nav %}
+        <div class="pure-u-1 pure-u-md-1-2">
+          <p class="site-map-item">{{ top_nav.name }}</p>
+            {% for sub_nav in top_nav.sub_navs %}
+            <p class="sub-nav">
+              {% if sub_nav.link %}
+              <a data-scroll href="{{ sub_nav.link }}" class="">{{ sub_nav.name }}</a>
+              {% else %}
+              <a class="pure-menu-disabled" disabled>{{ sub_nav.name }}</a>
+              {% endif %}
+            </p>
+            {% endfor %}
+        </div>
+      {% endfor %}
     </div>
   </div>
-  <div class="footer-right pure-u-1 pure-u-md-1-2">
-    <div class="horiz-spacing">
-      <p>For more information contact:</p>
-      <p>Megan Leahy-Wright</p>
-      <p>m.leahy@endeva.org</p>
-    </div>
-  </div>
+
 </footer>

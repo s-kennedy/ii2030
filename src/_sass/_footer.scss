@@ -4,15 +4,28 @@ footer {
   padding: $md-spacing;
 
   p {
-    font-size: $sm-size;
+    font-size: 14px;
   }
 
   .footer-right {
     text-align: right;
   }
 
-  .ii2030 {
+  .column-header {
     color: $dark-red;
     font-weight: 800;
+    font-size: $sm-size;
+  }
+
+  .site-map-item {
+    margin-top: 0;
+  }
+
+  .sub-nav {
+    padding-left: $sm-spacing;
+  }
+
+  .pure-menu-disabled {
+    padding: 0;
   }
 }

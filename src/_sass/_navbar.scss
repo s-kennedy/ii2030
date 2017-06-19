@@ -4,20 +4,20 @@ main {
 
 .custom-wrapper {
   -webkit-font-smoothing: antialiased;
-  -webkit-transition: height 0.5s;
-  -moz-transition: height 0.5s;
-  -ms-transition: height 0.5s;
-  transition: height 0.5s;
+  -webkit-transition: max-height 0.5s;
+  -moz-transition: max-height 0.5s;
+  -ms-transition: max-height 0.5s;
+  transition: max-height 0.5s;
   z-index: 999;
   background-color: $white;
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   top: 0;
-}
 
-.custom-wrapper.open {
-  height: 11em;
+  .flex {
+    display: flex;
+  }
 }
 
 .custom-menu-3 {
@@ -127,7 +127,16 @@ main {
 @media (max-width: 47.999em) {
 
   .custom-wrapper {
-    height: 2.1em;
+    max-height: 2.1em;
+    overflow: hidden;
+
+    .flex {
+      display: block;
+    }
+  }
+
+  .custom-wrapper.open {
+    max-height: 100vh;
   }
 
   .custom-menu-3 {
@@ -145,6 +154,20 @@ main {
   .pure-menu {
     &.pull-right {
       text-align: left;
+      float: none;
+    }
+  }
+
+  .pure-menu-allow-hover {
+    .pure-menu-children {
+      display: block;
+      position: relative !important;
+      left: 0;
+      top: none;
+
+      img {
+        display: none;
+      }
     }
   }
 }
