@@ -36,6 +36,18 @@ body {
     margin: 0.5em 0;
   }
 
+  a {
+    color: $dark-blue;
+
+    a:hover, a:active {
+      color: $light-blue
+    }
+
+    a:visited {
+      color: $dark-blue;
+    }
+  }
+
   .headline {
     font-size: $lg-size;
     text-align: center;
