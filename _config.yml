@@ -17,7 +17,7 @@ title: Inclusive Innovation 2030
 email: m.leahy@endeva.org
 description: > # this means to ignore newlines until "baseurl:"
   ii2030 will bring together innovators from corporates, startups, the public sector, NGOs and science to create solutions for a more inclusive society by 2030.
-baseurl: "/ii2030" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # External links
