@@ -17,7 +17,7 @@
               <li class="pure-menu-item pure-menu-disabled">
               {% endif %}
                 {% if sub_nav.icon %}
-                <img src="{{ sub_nav.icon }}" alt="icon" />
+                <img src="{{ site.baseurl }}{{ sub_nav.icon }}" alt="icon" />
                 {% endif %}
                 <a data-scroll href="{{ sub_nav.link }}" class="pure-menu-link">
                   {{ sub_nav.name }}

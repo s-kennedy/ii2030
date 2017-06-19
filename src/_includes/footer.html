@@ -15,7 +15,7 @@
             {% for sub_nav in top_nav.sub_navs %}
             <p class="sub-nav">
               {% if sub_nav.link %}
-              <a data-scroll href="{{ sub_nav.link }}" class="">{{ sub_nav.name }}</a>
+              <a data-scroll href="{{ site.baseurl }}{{ sub_nav.link }}" class="">{{ sub_nav.name }}</a>
               {% else %}
               <a class="pure-menu-disabled" disabled>{{ sub_nav.name }}</a>
               {% endif %}
