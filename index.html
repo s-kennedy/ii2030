@@ -115,7 +115,7 @@
                 <img src="/assets/icons/agri-red.svg" alt="icon" />
                 
                 <a data-scroll href="/tracks/precision-agriculture/tour" class="pure-menu-link">
-                  Precision Agriculture for Smallholder Farmers
+                  Precision Agriculture
                 </a>
               </li>
               
@@ -126,7 +126,7 @@
                 <img src="/assets/icons/ai-red.svg" alt="icon" />
                 
                 <a data-scroll href="/tracks/ai/tour" class="pure-menu-link">
-                  Artificial Intelligence for BoP Market Research
+                  Artificial Intelligence
                 </a>
               </li>
               
@@ -137,7 +137,7 @@
                 <img src="/assets/icons/drone-red.svg" alt="icon" />
                 
                 <a data-scroll href="/tracks/drones/tour" class="pure-menu-link">
-                  Drones in Sub-Saharan Africa
+                  Drones
                 </a>
               </li>
               
@@ -148,7 +148,7 @@
                 <img src="/assets/icons/3d-red.svg" alt="icon" />
                 
                 <a data-scroll href="" class="pure-menu-link">
-                  3D Printing for Localized Manufacturing
+                  3D Printing
                 </a>
               </li>
               
@@ -159,7 +159,7 @@
                 <img src="/assets/icons/eye-red.svg" alt="icon" />
                 
                 <a data-scroll href="" class="pure-menu-link">
-                  Remote Diagnosis through Image Recognition
+                  Remote Diagnosis
                 </a>
               </li>
               
@@ -192,14 +192,16 @@
       };
 
       function toggleMenu() {
+          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) || $(window).width() < 480) {
           // set timeout so that the panel has a chance to roll up
           // before the menu switches states
-          if (menu.classList.contains('open')) {
-              setTimeout(toggleHorizontal, 500);
-          }
-          else {
-              toggleHorizontal();
-          }
+            if (menu.classList.contains('open')) {
+                setTimeout(toggleHorizontal, 500);
+            }
+            else {
+                toggleHorizontal();
+            };
+          };
           menu.classList.toggle('open');
           document.getElementById('toggle').classList.toggle('x');
       };
@@ -249,7 +251,7 @@
         </div>
         <div class="pure-u-1 pure-u-md-1-2 image-container">
           <div class="ii2030-bubble"><h2>ii2030</h2></div>
-          <img src="/assets/images/head.png" alt="Robot head" class="pure-img oversize animate-buzz-out">
+          <img src="/assets/images/head.png" alt="Robot head" class="pure-img oversize">
         </div>
       </div>
     </div>
@@ -419,7 +421,7 @@
               <h3>3D Printing for Localized Manufacturing</h3>
               <p>How can we localize manufacturing in Africa with 3D printing?</p>
               
-              <a><button class="btn white hide-unless-active disabled">Learn more</button></a>
+              <p class="hide-unless-active">- Coming soon -</p>
               
             </div>
           </div>
@@ -432,7 +434,7 @@
               <h3>Remote Diagnosis through Image Recognition</h3>
               <p>How can we improve remote diagnosis through image recognition?</p>
               
-              <a><button class="btn white hide-unless-active disabled">Learn more</button></a>
+              <p class="hide-unless-active">- Coming soon -</p>
               
             </div>
           </div>
@@ -446,21 +448,27 @@
       <h2 class="subtitle"><span class="underlined">Partners</span></h2>
     </header>
     <div class="host partner-group headline">
-      <h3>Hosted by </h3>
-      <img src="/assets/images/logos/endeva.png" alt="Endeva logo">
+      <h3>An <img id="endeva-logo" src="/assets/images/logos/endeva.png" alt="Endeva logo"> initiative</h3>
     </div>
     <div class="partner-group headline">
       <h3>Co-hosted by </h3>
-      <img src="/assets/images/logos/iba.jpg" alt="IBA logo">
-      <img src="/assets/images/logos/iban.png" alt="IBAN logo">
-      <img src="/assets/images/logos/ixds.png" alt="IXDS logo">
+      
+        <img src="/assets/images/logos/iba.jpg" alt="IBA logo"/>
+      
+        <img src="/assets/images/logos/iban.png" alt="IBAN logo"/>
+      
+        <img src="/assets/images/logos/ixds.png" alt="IXDS logo"/>
+      
     </div>
     <div class="partner-group headline">
       <h3>Track Partners</h3>
-      <img src="/assets/images/logos/ekutir.png" alt="eKutir logo">
-      <img src="/assets/images/logos/inclusive-rising-north.jpg" alt="Inclusive/Rising North logo">
-      <img src="/assets/images/logos/airbus.png" alt="Airbus logo">
-      <img src="/assets/images/logos/dfki.jpg" alt="DFKI logo">
+      
+        <img src="/assets/images/logos/ekutir.png" alt="eKutir logo"/>
+      
+        <img src="/assets/images/logos/inclusive-rising-north.jpg" alt="Inlusive/Rising North logo"/>
+      
+        <img src="/assets/images/logos/dfki.jpg" alt="DFKI logo"/>
+      
     </div>
   </section>
 
@@ -551,31 +559,31 @@
             
             <p class="sub-nav">
               
-              <a data-scroll href="/tracks/precision-agriculture/tour" class="">Precision Agriculture for Smallholder Farmers</a>
+              <a data-scroll href="/tracks/precision-agriculture/tour" class="">Precision Agriculture</a>
               
             </p>
             
             <p class="sub-nav">
               
-              <a data-scroll href="/tracks/ai/tour" class="">Artificial Intelligence for BoP Market Research</a>
+              <a data-scroll href="/tracks/ai/tour" class="">Artificial Intelligence</a>
               
             </p>
             
             <p class="sub-nav">
               
-              <a data-scroll href="/tracks/drones/tour" class="">Drones in Sub-Saharan Africa</a>
+              <a data-scroll href="/tracks/drones/tour" class="">Drones</a>
               
             </p>
             
             <p class="sub-nav">
               
-              <a class="pure-menu-disabled" disabled>3D Printing for Localized Manufacturing</a>
+              <a class="pure-menu-disabled" disabled>3D Printing</a>
               
             </p>
             
             <p class="sub-nav">
               
-              <a class="pure-menu-disabled" disabled>Remote Diagnosis through Image Recognition</a>
+              <a class="pure-menu-disabled" disabled>Remote Diagnosis</a>
               
             </p>
             
