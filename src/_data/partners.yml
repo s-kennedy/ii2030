@@ -1,0 +1,17 @@
+hosts:
+  - name: Endeva
+    logo: endeva.png
+co_hosts:
+  - name: IBA
+    logo: iba.jpg
+  - name: IBAN
+    logo: iban.png
+  - name: IXDS
+    logo: ixds.png
+track_partners:
+  - name: eKutir
+    logo: ekutir.png
+  - name: Inlusive/Rising North
+    logo: inclusive-rising-north.jpg
+  - name: DFKI
+    logo: dfki.jpg

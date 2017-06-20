@@ -53,14 +53,16 @@
       };
 
       function toggleMenu() {
+          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) || $(window).width() < 480) {
           // set timeout so that the panel has a chance to roll up
           // before the menu switches states
-          if (menu.classList.contains('open')) {
-              setTimeout(toggleHorizontal, 500);
-          }
-          else {
-              toggleHorizontal();
-          }
+            if (menu.classList.contains('open')) {
+                setTimeout(toggleHorizontal, 500);
+            }
+            else {
+                toggleHorizontal();
+            };
+          };
           menu.classList.toggle('open');
           document.getElementById('toggle').classList.toggle('x');
       };

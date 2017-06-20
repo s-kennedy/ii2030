@@ -10,18 +10,18 @@
       link: /#partners
 - name: Tracks
   sub_navs:
-    - name: Precision Agriculture for Smallholder Farmers
+    - name: Precision Agriculture
       icon: /assets/icons/agri-red.svg
       link: /tracks/precision-agriculture/tour
-    - name: Artificial Intelligence for BoP Market Research
+    - name: Artificial Intelligence
       icon: '/assets/icons/ai-red.svg'
       link: /tracks/ai/tour
-    - name: Drones in Sub-Saharan Africa
+    - name: Drones
       icon: '/assets/icons/drone-red.svg'
       link: /tracks/drones/tour
-    - name: 3D Printing for Localized Manufacturing
+    - name: 3D Printing
       icon: '/assets/icons/3d-red.svg'
       link:
-    - name: Remote Diagnosis through Image Recognition
+    - name: Remote Diagnosis
       icon: '/assets/icons/eye-red.svg'
       link:

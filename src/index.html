@@ -31,7 +31,7 @@ overview_slides:
         </div>
         <div class="pure-u-1 pure-u-md-1-2 image-container">
           <div class="ii2030-bubble"><h2>ii2030</h2></div>
-          <img src="{{ site.github.url }}/assets/images/head.png" alt="Robot head" class="pure-img oversize animate-buzz-out">
+          <img src="{{ site.github.url }}/assets/images/head.png" alt="Robot head" class="pure-img oversize">
         </div>
       </div>
     </div>
@@ -124,7 +124,7 @@ overview_slides:
               {% if track.link %}
               <a href="{{ site.github.url }}{{ track.link }}"><button class="btn white animate hide-unless-active">Learn more</button></a>
               {% else %}
-              <a><button class="btn white hide-unless-active disabled">Learn more</button></a>
+              <p class="hide-unless-active">- Coming soon -</p>
               {% endif %}
             </div>
           </div>
@@ -138,21 +138,19 @@ overview_slides:
       <h2 class="subtitle"><span class="underlined">Partners</span></h2>
     </header>
     <div class="host partner-group headline">
-      <h3>Hosted by </h3>
-      <img src="{{ site.github.url }}/assets/images/logos/endeva.png" alt="Endeva logo">
+      <h3>An <img id="endeva-logo" src="{{ site.github.url }}/assets/images/logos/endeva.png" alt="Endeva logo"> initiative</h3>
     </div>
     <div class="partner-group headline">
       <h3>Co-hosted by </h3>
-      <img src="{{ site.github.url }}/assets/images/logos/iba.jpg" alt="IBA logo">
-      <img src="{{ site.github.url }}/assets/images/logos/iban.png" alt="IBAN logo">
-      <img src="{{ site.github.url }}/assets/images/logos/ixds.png" alt="IXDS logo">
+      {% for co_host in site.data.partners.co_hosts %}
+        <img src="{{ site.github.url }}/assets/images/logos/{{ co_host.logo }}" alt="{{ co_host.name }} logo"/>
+      {% endfor %}
     </div>
     <div class="partner-group headline">
       <h3>Track Partners</h3>
-      <img src="{{ site.github.url }}/assets/images/logos/ekutir.png" alt="eKutir logo">
-      <img src="{{ site.github.url }}/assets/images/logos/inclusive-rising-north.jpg" alt="Inclusive/Rising North logo">
-      <img src="{{ site.github.url }}/assets/images/logos/airbus.png" alt="Airbus logo">
-      <img src="{{ site.github.url }}/assets/images/logos/dfki.jpg" alt="DFKI logo">
+      {% for track_partner in site.data.partners.track_partners %}
+        <img src="{{ site.github.url }}/assets/images/logos/{{ track_partner.logo }}" alt="{{ track_partner.name }} logo"/>
+      {% endfor %}
     </div>
   </section>
 

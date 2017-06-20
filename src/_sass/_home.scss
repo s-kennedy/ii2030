@@ -4,20 +4,20 @@ section#landing {
 
   .image-container {
     position: relative;
-    align-items: baseline;
+    align-items: flex-start;
     display: flex;
     justify-content: flex-start;
-    transform: translateX(-60px);
 
     img.oversize {
       max-height: 80vh;
+      transform: translateX(-60px);
     }
 
     .ii2030-bubble {
       background: $dark-red;
       height: 200px;
       width: 300px;
-      min-width: 180px;
+      min-width: 250px;
       border-radius: 50%;
       position: relative;
       display: flex;
@@ -28,17 +28,18 @@ section#landing {
         content: '';
         height: 0px;
         width: 0px;
-        border-top: 15px solid transparent;
-        border-bottom: 15px solid transparent;
-        border-left: 30px solid $dark-red;
+        border-top: 22px solid transparent;
+        border-bottom: 22px solid transparent;
+        border-left: 60px solid $dark-red;
         position: absolute;
-        right: 0px;
-        top: 30px;
-        transform: rotate(-30deg);
+        right: -20px;
+        bottom: 10px;
+        transform: rotate(45deg);
       }
 
       h2 {
         color: $white;
+        text-transform: lowercase;
       }
     }
   }
@@ -112,7 +113,6 @@ section#tracks {
       .hide-unless-active {
         transition: opacity 0.3s ease-in-out;
         opacity: 0;
-        text-transform: uppercase;
         font-weight: $bold;
       }
 
@@ -139,6 +139,7 @@ section#tracks {
         border-color: $dark-red;
         margin-bottom: $md-spacing;
         margin-top: $md-spacing;
+        text-transform: uppercase;
       }
 
       .disabled {
@@ -167,8 +168,17 @@ section#partners {
 
     img {
       max-height: 2.8em;
-      margin-left: 40px;
       margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+
+      &:not(#endeva-logo) {
+        margin-left: 40px;
+      }
+
+      &#endeva-logo {
+        max-height: 4em;
+      }
     }
   }
 }

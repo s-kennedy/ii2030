@@ -115,7 +115,7 @@
                 <img src="/assets/icons/agri-red.svg" alt="icon" />
                 
                 <a data-scroll href="/tracks/precision-agriculture/tour" class="pure-menu-link">
-                  Precision Agriculture for Smallholder Farmers
+                  Precision Agriculture
                 </a>
               </li>
               
@@ -126,7 +126,7 @@
                 <img src="/assets/icons/ai-red.svg" alt="icon" />
                 
                 <a data-scroll href="/tracks/ai/tour" class="pure-menu-link">
-                  Artificial Intelligence for BoP Market Research
+                  Artificial Intelligence
                 </a>
               </li>
               
@@ -137,7 +137,7 @@
                 <img src="/assets/icons/drone-red.svg" alt="icon" />
                 
                 <a data-scroll href="/tracks/drones/tour" class="pure-menu-link">
-                  Drones in Sub-Saharan Africa
+                  Drones
                 </a>
               </li>
               
@@ -148,7 +148,7 @@
                 <img src="/assets/icons/3d-red.svg" alt="icon" />
                 
                 <a data-scroll href="" class="pure-menu-link">
-                  3D Printing for Localized Manufacturing
+                  3D Printing
                 </a>
               </li>
               
@@ -159,7 +159,7 @@
                 <img src="/assets/icons/eye-red.svg" alt="icon" />
                 
                 <a data-scroll href="" class="pure-menu-link">
-                  Remote Diagnosis through Image Recognition
+                  Remote Diagnosis
                 </a>
               </li>
               
@@ -192,14 +192,16 @@
       };
 
       function toggleMenu() {
+          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) || $(window).width() < 480) {
           // set timeout so that the panel has a chance to roll up
           // before the menu switches states
-          if (menu.classList.contains('open')) {
-              setTimeout(toggleHorizontal, 500);
-          }
-          else {
-              toggleHorizontal();
-          }
+            if (menu.classList.contains('open')) {
+                setTimeout(toggleHorizontal, 500);
+            }
+            else {
+                toggleHorizontal();
+            };
+          };
           menu.classList.toggle('open');
           document.getElementById('toggle').classList.toggle('x');
       };
@@ -341,101 +343,6 @@
       </div>
     </div>
   </section>
-  <div>
-    <div id="factory">
-  <section id="intro">
-    <div class="headline">
-      <div class="day-selector">
-        <a href="/tracks/precision-agriculture/tour#intro">
-          <button data-day="day-1" class="btn btn-day1 white day-1">Day 1: Tour</button>
-        </a>
-        <button data-day="day-2" class="btn btn-day2 white day-2 active">Day 2: Factory</button>
-      </div>
-    </div>
-    <header>
-      <h2 class="subtitle"><span class="underlined">Day 2: Inclusive Innovation Factory</span></h2>
-      <div class="headline vert-spacing">
-        The Factory is all about manufacturing solutions through cross-sector collaboration!
-      </div>
-    </header>
-
-    <div class="outer-container slide-container">
-      
-      <div class="slide background-container dark">
-        <div class="pure-g">
-          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
-            <div class="image oversize">
-              <img src="/assets/images/conf-pic-8.jpg" alt="ii2030" class="pure-img">
-            </div>
-          </div>
-          <div class="pure-u-1 pure-u-md-1-2 vert-center">
-            <div class="text horiz-spacing vert-spacing">
-              <p>In a design-thinking workshop of up to 10 participants, we will work out how technology can drive inclusive innovation, and what is needed to achieve a solution. Participants are carefully selected to bring together those actors who can make the change.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="slide background-container dark">
-        <div class="pure-g">
-          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
-            <div class="image oversize">
-              <img src="/assets/images/conf-pic-9.jpg" alt="ii2030" class="pure-img">
-            </div>
-          </div>
-          <div class="pure-u-1 pure-u-md-1-2 vert-center">
-            <div class="text horiz-spacing vert-spacing">
-              <p>Throughout the day, a networking assembly line, factory whistle speeches and a canteen exhibition will allow participants to get inspired and connect outside their workshop.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="slide background-container dark">
-        <div class="pure-g">
-          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
-            <div class="image oversize">
-              <img src="/assets/images/conf-pic-10.jpg" alt="ii2030" class="pure-img">
-            </div>
-          </div>
-          <div class="pure-u-1 pure-u-md-1-2 vert-center">
-            <div class="text horiz-spacing vert-spacing">
-              <p>An ii2030 online platform will be used for participants to start connecting and preparing for the workshop prior to the event and to continue their collaboration following the co-creation workshop. In the follow-up, the team will receive support from Endeva as they work on improving and implementing the solution in the field.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="slide background-container dark">
-        <div class="pure-g">
-          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
-            <div class="image oversize">
-              <img src="/assets/images/conf-pic-11.jpg" alt="ii2030" class="pure-img">
-            </div>
-          </div>
-          <div class="pure-u-1 pure-u-md-1-2 vert-center">
-            <div class="text horiz-spacing vert-spacing">
-              <p>Design-thinking methodology is a collaborative solution-based approach to solving complex challenges. The strategic process will guide the team of like-minded partners in co-creating concrete, innovative and user-friendly solutions in a 1-day, action-packed workshop.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-
-  <section id="factory-outputs">
-    <header>
-      <h2 class="subtitle"><span class="underlined">Factory Outputs</span></h2>
-    </header>
-    <div class="text vert-spacing-lg horiz-spacing">
-      <p>During a 1-day co-creation workshop, participants will design a plan to use digital technology to create a smarter and more integrated agricultural ecosystem. The team will devise a solution to harness on and off-farm data collected from mobile apps, remote sensing and publically available sources to:</p>
-      <ul>
-        <li>connect farmers to better markets and inputs (seeds, fertilizers, finance, etc.)</li>
-        <li>make digitized farming equipment available and affordable to smallholder farmers</li>
-        <li>use end-to-end traceability to track distribution and production methods</li>
-      </ul>
-    </div>
     <div class="track-lead">
       <div class="background-container">
         <div class="pure-g">
@@ -454,6 +361,66 @@
           </div>
         </div>
       </div>
+    </div>
+  <div>
+    <div id="factory">
+  <section id="intro">
+    <div class="headline">
+      <div class="day-selector">
+        <a href="/tracks/precision-agriculture/tour#intro">
+          <button data-day="day-1" class="btn btn-day1 white day-1">Day 1: Tour</button>
+        </a>
+        <button data-day="day-2" class="btn btn-day2 white day-2 active">Day 2: Factory</button>
+      </div>
+    </div>
+    <header>
+      <h2 class="subtitle"><span class="underlined">Day 2: Inclusive Innovation Factory</span></h2>
+      <div class="headline vert-spacing">
+        The Factory is all about manufacturing solutions through cross-sector collaboration!
+      </div>
+    </header>
+
+    <div class="outer-container">
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+          <div class="image oversize">
+            <img src="/assets/images/factory-detailed.png" alt="ii2030" class="pure-img">
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 vert-center slide-container">
+          
+            <div class="slide text horiz-spacing vert-spacing">
+              <p>In a design-thinking workshop of up to 10 participants, we will work out how technology can drive inclusive innovation, and what is needed to achieve a solution. Participants are carefully selected to bring together those actors who can make the change.</p>
+            </div>
+          
+            <div class="slide text horiz-spacing vert-spacing">
+              <p>Throughout the day, a networking assembly line, factory whistle speeches and a canteen exhibition will allow participants to get inspired and connect outside their workshop.</p>
+            </div>
+          
+            <div class="slide text horiz-spacing vert-spacing">
+              <p>An ii2030 online platform will be used for participants to start connecting and preparing for the workshop prior to the event and to continue their collaboration following the co-creation workshop. In the follow-up, the team will receive support from Endeva as they work on improving and implementing the solution in the field.</p>
+            </div>
+          
+            <div class="slide text horiz-spacing vert-spacing">
+              <p>Design-thinking methodology is a collaborative solution-based approach to solving complex challenges. The strategic process will guide the team of like-minded partners in co-creating concrete, innovative and user-friendly solutions in a 1-day, action-packed workshop.</p>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="factory-outputs">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Factory Outputs</span></h2>
+    </header>
+    <div class="text vert-spacing-lg horiz-spacing">
+      <p>During a 1-day co-creation workshop, participants will design a plan to use digital technology to create a smarter and more integrated agricultural ecosystem. The team will devise a solution to harness on and off-farm data collected from mobile apps, remote sensing and publically available sources to:</p>
+      <ul>
+        <li>connect farmers to better markets and inputs (seeds, fertilizers, finance, etc.)</li>
+        <li>make digitized farming equipment available and affordable to smallholder farmers</li>
+        <li>use end-to-end traceability to track distribution and production methods</li>
+      </ul>
     </div>
   </section>
 
@@ -610,7 +577,7 @@
     autoplaySpeed: 3000,
     swipe: true,
     pauseOnHover: true,
-    adaptiveHeight: true,
+    // adaptiveHeight: true,
   })
 
   $('#track-description .next-btn').click(function() {
@@ -667,31 +634,31 @@
             
             <p class="sub-nav">
               
-              <a data-scroll href="/tracks/precision-agriculture/tour" class="">Precision Agriculture for Smallholder Farmers</a>
+              <a data-scroll href="/tracks/precision-agriculture/tour" class="">Precision Agriculture</a>
               
             </p>
             
             <p class="sub-nav">
               
-              <a data-scroll href="/tracks/ai/tour" class="">Artificial Intelligence for BoP Market Research</a>
+              <a data-scroll href="/tracks/ai/tour" class="">Artificial Intelligence</a>
               
             </p>
             
             <p class="sub-nav">
               
-              <a data-scroll href="/tracks/drones/tour" class="">Drones in Sub-Saharan Africa</a>
+              <a data-scroll href="/tracks/drones/tour" class="">Drones</a>
               
             </p>
             
             <p class="sub-nav">
               
-              <a class="pure-menu-disabled" disabled>3D Printing for Localized Manufacturing</a>
+              <a class="pure-menu-disabled" disabled>3D Printing</a>
               
             </p>
             
             <p class="sub-nav">
               
-              <a class="pure-menu-disabled" disabled>Remote Diagnosis through Image Recognition</a>
+              <a class="pure-menu-disabled" disabled>Remote Diagnosis</a>
               
             </p>
             
