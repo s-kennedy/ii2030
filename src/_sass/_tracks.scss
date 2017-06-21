@@ -1,6 +1,8 @@
 
 section#track-landing {
-  margin-bottom: 0;
+  padding-bottom: $lg-spacing;
+  padding-top: 0;
+
   @include background-pattern;
 
   .track-icon {
@@ -16,7 +18,6 @@ section#track-landing {
   .big-question {
     h1 {
       text-transform: none;
-      font-size: $h3-size;
     }
   }
 }
@@ -61,6 +62,7 @@ section#tour-factory {
   }
 
   .day-selector {
+    margin-top: $lg-spacing;
     button {
       margin-bottom: 0;
     }
@@ -136,73 +138,6 @@ section#tour-factory {
       }
     }
   }
-
-  section.schedule {
-    .schedule-grid {
-
-      .background-container {
-        margin-bottom: $lg-spacing;
-      }
-
-      .time, .content {
-        padding: $lg-spacing;
-      }
-
-      .time {
-        display: flex;
-        align-items: center;
-        justify-content: left;
-
-        > div {
-          flex-grow: 1;
-        }
-
-        .clock {
-          svg {
-            width: 50px; height: 50px;
-            background: $dark-red;
-            border-radius: 50%;
-
-            circle {
-              fill: $dark-red;
-              stroke: $orange;
-              stroke-width: 32;
-            }
-          }
-
-          &.midday {
-            svg {
-              transform: rotate(-75deg); /*hour starting point from 3:00 - (360/12 * hour) */
-
-              circle {
-                stroke-dasharray: 4 100; /*duration as percentage: 100/12 * hours */
-              }
-            }
-          }
-
-          &.afternoon {
-            svg {
-              transform: rotate(-30deg);
-
-              circle {
-                stroke-dasharray: 33 100;
-              }
-            }
-          }
-
-          &.evening {
-            svg {
-              transform: rotate(90deg);
-
-              circle {
-                stroke-dasharray: 33 100;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
 #factory {
@@ -223,97 +158,6 @@ section#tour-factory {
           font-size: 0.6em;
           color: $orange;
           margin-right: $lg-spacing;
-        }
-      }
-    }
-  }
-
-  section.schedule {
-    .schedule-grid {
-
-      .label {
-        text-align: center;
-      }
-
-      .side-program {
-        display: flex;
-
-        .background-container {
-          margin-left: $md-spacing;
-          display: flex;
-          align-items: center;
-        }
-      }
-
-      .background-container {
-        margin-bottom: $lg-spacing;
-      }
-
-      .time, .content {
-        padding: $lg-spacing;
-      }
-
-      .time {
-        display: flex;
-        align-items: center;
-        justify-content: left;
-
-        > div {
-          flex-grow: 1;
-        }
-
-        .clock {
-          svg {
-            width: 50px; height: 50px;
-            background: $dark-red;
-            border-radius: 50%;
-
-            circle {
-              fill: $dark-red;
-              stroke: $orange;
-              stroke-width: 32;
-            }
-          }
-
-          &.morning {
-            svg {
-              transform: rotate(-165deg); /*hour starting point from 3:00 - (360/12 * hour) */
-
-              circle {
-                stroke-dasharray: 29 100; /*duration as percentage: 100/12 * hours */
-              }
-            }
-          }
-
-          &.lunch {
-            svg {
-              transform: rotate(-60deg);
-
-              circle {
-                stroke-dasharray: 13 100;
-              }
-            }
-          }
-
-          &.afternoon {
-            svg {
-              transform: rotate(-15deg);
-
-              circle {
-                stroke-dasharray: 29 100;
-              }
-            }
-          }
-
-          &.evening {
-            svg {
-              transform: rotate(90deg);
-
-              circle {
-                stroke-dasharray: 33 100;
-              }
-            }
-          }
         }
       }
     }

@@ -1,6 +1,5 @@
 section {
   padding-top: $lg-spacing;
-  padding-bottom: $lg-spacing;
 }
 
 header {
@@ -158,5 +157,14 @@ header {
 
 i.fa {
   margin-left: 12px;
+}
+
+button {
+  img {
+    height: 1em;
+    display: inline !important;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
 }
 
