@@ -27,7 +27,7 @@
 <link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
 
 
-  <title>FAQs</title>
+  <title>Impressum</title>
   <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
   <!--[if lte IE 8]>
       <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
@@ -253,127 +253,31 @@
 
 
 <main>
-  <section id="faqs">
-    <header>
-        <h2 class="subtitle"><span class="underlined">Frequently Asked Questions</span></h2>
-      </header>
-    <div class="faq-questions">
-      
-        
-        <div class="faq-container faq-open">
-        
-          <div class="question">
-            <h3>How do I register for ii2030?</h3>
-            <a class="show-answer"><i class="fa fa-plus" aria-hidden="true"></i></a>
-            <a class="hide-answer"><i class="fa fa-minus" aria-hidden="true"></i></a>
-          </div>
-          <div class="answer">
-            
-              <p class="large">For more information on applying or registering for ii2030, please visit our <a href="https://iba.ventures/inclusive-innovation-factory/">registration page</a>.</p>
-            
-            
-          </div>
-        </div>
-      
-        
-        <div class="faq-container faq-closed">
-        
-          <div class="question">
-            <h3>How much do tickets cost?</h3>
-            <a class="show-answer"><i class="fa fa-plus" aria-hidden="true"></i></a>
-            <a class="hide-answer"><i class="fa fa-minus" aria-hidden="true"></i></a>
-          </div>
-          <div class="answer">
-            
-              <p class="large">Ticket prices for ii2030 are as follows:</p>
-            
-            
-              <ul>
-                
-                  <li>Early bird participant ticket - non-profit (before July 31): €400</li>
-                
-                  <li>Early bird participant ticket - non-profit (before July 31): €400</li>
-                
-                  <li>Early bird participant ticket – corporate (before July 31): €800</li>
-                
-                  <li>Standard participant ticket - non-profit (from August 1): €500</li>
-                
-                  <li>Standard participant ticket – corporate (from August 1): €1,000</li>
-                
-              </ul>
-            
-          </div>
-        </div>
-      
-        
-        <div class="faq-container faq-closed">
-        
-          <div class="question">
-            <h3>How many people can join the event from my company/organization?</h3>
-            <a class="show-answer"><i class="fa fa-plus" aria-hidden="true"></i></a>
-            <a class="hide-answer"><i class="fa fa-minus" aria-hidden="true"></i></a>
-          </div>
-          <div class="answer">
-            
-              <p class="large">In our experience, co-creation workshops work most efficiently and effectively    with small groups (between 6-10 individuals) consisting of representatives from diverse backgrounds. Thus, it is suggested that each company or organization sends one representative to the event in Berlin.</p>
-            
-              <p class="large">Nevertheless, it is also possible for your organization to bring two representatives if each of you purchases a ticket. This can be confirmed by contacting the ii2030 team beforehand.</p>
-            
-            
-          </div>
-        </div>
-      
-        
-        <div class="faq-container faq-closed">
-        
-          <div class="question">
-            <h3>Nevertheless, it is also possible for your organization to bring two representatives if each of you purchases a ticket. This can be confirmed by contacting the ii2030 team beforehand.</h3>
-            <a class="show-answer"><i class="fa fa-plus" aria-hidden="true"></i></a>
-            <a class="hide-answer"><i class="fa fa-minus" aria-hidden="true"></i></a>
-          </div>
-          <div class="answer">
-            
-              <p class="large">Inclusive Innovation 2030 is a curated, invitation-only event. However, the organizers of ii2030 actively seek relevant participants who contribute to the vision and goals of the event. If you do not have an invitation, but are interested in taking part, you may request an invitation by completing the application form here: <a href="https://iba.ventures/inclusive-innovation-factory">https://iba.ventures/inclusive-innovation-factory</a>.</p>
-            
-              <p class="large">We will review each application in detail and look forward to reading about your efforts to achieve a more inclusive society by 2030.</p>
-            
-            
-          </div>
-        </div>
-      
-        
-        <div class="faq-container faq-closed">
-        
-          <div class="question">
-            <h3>I am/my company or organization is interested in sponsoring this event, how can I find out more?</h3>
-            <a class="show-answer"><i class="fa fa-plus" aria-hidden="true"></i></a>
-            <a class="hide-answer"><i class="fa fa-minus" aria-hidden="true"></i></a>
-          </div>
-          <div class="answer">
-            
-              <p class="large">We’re happy to tell you more about the event (both online and in Berlin) and how you might be able to contribute in a personal email or call. Please get in touch with us by sending an email to: m.leahy@endeva.org</p>
-            
-            
-          </div>
-        </div>
-      
+  <section class="horiz-spacing">
+    <h3>Impressum</h3>
+
+    <div class="vert-spacing">
+      <p>endeva UG (haftungsbeschränkt)</p>
+      <p>Brunnenstraße 192</p>
+      <p>10119 Berlin</p>
+    </div>
+
+    <div class="vert-spacing">
+      <p>phone: +49 (0)30 27583985</p>
+      <p>email: info@endeva.org</p>
+    </div>
+
+    <div class="vert-spacing">
+      <p>Registergericht: HRB 129928 B</p>
+      <p>Amtsgericht Charlottenburg</p>
+      <p>Geschäftsführer: Dr. Christina Tewes-Gradl, Dr. Aline Menden</p>
+      <p>Steuernummer: 30/277/33528</p>
+      <p>Ust-ID: DE 273951949</p>
     </div>
   </section>
 </main>
 
-<script>
-  $(function() {
-    $('.faq-container a.show-answer').on('click', function(e) {
-      e.preventDefault()
-      $(this).closest('.faq-container').removeClass('faq-closed').addClass('faq-open');
-    })
 
-    $('.faq-container a.hide-answer').on('click', function(e) {
-      e.preventDefault()
-      $(this).closest('.faq-container').removeClass('faq-open').addClass('faq-closed');
-    })
-  })
-</script>
 
 <footer class="pure-g">
   <div class="footer-left pure-u-1 pure-u-md-1-2">
