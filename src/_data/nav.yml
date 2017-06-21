@@ -25,3 +25,5 @@
     - name: Remote Diagnosis
       icon: '/assets/icons/eye-red.svg'
       link:
+- name: FAQs
+  link: /faqs

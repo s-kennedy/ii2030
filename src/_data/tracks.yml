@@ -1,20 +1,25 @@
 - topic: How can we increase smallholder yields through remote sensing?
+  tech: Precision Agriculture
   title: Precision Agriculture for Smallholder Farmers
   link: /tracks/precision-agriculture/tour
   icon: /assets/icons/agri-red.svg
 - topic: How can we source data on low-income markets through artificial intelligence?
   title: Artificial Intelligence for BoP Market Research
+  tech: Artificial Intelligence
   link: '/tracks/ai/tour'
   icon: '/assets/icons/ai-red.svg'
 - topic: How can we deliver basic goods and services to remote areas using drones?
   title: Drones in Sub-Saharan Africa
+  tech: Drones
   link: '/tracks/drones/tour'
   icon: '/assets/icons/drone-red.svg'
 - topic: How can we localize manufacturing in Africa with 3D printing?
   title: 3D Printing for Localized Manufacturing
+  tech: 3D Printing
   link:
   icon: '/assets/icons/3d-red.svg'
 - topic: How can we improve remote diagnosis through image recognition?
   title: Remote Diagnosis through Image Recognition
+  tech: Image Recognition
   link:
   icon: '/assets/icons/eye-red.svg'

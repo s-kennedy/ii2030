@@ -1,0 +1,52 @@
+---
+layout: default
+title: FAQs
+---
+<main>
+  <section id="faqs">
+    <header>
+        <h2 class="subtitle"><span class="underlined">Frequently Asked Questions</span></h2>
+      </header>
+    <div class="faq-questions">
+      {% for faq in site.data.faqs %}
+        {% if forloop.first %}
+        <div class="faq-container faq-open">
+        {% else %}
+        <div class="faq-container faq-closed">
+        {% endif %}
+          <div class="question">
+            <h3>{{ faq.question }}</h3>
+            <a class="show-answer"><i class="fa fa-plus" aria-hidden="true"></i></a>
+            <a class="hide-answer"><i class="fa fa-minus" aria-hidden="true"></i></a>
+          </div>
+          <div class="answer">
+            {% for paragraph in faq.answer.paras %}
+              <p class="large">{{ paragraph }}</p>
+            {% endfor %}
+            {% if faq.answer.list %}
+              <ul>
+                {% for list_item in faq.answer.list %}
+                  <li>{{ list_item }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+</main>
+
+<script>
+  $(function() {
+    $('.faq-container a.show-answer').on('click', function(e) {
+      e.preventDefault()
+      $(this).closest('.faq-container').removeClass('faq-closed').addClass('faq-open');
+    })
+
+    $('.faq-container a.hide-answer').on('click', function(e) {
+      e.preventDefault()
+      $(this).closest('.faq-container').removeClass('faq-open').addClass('faq-closed');
+    })
+  })
+</script>

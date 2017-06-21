@@ -7,25 +7,31 @@
       <div class="pure-menu pure-menu-horizontal custom-can-transform">
         <ul class="pure-menu-list">
           {% for top_nav in site.data.nav %}
-            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-              <a class="pure-menu-link">{{ top_nav.name }}</a>
-              <ul class="pure-menu-children">
-              {% for sub_nav in top_nav.sub_navs %}
-              {% if sub_nav.link %}
+            {% if top_nav.link %}
               <li class="pure-menu-item">
-              {% else %}
-              <li class="pure-menu-item pure-menu-disabled">
-              {% endif %}
-                {% if sub_nav.icon %}
-                <img src="{{ site.baseurl }}{{ sub_nav.icon }}" alt="icon" />
-                {% endif %}
-                <a data-scroll href="{{ site.baseurl }}{{ sub_nav.link }}" class="pure-menu-link">
-                  {{ sub_nav.name }}
-                </a>
+                <a href={{ top_nav.link }} class="pure-menu-link">{{ top_nav.name }}</a>
               </li>
-              {% endfor %}
-              </ul>
-            </li>
+              {% else %}
+              <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <a class="pure-menu-link">{{ top_nav.name }}</a>
+                <ul class="pure-menu-children">
+                {% for sub_nav in top_nav.sub_navs %}
+                  {% if sub_nav.link %}
+                  <li class="pure-menu-item">
+                  {% else %}
+                  <li class="pure-menu-item pure-menu-disabled">
+                  {% endif %}
+                    {% if sub_nav.icon %}
+                    <img src="{{ site.baseurl }}{{ sub_nav.icon }}" alt="icon" />
+                    {% endif %}
+                    <a data-scroll href="{{ site.baseurl }}{{ sub_nav.link }}" class="pure-menu-link">
+                      {{ sub_nav.name }}
+                    </a>
+                  </li>
+                {% endfor %}
+                </ul>
+              </li>
+            {% endif %}
           {% endfor %}
         </ul>
       </div>
