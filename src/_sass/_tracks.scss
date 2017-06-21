@@ -25,21 +25,76 @@ section#track-landing {
 section#track-description {
   padding-top: 0;
 
-  .w-question {
-    text-align: right;
-    padding-right: 20px;
+  .headline {
+    h2 {
+      text-transform: none;
+      font-weight: $light;
 
-    p {
-      font-size: 2em;
+      &.bold {
+        color: $dark-red;
+      }
     }
   }
 
-  li {
-    font-size: $sm-size;
+  .text {
+    padding-bottom: $md-spacing;
+
+    li {
+      font-size: $sm-size;
+    }
   }
 
-  .text {
-    border-left: 2px solid $light-blue;
+  .outer-container {
+    padding-top: $lg-spacing;
+  }
+
+  .slick-dots {
+    position: relative;
+    bottom: 0;
+
+    li {
+      margin: 0 $lg-spacing;
+
+      &:hover:not(.slick-active) {
+        font-weight: 400;
+      }
+
+      button:before {
+        content: '';
+      }
+
+      &:nth-of-type(1) {
+        &:before {
+          content: 'What';
+        }
+      }
+
+      &:nth-of-type(2) {
+        &:before {
+          content: 'Why';
+        }
+      }
+
+      &:nth-of-type(3) {
+        &:before {
+          content: 'Who';
+        }
+      }
+
+      &:nth-of-type(4) {
+        &:before {
+          content: 'How';
+        }
+      }
+
+      &.slick-active {
+        &:before {
+          background: $orange;
+          padding: 4px 14px;
+          border-radius: 1em;
+        }
+      }
+    }
   }
 
 }

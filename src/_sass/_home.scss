@@ -79,10 +79,11 @@ section#agenda {
       position: relative;
       width: 300px;
       margin: 0 auto;
+    }
 
-      &:after {
+    .robot-body {
+      &after {
         content: 'Day 1';
-        position: absolute;
       }
     }
   }
