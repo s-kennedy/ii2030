@@ -6,32 +6,37 @@
       </div>
       <div class="pure-menu pure-menu-horizontal custom-can-transform">
         <ul class="pure-menu-list">
-          {% for top_nav in site.data.nav %}
-            {% if top_nav.link %}
-              <li class="pure-menu-item">
-                <a href={{ top_nav.link }} class="pure-menu-link">{{ top_nav.name }}</a>
-              </li>
-              {% else %}
-              <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-                <a class="pure-menu-link">{{ top_nav.name }}</a>
-                <ul class="pure-menu-children">
-                {% for sub_nav in top_nav.sub_navs %}
-                  {% if sub_nav.link %}
-                  <li class="pure-menu-item">
-                  {% else %}
-                  <li class="pure-menu-item pure-menu-disabled">
-                  {% endif %}
-                    {% if sub_nav.icon %}
-                    <img src="{{ site.baseurl }}{{ sub_nav.icon }}" alt="icon" />
+          {% for section in site.data.nav %}
+            {% for nav in section.navs %}
+              {% if nav.sub_navs %}
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                  <a class="pure-menu-link" href="{{ nav.link }}">{{ nav.name }}</a>
+                  <ul class="pure-menu-children">
+                  {% for sub_nav in nav.sub_navs %}
+                    {% if sub_nav.link %}
+                    <li class="pure-menu-item">
+                    {% else %}
+                    <li class="pure-menu-item pure-menu-disabled">
                     {% endif %}
-                    <a data-scroll href="{{ site.baseurl }}{{ sub_nav.link }}" class="pure-menu-link">
-                      {{ sub_nav.name }}
-                    </a>
+                      {% if sub_nav.icon %}
+                      <img src="{{ site.baseurl }}{{ sub_nav.icon }}" alt="icon" />
+                      {% endif %}
+                      <a data-scroll href="{{ site.baseurl }}{{ sub_nav.link }}" class="pure-menu-link">
+                        {{ sub_nav.name }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                  </ul>
+                </li>
+              {% else %}
+                {% if nav.hide_in_navbar %}
+                {% else %}
+                  <li class="pure-menu-item">
+                    <a class="pure-menu-link" href="{{ nav.link }}">{{ nav.name }}</a>
                   </li>
-                {% endfor %}
-                </ul>
-              </li>
-            {% endif %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
           {% endfor %}
         </ul>
       </div>

@@ -1,29 +1,35 @@
-- name: Overview
-  sub_navs:
-    - name: Event Overview
-      link: /#overview
-    - name: Agenda
-      link: /#agenda
-    - name: Tracks
-      link: /#tracks
-    - name: Partners
-      link: /#partners
-- name: Tracks
-  sub_navs:
-    - name: Precision Agriculture
-      icon: /assets/icons/agri-red.svg
-      link: /tracks/precision-agriculture/tour
-    - name: Artificial Intelligence
-      icon: '/assets/icons/ai-red.svg'
-      link: /tracks/ai/tour
-    - name: Drones
-      icon: '/assets/icons/drone-red.svg'
-      link: /tracks/drones/tour
-    - name: 3D Printing
-      icon: '/assets/icons/3d-red.svg'
-      link:
-    - name: Remote Diagnosis
-      icon: '/assets/icons/eye-red.svg'
-      link:
-- name: FAQs
-  link: /faqs
+- navs:
+  - name: Overview
+    sub_navs:
+      - name: Event Overview
+        link: /#overview
+      - name: Agenda
+        link: /#agenda
+      - name: Tracks
+        link: /#tracks
+      - name: Partners
+        link: /#partners
+- navs:
+  - name: Tracks
+    sub_navs:
+      - name: Precision Agriculture
+        icon: /assets/icons/agri-red.svg
+        link: /tracks/precision-agriculture/tour
+      - name: Artificial Intelligence
+        icon: '/assets/icons/ai-red.svg'
+        link: /tracks/ai/tour
+      - name: Drones
+        icon: '/assets/icons/drone-red.svg'
+        link: /tracks/drones/tour
+      - name: 3D Printing
+        icon: '/assets/icons/3d-red.svg'
+        link:
+      - name: Remote Diagnosis
+        icon: '/assets/icons/eye-red.svg'
+        link:
+- navs:
+  - name: FAQs
+    link: /faqs
+  - name: Impressum
+    link: /impressum
+    hide_in_navbar: true

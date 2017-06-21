@@ -9,19 +9,27 @@
   <div class="pure-u-1 pure-u-md-1-2">
     <p class="column-header">Site map</p>
     <div class="pure-g">
-      {% for top_nav in site.data.nav %}
-        <div class="pure-u-1 pure-u-md-1-2">
-          <p class="site-map-item">{{ top_nav.name }}</p>
-            {% for sub_nav in top_nav.sub_navs %}
-            <p class="sub-nav">
-              {% if sub_nav.link %}
-              <a data-scroll href="{{ site.baseurl }}{{ sub_nav.link }}" class="">{{ sub_nav.name }}</a>
-              {% else %}
-              <a class="pure-menu-disabled" disabled>{{ sub_nav.name }}</a>
-              {% endif %}
-            </p>
-            {% endfor %}
-        </div>
+      {% for section in site.data.nav %}
+        <div class="pure-u-1 pure-u-md-1-3">
+        {% for nav in section.navs %}
+            {% if nav.link %}
+            <p class="site-map-item"><a href="{{ nav.link }}">{{ nav.name }}</a></p>
+            {% else %}
+            <p class="site-map-item">{{ nav.name }}</p>
+            {% if nav.sub_navs %}
+              {% for sub_nav in nav.sub_navs %}
+              <p class="sub-nav">
+                {% if sub_nav.link %}
+                <a data-scroll href="{{ site.baseurl }}{{ sub_nav.link }}" class="">{{ sub_nav.name }}</a>
+                {% else %}
+                <a class="pure-menu-disabled" disabled>{{ sub_nav.name }}</a>
+                {% endif %}
+              </p>
+              {% endfor %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
       {% endfor %}
     </div>
   </div>
