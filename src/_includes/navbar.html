@@ -10,7 +10,7 @@
             {% for nav in section.navs %}
               {% if nav.sub_navs %}
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-                  <a class="pure-menu-link" href="{{ nav.link }}">{{ nav.name }}</a>
+                  <a class="pure-menu-link">{{ nav.name }}</a>
                   <ul class="pure-menu-children">
                   {% for sub_nav in nav.sub_navs %}
                     {% if sub_nav.link %}

@@ -1,25 +1,7 @@
 
-PARTICIPANT_TYPES = [
-  'corporates',
-  'startups',
-  'the public sector',
-  'NGOs',
-  'science'
-];
-
 function activateButton() {
   $('.day-selector button').removeClass('active');
   $(this).addClass('active');
-};
-
-function cycleParticipants() {
-  var textSpan = $('#cycle-participants')
-  var currentText = textSpan.text();
-  var currentTextIndex = PARTICIPANT_TYPES.indexOf(currentText);
-  var newPosition = currentTextIndex >= (PARTICIPANT_TYPES.length -1) ? 0 : currentTextIndex + 1
-  var newText = PARTICIPANT_TYPES[newPosition];
-
-  textSpan.text(newText);
 };
 
 function activateTrack() {
@@ -28,7 +10,6 @@ function activateTrack() {
 }
 
 function activateAnimation() {
-  console.log
   $('#agenda .image .animate-move-right.active').removeClass('active')
   var day = $(this).data('day');
   if (day === 'day-1') {
@@ -40,11 +21,18 @@ function activateAnimation() {
   }
 }
 
-
 $(function(){
   $('.day-selector button').on('click', activateButton);
   $('.track').on('mouseover', activateTrack);
   $('#agenda .day-selector .btn').on('click', activateAnimation);
-  window.setInterval(cycleParticipants, 2500);
 
+  $('#tour-factory .factory-button .next-btn').on('click', function() {
+    $('.day-selector button').removeClass('active');
+    $('.day-selector button.btn-day2').addClass('active');
+  })
+
+  $('#tour-factory .factory-button .prev-btn').on('click', function() {
+    $('.day-selector button').removeClass('active');
+    $('.day-selector button.btn-day1').addClass('active');
+  })
 });

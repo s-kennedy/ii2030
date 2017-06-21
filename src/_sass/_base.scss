@@ -5,6 +5,10 @@ section {
 
 header {
   padding: $md-spacing $lg-spacing;
+
+  img {
+    vertical-align: middle;
+  }
 }
 
 .outer-container {

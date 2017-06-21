@@ -64,7 +64,7 @@
             
               
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-                  <a class="pure-menu-link" href="">Overview</a>
+                  <a class="pure-menu-link">Overview</a>
                   <ul class="pure-menu-children">
                   
                     
@@ -111,7 +111,7 @@
             
               
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-                  <a class="pure-menu-link" href="">Tracks</a>
+                  <a class="pure-menu-link">Tracks</a>
                   <ul class="pure-menu-children">
                   
                     
@@ -120,7 +120,7 @@
                       
                       <img src="/assets/icons/agri-red.svg" alt="icon" />
                       
-                      <a data-scroll href="/tracks/precision-agriculture/tour" class="pure-menu-link">
+                      <a data-scroll href="/tracks/precision-agriculture" class="pure-menu-link">
                         Precision Agriculture
                       </a>
                     </li>
@@ -131,7 +131,7 @@
                       
                       <img src="/assets/icons/ai-red.svg" alt="icon" />
                       
-                      <a data-scroll href="/tracks/ai/tour" class="pure-menu-link">
+                      <a data-scroll href="/tracks/artificial-intelligence" class="pure-menu-link">
                         Artificial Intelligence
                       </a>
                     </li>
@@ -142,7 +142,7 @@
                       
                       <img src="/assets/icons/drone-red.svg" alt="icon" />
                       
-                      <a data-scroll href="/tracks/drones/tour" class="pure-menu-link">
+                      <a data-scroll href="/tracks/drones" class="pure-menu-link">
                         Drones
                       </a>
                     </li>
@@ -282,7 +282,7 @@
             <div class="pure-u-1 pure-u-md-1-2">
               <div class="w-question">
                 <p><span class="bold"></span><span class="bold">What</span> can artificial intelligence do for market research?</p>
-                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                <button class="btn orange animate" onClick="$('#track-description .slide-container').slick('slickNext')">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
               </div>
             </div>
             <div class="pure-u-1 pure-u-md-1-2">
@@ -300,7 +300,7 @@
             <div class="pure-u-1 pure-u-md-1-2">
               <div class="w-question">
                 <p><span class="bold"></span><span class="bold">Why</span> do we need BoP market data?</p>
-                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                <button class="btn orange animate" onClick="$('#track-description .slide-container').slick('slickNext')">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
               </div>
             </div>
             <div class="pure-u-1 pure-u-md-1-2">
@@ -318,7 +318,7 @@
             <div class="pure-u-1 pure-u-md-1-2">
               <div class="w-question">
                 <p><span class="bold"></span><span class="bold">Who</span> would we like to attend?</p>
-                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                <button class="btn orange animate" onClick="$('#track-description .slide-container').slick('slickNext')">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
               </div>
             </div>
             <div class="pure-u-1 pure-u-md-1-2">
@@ -352,7 +352,7 @@
             <div class="pure-u-1 pure-u-md-1-2">
               <div class="w-question">
                 <p><span class="bold"></span><span class="bold">How</span> will we create impact?</p>
-                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                <button class="btn orange animate" onClick="$('#track-description .slide-container').slick('slickNext')">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
               </div>
             </div>
             <div class="pure-u-1 pure-u-md-1-2">
@@ -368,111 +368,61 @@
       </div>
     </div>
   </section>
-    <div class="track-lead">
-      <div class="background-container">
-        <div class="pure-g">
-          <div class="pure-u-1 pure-u-md-1-2">
-            <div class="image-container">
-              <img src="" alt="" class="pure-img">
-            </div>
-          </div>
-          <div class="pure-u-1 pure-u-md-1-2">
-            <div class="text vert-spacing horiz-spacing">
-              <h3>Track lead:</h3>
-              <p></p>
-              <p></p>
-              <p class="quote">""</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <div>
-    <div id="tour">
-  <section id="intro">
+  
+
+  <section id="tour-factory">
     <div class="headline">
       <div class="day-selector">
         <button data-day="day-1" class="btn btn-day1 white active day-1">Day 1: Tour</button>
-        <a href="/tracks/ai/factory#intro">
-          <button data-day="day-2" class="btn btn-day2 white day-2">Day 2: Factory</button>
-        </a>
+        <button data-day="day-2" class="btn btn-day2 white day-2">Day 2: Factory</button>
       </div>
     </div>
+    <div class="slide-container page-slide">
+      <div class="slide">
+        <div id="tour">
+  <section id="intro">
     <header>
-      <h2 class="subtitle"><span class="underlined">Day 1: Inclusive Innovation Tour</span></h2>
+      <h2 class="subtitle">
+        <div class="icon">
+          <img src="/assets/icons/ai-red.svg" alt="Artificial Intelligence for BoP market research icon">
+        </div>
+        <span class="underlined">Day 1: Inclusive Innovation Tour</span>
+      </h2>
       <div class="headline vert-spacing">
         Hit the road on our Inclusive Innovation Tour of Berlin!
       </div>
     </header>
 
-    <div class="outer-container slide-container">
-      
-      <div class="slide background-container dark">
-        <div class="pure-g">
-          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
-            <div class="image oversize">
-              <img src="/assets/images/conf-pic-4.jpg" alt="ii2030" class="pure-img">
-            </div>
-          </div>
-          <div class="pure-u-1 pure-u-md-1-2 vert-center">
-            <div class="text horiz-spacing vert-spacing">
-              <p>Our tour guides will take participants on an exploration of Berlin’s buzzing inclusive innovation scene to provide inspiration and information for each track.</p>
-            </div>
+    <div class="outer-container">
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+          <div class="image oversize">
+            <img src="/assets/images/tour-detailed.png" alt="ii2030" class="pure-img">
           </div>
         </div>
-      </div>
-      
-      <div class="slide background-container dark">
-        <div class="pure-g">
-          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
-            <div class="image oversize">
-              <img src="/assets/images/conf-pic-5.jpg" alt="ii2030" class="pure-img">
-            </div>
-          </div>
-          <div class="pure-u-1 pure-u-md-1-2 vert-center">
-            <div class="text horiz-spacing vert-spacing">
-              <p>The 4-hour tour will take participants to 3 visionary organizations, where hosts will lead a discussion on how greater inclusion in the agriculture sector will impact society in 2030.</p>
-            </div>
-          </div>
+        <div class="pure-u-1 pure-u-md-1-2">
+          
+            <p class="vert-spacing">Our tour guides will take participants on an exploration of Berlin’s buzzing inclusive innovation scene to provide inspiration and information for each track.</p>
+          
+            <p class="vert-spacing">The 4-hour tour will take participants to 3 visionary organizations, where hosts will lead a discussion on how greater inclusion in the agriculture sector will impact society in 2030.</p>
+          
+            <p class="vert-spacing">The day will end with a “Meet & Greet” networking dinner. Participants from all tracks will reconvene over dinner to share what they have learned and get to know one another.</p>
+          
+            <p class="vert-spacing">Participants will gain inspiration from and knowledge on the various perspectives of how inclusive innovation in agriculture will create positive change. They will gain an up-close-and-personal look into the three organizations, connect with their leaders and use the inspiration to guide and motivate them through their co-creation journey at the Inclusive Innovation Factory and beyond.</p>
+          
         </div>
       </div>
-      
-      <div class="slide background-container dark">
-        <div class="pure-g">
-          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
-            <div class="image oversize">
-              <img src="/assets/images/conf-pic-6.jpg" alt="ii2030" class="pure-img">
-            </div>
-          </div>
-          <div class="pure-u-1 pure-u-md-1-2 vert-center">
-            <div class="text horiz-spacing vert-spacing">
-              <p>The day will end with a “Meet & Greet” networking dinner. Participants from all tracks will reconvene over dinner to share what they have learned and get to know one another.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="slide background-container dark">
-        <div class="pure-g">
-          <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
-            <div class="image oversize">
-              <img src="/assets/images/conf-pic-7.jpg" alt="ii2030" class="pure-img">
-            </div>
-          </div>
-          <div class="pure-u-1 pure-u-md-1-2 vert-center">
-            <div class="text horiz-spacing vert-spacing">
-              <p>Participants will gain inspiration from and knowledge on the various perspectives of how inclusive innovation in agriculture will create positive change. They will gain an up-close-and-personal look into the three organizations, connect with their leaders and use the inspiration to guide and motivate them through their co-creation journey at the Inclusive Innovation Factory and beyond.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
     </div>
   </section>
 
   <section id="tour-stops">
     <header>
-      <h2 class="subtitle"><span class="underlined">Tour Stops</span></h2>
+      <h2 class="subtitle">
+        <div class="icon">
+          <img src="/assets/icons/ai-red.svg" alt="Artificial Intelligence for BoP market research icon">
+        </div>
+        <span class="underlined">Tour Stops</span>
+      </h2>
       <p class="headline vert-spacing">The AI for BoP Market Research track will take participants on a tour of the following three organizations:</p>
     </header>
     <div class="pure-g tour-stops">
@@ -518,7 +468,12 @@
 
   <section class="schedule">
     <header>
-      <h2 class="subtitle"><span class="underlined">Schedule</span></h2>
+      <h2 class="subtitle">
+        <div class="icon">
+          <img src="/assets/icons/ai-red.svg" alt="Artificial Intelligence for BoP market research icon">
+        </div>
+        <span class="underlined">Schedule</span>
+      </h2>
     </header>
     <div class="schedule-grid">
       <div class="pure-g background-container">
@@ -587,9 +542,215 @@
     </div>
   </section>
   <div class="factory-button">
-    <a href="/tracks/ai/factory#intro" class="btn animate orange">Day 2: Factory<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    <button class="btn animate orange next-btn" onClick="$('#tour-factory .page-slide.slide-container').slick('slickNext')">Day 2: Factory<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
   </div>
 </div>
+
+      </div>
+      <div class="slide">
+        <div id="factory">
+  <section id="intro">
+    <header>
+      <h2 class="subtitle">
+        <div class="icon">
+          <img src="/assets/icons/ai-red.svg" alt="Artificial Intelligence for BoP market research icon">
+        </div>
+        <span class="underlined">Day 2: Inclusive Innovation Factory</span>
+      </h2>
+      <div class="headline vert-spacing">
+        The Factory is all about manufacturing solutions through cross-sector collaboration!
+      </div>
+    </header>
+
+    <div class="outer-container">
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
+          <div class="image oversize">
+            <img src="/assets/images/factory-detailed.png" alt="ii2030" class="pure-img">
+          </div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 vert-center slide-container">
+          
+            <div class="slide text horiz-spacing vert-spacing">
+              <p>In a design-thinking workshop of up to 10 participants, we will work out how technology can drive inclusive innovation, and what is needed to achieve a solution. Participants are carefully selected to bring together those actors who can make the change.</p>
+            </div>
+          
+            <div class="slide text horiz-spacing vert-spacing">
+              <p>Throughout the day, a networking assembly line, factory whistle speeches and a canteen exhibition will allow participants to get inspired and connect outside their workshop.</p>
+            </div>
+          
+            <div class="slide text horiz-spacing vert-spacing">
+              <p>An ii2030 online platform will be used for participants to start connecting and preparing for the workshop prior to the event and to continue their collaboration following the co-creation workshop. In the follow-up, the team will receive support from Endeva as they work on improving and implementing the solution in the field.</p>
+            </div>
+          
+            <div class="slide text horiz-spacing vert-spacing">
+              <p>Design-thinking methodology is a collaborative solution-based approach to solving complex challenges. The strategic process will guide the team of like-minded partners in co-creating concrete, innovative and user-friendly solutions in a 1-day, action-packed workshop.</p>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="factory-outputs">
+    <header>
+      <h2 class="subtitle">
+        <div class="icon">
+          <img src="/assets/icons/ai-red.svg" alt="Artificial Intelligence for BoP market research icon">
+        </div>
+        <span class="underlined">Factory Outputs</span>
+      </h2>
+    </header>
+    <div class="text horiz-spacing">
+      <p>During a 1-day co-creation workshop, participants will design a plan to use digital technology to create a smarter and more integrated agricultural ecosystem. The team will devise a solution to harness on and off-farm data collected from mobile apps, remote sensing and publically available sources to:</p>
+      <ul>
+        <li>connect farmers to better markets and inputs (seeds, fertilizers, finance, etc.)</li>
+        <li>make digitized farming equipment available and affordable to smallholder farmers</li>
+        <li>use end-to-end traceability to track distribution and production methods</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="schedule">
+    <header>
+      <h2 class="subtitle">
+        <div class="icon">
+          <img src="/assets/icons/ai-red.svg" alt="Artificial Intelligence for BoP market research icon">
+        </div>
+        <span class="underlined">Schedule</span>
+      </h2>
+    </header>
+    <div class="schedule-grid">
+      <div class="labels">
+        <div class="pure-g">
+          <div class="pure-u-md-1-3"></div>
+          <div class="pure-u-md-1-3 label">
+            <h3>Main program</h3>
+          </div>
+          <div class="pure-u-md-1-3 label">
+            <h3>Side program</h3>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-2-3">
+          <div class="main-program">
+            <div class="pure-g background-container">
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div class="time">
+                  <div class="text">
+                    <h3>Morning</h3>
+                    <p>9:30 - 13:00</p>
+                  </div>
+                  <div class="clock morning">
+                    <svg viewBox="0 0 32 32">
+                      <circle r="16" cx="16" cy="16" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div class="content">
+                  <h3>Opening Ceremony</h3>
+                  <p>Inspiring keynote speeches, given from the perspective of 2030</p>
+                  <h3>Co-creation Labs 1</h3>
+                  <p>Work with new partners to create innovative solutions on a specific, pre-defined challenge of inclusive markets and society</p>
+                </div>
+              </div>
+            </div>
+            <div class="pure-g background-container">
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div class="time">
+                  <div class="text">
+                    <h3>Lunch</h3>
+                    <p>13:00 - 14:30</p>
+                  </div>
+                  <div class="clock lunch">
+                    <svg viewBox="0 0 32 32">
+                      <circle r="16" cx="16" cy="16" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div class="content">
+                  <h3>Networking Lunch</h3>
+                  <p>Over a delicious catered lunch, participants will connect with one another in our curated networking format</p>
+                </div>
+              </div>
+            </div>
+            <div class="pure-g background-container">
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div class="time">
+                  <div class="text">
+                    <h3>Afternoon</h3>
+                    <p>14:30 - 18:00</p>
+                  </div>
+                  <div class="clock afternoon">
+                    <svg viewBox="0 0 32 32">
+                      <circle r="16" cx="16" cy="16" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="pure-u-1 pure-u-md-1-2">
+                <div class="content">
+                  <h3>Co-creation Labs 2</h3>
+                  <p>Work with new partners to create innovative solutions on a specific, pre-defined challenge of inclusive markets and society</p>
+                  <h3>Closing Talk</h3>
+                  <p>Speaker/topic TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="pure-u-1 pure-u-md-1-3 side-program">
+            <div class="background-container">
+              <div class="content">
+                <h3>On Stage</h3>
+                <p>Additional talks from leading experts in inclusive innovation, documentary screening and lightning talks</p>
+                <h3>On Display</h3>
+                <p>Innovative product demonstrations, exhibit of design products of INDEX Award (tbc)</p>
+                <h3>Collaboration Station</h3>
+                <p>Inspiring spaces will be available throughout the day for participants to solidify new connections and discuss next steps beyond the conference</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pure-g background-container">
+          <div class="pure-u-1 pure-u-md-1-3">
+            <div class="time">
+              <div class="text">
+                <h3>Evening</h3>
+                <p>18:00 - 22:00</p>
+              </div>
+              <div class="clock evening">
+                <svg viewBox="0 0 32 32">
+                  <circle r="16" cx="16" cy="16" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="pure-u-1 pure-u-md-2-3">
+            <div class="content">
+              <h3>Optional Events</h3>
+              <p>Networking dinner and other social events in Berlin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <div class="factory-button">
+    <button class="btn animate orange prev-btn" onClick="$('#tour-factory .page-slide.slide-container').slick('slickPrev')"><i class="fa fa-arrow-left" aria-hidden="true"></i>Day 1: Tour</button>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+</main>
+
 
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
@@ -614,13 +775,16 @@
     pauseOnHover: true,
   })
 
-  $('#track-description .next-btn').click(function() {
-    $('#track-description .slide-container').slick('slickNext');
-  })
+  $('#tour-factory .page-slide.slide-container').slick({
+    prevArrow: $("#tour-factory .day-selector .day-1"),
+    nextArrow: $("#tour-factory .day-selector .day-2"),
+    swipe: true,
+    infinite: false,
+    adaptiveHeight: true,
+  });
+
 
 </script>
-  </div>
-</main>
 
 <footer class="pure-g">
   <div class="footer-left pure-u-1 pure-u-md-1-2">
@@ -677,19 +841,19 @@
               
               <p class="sub-nav">
                 
-                <a data-scroll href="/tracks/precision-agriculture/tour" class="">Precision Agriculture</a>
+                <a data-scroll href="/tracks/precision-agriculture" class="">Precision Agriculture</a>
                 
               </p>
               
               <p class="sub-nav">
                 
-                <a data-scroll href="/tracks/ai/tour" class="">Artificial Intelligence</a>
+                <a data-scroll href="/tracks/artificial-intelligence" class="">Artificial Intelligence</a>
                 
               </p>
               
               <p class="sub-nav">
                 
-                <a data-scroll href="/tracks/drones/tour" class="">Drones</a>
+                <a data-scroll href="/tracks/drones" class="">Drones</a>
                 
               </p>
               
@@ -726,5 +890,6 @@
   </div>
 
 </footer>
+
 </body>
 </html>

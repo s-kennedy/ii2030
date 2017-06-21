@@ -32,7 +32,7 @@ layout: default
             <div class="pure-u-1 pure-u-md-1-2">
               <div class="w-question">
                 <p><span class="bold"></span>{{ slide.question }}</p>
-                <button href="#" class="btn orange animate next-btn">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                <button class="btn orange animate" onClick="$('#track-description .slide-container').slick('slickNext')">next<i class="fa fa-arrow-right" aria-hidden="true"></i></button>
               </div>
             </div>
             <div class="pure-u-1 pure-u-md-1-2">
@@ -56,6 +56,7 @@ layout: default
       </div>
     </div>
   </section>
+  {% if page.track_lead_name %}
     <div class="track-lead">
       <div class="background-container">
         <div class="pure-g">
@@ -66,16 +67,65 @@ layout: default
           </div>
           <div class="pure-u-1 pure-u-md-1-2">
             <div class="text vert-spacing horiz-spacing">
-              <h3>Track lead:</h3>
-              <p>{{ page.track_lead_name }}</p>
-              <p>{{ page.track_lead_position }}</p>
+              <h3>Track lead</h3>
+              <p>{{ page.track_lead_name }}, {{ page.track_lead_position }}</p>
               <p class="quote">"{{ page.track_lead_quote }}"</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  <div>
-    {{ content }}
-  </div>
+  {% endif %}
+
+  <section id="tour-factory">
+    <div class="headline">
+      <div class="day-selector">
+        <button data-day="day-1" class="btn btn-day1 white active day-1">Day 1: Tour</button>
+        <button data-day="day-2" class="btn btn-day2 white day-2">Day 2: Factory</button>
+      </div>
+    </div>
+    <div class="slide-container page-slide">
+      <div class="slide">
+        {% include tour.html %}
+      </div>
+      <div class="slide">
+        {% include factory.html %}
+      </div>
+    </div>
+  </section>
 </main>
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<script>
+  $('#intro .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    swipe: true,
+    pauseOnHover: true,
+  });
+
+  $('#track-description .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    swipe: true,
+    pauseOnHover: true,
+  })
+
+  $('#tour-factory .page-slide.slide-container').slick({
+    prevArrow: $("#tour-factory .day-selector .day-1"),
+    nextArrow: $("#tour-factory .day-selector .day-2"),
+    swipe: true,
+    infinite: false,
+    adaptiveHeight: true,
+  });
+
+
+</script>

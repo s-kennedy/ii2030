@@ -1,19 +1,12 @@
----
-layout: track
----
-
 <div id="factory">
   <section id="intro">
-    <div class="headline">
-      <div class="day-selector">
-        <a href="{{ site.baseurl }}/tracks/precision-agriculture/tour#intro">
-          <button data-day="day-1" class="btn btn-day1 white day-1">Day 1: Tour</button>
-        </a>
-        <button data-day="day-2" class="btn btn-day2 white day-2 active">Day 2: Factory</button>
-      </div>
-    </div>
     <header>
-      <h2 class="subtitle"><span class="underlined">Day 2: Inclusive Innovation Factory</span></h2>
+      <h2 class="subtitle">
+        <div class="icon">
+          <img src="{{ site.github.url }}{{ page.icon_path }}" alt="{{ page.title }} icon">
+        </div>
+        <span class="underlined">Day 2: Inclusive Innovation Factory</span>
+      </h2>
       <div class="headline vert-spacing">
         The Factory is all about manufacturing solutions through cross-sector collaboration!
       </div>
@@ -39,9 +32,14 @@ layout: track
 
   <section id="factory-outputs">
     <header>
-      <h2 class="subtitle"><span class="underlined">Factory Outputs</span></h2>
+      <h2 class="subtitle">
+        <div class="icon">
+          <img src="{{ site.github.url }}{{ page.icon_path }}" alt="{{ page.title }} icon">
+        </div>
+        <span class="underlined">Factory Outputs</span>
+      </h2>
     </header>
-    <div class="text vert-spacing-lg horiz-spacing">
+    <div class="text horiz-spacing">
       <p>During a 1-day co-creation workshop, participants will design a plan to use digital technology to create a smarter and more integrated agricultural ecosystem. The team will devise a solution to harness on and off-farm data collected from mobile apps, remote sensing and publically available sources to:</p>
       <ul>
         <li>connect farmers to better markets and inputs (seeds, fertilizers, finance, etc.)</li>
@@ -53,7 +51,12 @@ layout: track
 
   <section class="schedule">
     <header>
-      <h2 class="subtitle"><span class="underlined">Schedule</span></h2>
+      <h2 class="subtitle">
+        <div class="icon">
+          <img src="{{ site.github.url }}{{ page.icon_path }}" alt="{{ page.title }} icon">
+        </div>
+        <span class="underlined">Schedule</span>
+      </h2>
     </header>
     <div class="schedule-grid">
       <div class="labels">
@@ -176,39 +179,8 @@ layout: track
           </div>
         </div>
       </div>
-    </div>
   </section>
   <div class="factory-button">
-    <a href="{{ site.baseurl }}/tracks/precision-agriculture/tour#intro" class="btn animate orange">Day 1: Tour<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+    <button class="btn animate orange prev-btn" onClick="$('#tour-factory .page-slide.slide-container').slick('slickPrev')"><i class="fa fa-arrow-left" aria-hidden="true"></i>Day 1: Tour</button>
   </div>
 </div>
-
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-
-<script>
-  $('#intro .slide-container').slick({
-    dots: true,
-    infinite: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    swipe: true,
-    pauseOnHover: true,
-  });
-
-  $('#track-description .slide-container').slick({
-    dots: true,
-    infinite: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    swipe: true,
-    pauseOnHover: true,
-    // adaptiveHeight: true,
-  })
-
-  $('#track-description .next-btn').click(function() {
-    $('#track-description .slide-container').slick('slickNext');
-  })
-
-</script>

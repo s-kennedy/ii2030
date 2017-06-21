@@ -40,6 +40,45 @@ section#track-description {
   .text {
     border-left: 2px solid $light-blue;
   }
+
+}
+
+.quote {
+  font-style: italic;
+}
+
+section#tour-factory {
+  header {
+    .icon {
+      display: flex;
+      justify-content: center;
+
+      img {
+        display: block;
+        height: 1.6em;
+      }
+    }
+  }
+
+  .day-selector {
+    button {
+      margin-bottom: 0;
+    }
+  }
+
+  .factory-button {
+    display: flex;
+    justify-content: center;
+
+    button {
+      &.prev-btn {
+        i {
+          margin-right: 12px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
 
 #tour {
@@ -166,9 +205,117 @@ section#track-description {
   }
 }
 
-.factory-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: $lg-spacing;
+#factory {
+  section#intro {
+    .image.oversize {
+      padding: $md-spacing;
+    }
+  }
+
+  section#factory-outputs {
+    ul {
+      list-style: none;
+
+      li {
+        &:before {
+          content: "\f111";
+          font-family: FontAwesome;
+          font-size: 0.6em;
+          color: $orange;
+          margin-right: $lg-spacing;
+        }
+      }
+    }
+  }
+
+  section.schedule {
+    .schedule-grid {
+
+      .label {
+        text-align: center;
+      }
+
+      .side-program {
+        display: flex;
+
+        .background-container {
+          margin-left: $md-spacing;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .background-container {
+        margin-bottom: $lg-spacing;
+      }
+
+      .time, .content {
+        padding: $lg-spacing;
+      }
+
+      .time {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        > div {
+          flex-grow: 1;
+        }
+
+        .clock {
+          svg {
+            width: 50px; height: 50px;
+            background: $dark-red;
+            border-radius: 50%;
+
+            circle {
+              fill: $dark-red;
+              stroke: $orange;
+              stroke-width: 32;
+            }
+          }
+
+          &.morning {
+            svg {
+              transform: rotate(-165deg); /*hour starting point from 3:00 - (360/12 * hour) */
+
+              circle {
+                stroke-dasharray: 29 100; /*duration as percentage: 100/12 * hours */
+              }
+            }
+          }
+
+          &.lunch {
+            svg {
+              transform: rotate(-60deg);
+
+              circle {
+                stroke-dasharray: 13 100;
+              }
+            }
+          }
+
+          &.afternoon {
+            svg {
+              transform: rotate(-15deg);
+
+              circle {
+                stroke-dasharray: 29 100;
+              }
+            }
+          }
+
+          &.evening {
+            svg {
+              transform: rotate(90deg);
+
+              circle {
+                stroke-dasharray: 33 100;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
