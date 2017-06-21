@@ -21,7 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # External links
-registration_page_url: www.example.com
+registration_page_url: https://iba.ventures/inclusive-innovation-factory/
 url: s-kennedy.github.io/ii2030
 
 collections:

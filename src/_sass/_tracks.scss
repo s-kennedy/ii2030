@@ -12,6 +12,13 @@ section#track-landing {
       width: 70%;
     }
   }
+
+  .big-question {
+    h1 {
+      text-transform: none;
+      font-size: $h3-size;
+    }
+  }
 }
 
 section#track-description {
