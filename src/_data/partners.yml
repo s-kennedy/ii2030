@@ -5,7 +5,7 @@ co_hosts:
   - name: IBA
     logo: iba.jpg
   - name: IBAN
-    logo: iban.png
+    logo: IBAN-Logo.png
   - name: IXDS
     logo: ixds.png
 track_partners:
