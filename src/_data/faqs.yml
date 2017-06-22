@@ -8,7 +8,6 @@
     - 'Ticket prices for ii2030 are as follows:'
     list:
     - 'Early bird participant ticket - non-profit (before July 31): €400'
-    - 'Early bird participant ticket - non-profit (before July 31): €400'
     - 'Early bird participant ticket – corporate (before July 31): €800'
     - 'Standard participant ticket - non-profit (from August 1): €500'
     - 'Standard participant ticket – corporate (from August 1): €1,000'
@@ -16,8 +15,8 @@
   answer:
     paras:
     - In our experience, co-creation workshops work most efficiently and effectively    with small groups (between 6-10 individuals) consisting of representatives from diverse backgrounds. Thus, it is suggested that each company or organization sends one representative to the event in Berlin.
-    - Nevertheless, it is also possible for your organization to bring two representatives if each of you purchases a ticket. This can be confirmed by contacting the ii2030 team beforehand.
-- question: Nevertheless, it is also possible for your organization to bring two representatives if each of you purchases a ticket. This can be confirmed by contacting the ii2030 team beforehand.
+    - However, if you believe it would add value to have additional representatives from your organisation because they would bring a skillset that would otherwise be missing, please contact us to buy more than one ticket for your organisation. 
+- question: I don’t have an invitation for ii2030, how can I participate?
   answer:
     paras:
       - 'Inclusive Innovation 2030 is a curated, invitation-only event. However, the organizers of ii2030 actively seek relevant participants who contribute to the vision and goals of the event. If you do not have an invitation, but are interested in taking part, you may request an invitation by completing the application form here: <a href="https://iba.ventures/inclusive-innovation-factory">https://iba.ventures/inclusive-innovation-factory</a>.'
