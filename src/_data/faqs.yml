@@ -7,10 +7,10 @@
     paras:
     - 'Ticket prices for ii2030 are as follows:'
     list:
-    - 'Early bird participant ticket - non-profit (before July 31): €400'
-    - 'Early bird participant ticket – corporate (before July 31): €800'
-    - 'Standard participant ticket - non-profit (from August 1): €500'
-    - 'Standard participant ticket – corporate (from August 1): €1,000'
+    - 'Early bird - non-profit (before July 31): €400'
+    - 'Early bird – corporate (before July 31): €800'
+    - 'Standard - non-profit (from August 1): €500'
+    - 'Standard – corporate (from August 1): €1,000'
 - question: How many people can join the event from my company/organization?
   answer:
     paras:
