@@ -37,7 +37,7 @@ section#track-description {
   }
 
   .text {
-    padding-bottom: $md-spacing;
+    padding-bottom: $lg-spacing;
 
     li {
       font-size: $sm-size;
@@ -46,6 +46,10 @@ section#track-description {
 
   .outer-container {
     padding-top: $lg-spacing;
+  }
+
+  .slide-container {
+    margin-bottom: 0;
   }
 
   .slick-dots {
@@ -103,6 +107,10 @@ section#track-description {
   font-style: italic;
 }
 
+section#track-lead {
+  padding-top: 0;
+}
+
 section#tour-factory {
   header {
     .icon {
@@ -157,8 +165,7 @@ section#tour-factory {
           justify-content: center;
           align-items: center;
 
-          h1 {
-            font-family: $numbers-font;
+          h2 {
             opacity: 1;
             transition: opacity 0.3s ease-in-out;
           }
@@ -196,7 +203,7 @@ section#tour-factory {
 }
 
 #factory {
-  section#intro {
+  section.intro {
     .image.oversize {
       padding: $md-spacing;
     }
@@ -218,3 +225,28 @@ section#tour-factory {
     }
   }
 }
+
+h2.subtitle {
+  img {
+    display: inline;
+    margin-left: $sm-spacing;
+    margin-top: $sm-spacing;
+    height: $h1-size;
+    vertical-align: top;
+  }
+}
+
+section.intro {
+  .oversize {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 350px;
+    }
+  }
+}
+
+

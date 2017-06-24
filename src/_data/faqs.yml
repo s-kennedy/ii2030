@@ -1,29 +1,36 @@
-- question: How do I register for ii2030?
-  answer:
-    paras:
-    - For more information on applying or registering for ii2030, please visit our <a href="https://iba.ventures/inclusive-innovation-factory/">registration page</a>.
-- question: How much do tickets cost?
-  answer:
-    paras:
-    - 'Ticket prices for ii2030 are as follows:'
-    list:
-    - 'Early bird – non-profit (before July 31): €400'
-    - 'Early bird – corporate (before July 31): €800'
-    - 'Standard – non-profit (from August 1): €500'
-    - 'Standard – corporate (from August 1): €1,000'
-- question: How many people can join the event from my company/organization?
-  answer:
-    paras:
-    - In our experience, co-creation workshops work most efficiently and effectively    with small groups (between 6-10 individuals) consisting of representatives from diverse backgrounds. Thus, it is suggested that each company or organization sends one representative to the event in Berlin.
-    - However, if you believe it would add value to have additional representatives from your organisation because they would bring a skillset that would otherwise be missing, please contact us to buy more than one ticket for your organisation. 
-- question: I don’t have an invitation for ii2030, how can I participate?
-  answer: 
-    paras:
-      - 'Inclusive Innovation 2030 is a curated, invitation-only event. However, the organizers of ii2030 actively seek relevant participants who contribute to the vision and goals of the event. If you do not have an invitation, but are interested in taking part, you may request an invitation by completing the application form here: <a href="https://iba.ventures/inclusive-innovation-factory">https://iba.ventures/inclusive-innovation-factory</a>.'
-      - We will review each application in detail and look forward to reading about your efforts to achieve a more inclusive society by 2030.
-- question: I am/my company or organization is interested in sponsoring this event, how can I find out more?
-  answer:
-    paras:
-      - 'We’re happy to tell you more about the event (both online and in Berlin) and how you might be able to contribute in a personal email or call. Please get in touch with us by sending an email to: m.leahy@endeva.org'
+sections:
+  - name: Registration
+    questions:
+    - question: How do I register for ii2030?
+      answer:
+        paras:
+        - For more information on applying or registering for ii2030, please visit our <a href="https://iba.ventures/inclusive-innovation-factory/">registration page</a>.
+    - question: How many people can join the event from my company/organization?
+      answer:
+        paras:
+        - In our experience, co-creation workshops work most efficiently and effectively    with small groups (between 6-10 individuals) consisting of representatives from diverse backgrounds. Thus, it is suggested that each company or organization sends one representative to the event in Berlin.
+        - However, if you believe it would add value to have additional representatives from your organisation because they would bring a skillset that would otherwise be missing, please contact us to buy more than one ticket for your organisation.
+    - question: I don’t have an invitation for ii2030, how can I participate?
+      answer:
+        paras:
+          - 'Inclusive Innovation 2030 is a curated, invitation-only event. However, the organizers of ii2030 actively seek relevant participants who contribute to the vision and goals of the event. If you do not have an invitation, but are interested in taking part, you may request an invitation by completing the application form here: <a href="https://iba.ventures/inclusive-innovation-factory">https://iba.ventures/inclusive-innovation-factory</a>.'
+          - We will review each application in detail and look forward to reading about your efforts to achieve a more inclusive society by 2030.
+  - name: Tickets
+    questions:
+    - question: How much do tickets cost?
+      answer:
+        paras:
+        - 'Ticket prices for ii2030 are as follows:'
+        list:
+        - 'Early bird – non-profit (before July 31): €400'
+        - 'Early bird – corporate (before July 31): €800'
+        - 'Standard – non-profit (from August 1): €500'
+        - 'Standard – corporate (from August 1): €1,000'
+  - name: Sponsorship
+    questions:
+    - question: I am/my company or organization is interested in sponsoring this event, how can I find out more?
+      answer:
+        paras:
+          - 'We’re happy to tell you more about the event (both online and in Berlin) and how you might be able to contribute in a personal email or call. Please get in touch with us by sending an email to: m.leahy@endeva.org'
 
 

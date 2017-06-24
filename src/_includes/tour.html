@@ -1,11 +1,9 @@
 <div id="tour">
-  <section id="intro">
+  <section class="intro">
     <header>
       <h2 class="subtitle">
-        <div class="icon">
-          <img src="{{ site.github.url }}{{ page.icon_path }}" alt="{{ page.title }} icon">
-        </div>
         <span class="underlined">Day 1: Inclusive Innovation Tour</span>
+        <img src="{{ site.github.url }}{{ page.icon_path }}" alt="{{ page.title }} icon">
       </h2>
       <div class="headline vert-spacing">
         Hit the road on our Inclusive Innovation Tour of Berlin!
@@ -19,22 +17,23 @@
             <img src="{{ site.baseurl }}/assets/images/tour-detailed.png" alt="ii2030" class="pure-img">
           </div>
         </div>
-        <div class="pure-u-1 pure-u-md-1-2">
+        <div class="pure-u-1 pure-u-md-1-2 vert-center slide-container">
           {% for slide in page.tour_slides %}
-            <p class="vert-spacing">{{ slide.text }}</p>
+            <div class="slide text horiz-spacing vert-spacing">
+              <p>{{ slide.text }}</p>
+            </div>
           {% endfor %}
         </div>
       </div>
     </div>
   </section>
 
+  {% if page.tour_stops_headline %}
   <section id="tour-stops">
     <header>
       <h2 class="subtitle">
-        <div class="icon">
-          <img src="{{ site.github.url }}{{ page.icon_path }}" alt="{{ page.title }} icon">
-        </div>
         <span class="underlined">Tour Stops</span>
+        <img src="{{ site.github.url }}{{ page.icon_path }}" alt="{{ page.title }} icon">
       </h2>
       <p class="headline vert-spacing">{{ page.tour_stops_headline }}</p>
     </header>
@@ -44,7 +43,7 @@
         <div class="track-container">
           <div class="background-image">
           </div>
-          <div class="overlay"><h1>{{ forloop.index }}</h1></div>
+          <div class="overlay"><h2>{{ forloop.index }}</h2></div>
         </div>
         <div class="content-container">
           <h3>{{ tour_stop.organization }}</h3>
@@ -54,6 +53,7 @@
       {% endfor %}
     </div>
   </section>
+  {% endif %}
 
   <section>
     <div class="factory-button">

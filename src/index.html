@@ -3,11 +3,14 @@ layout: default
 title: Inclusive Innovation 2030 | ii2030
 overview_slides:
   - img_path: /assets/images/SDGS.png
-    text: Inclusion is the Number 1 challenge of tomorrow. Increasing inequality reduces growth and leads to social and economic instability. Climate change creates risks for many of the worlds poorest. Population growth exacerbates present issues of access to basic services and income. We need to innovate to create opportunity for all. 
+    heading: The Challenge
+    text: Inclusion is the Number 1 challenge of tomorrow. Increasing inequality reduces growth and leads to social and economic instability. Climate change creates risks for many of the worlds poorest. Population growth exacerbates present issues of access to basic services and income. We need to innovate to create opportunity for all.
   - img_path: /assets/images/circuit board.jpg
-    text: Coupling inclusive innovation with technological advances can unlock opportunities that enable companies and other actors and to turn global challenges into opportunities for growth. Taking a future perspective and acting upon it today will ensure that we are better able to use these technologies to achieve greater inclusion and growth by 2030. 
+    heading: The Solution
+    text: Coupling inclusive innovation with technological advances can unlock opportunities that enable companies and other actors and to turn global challenges into opportunities for growth. Taking a future perspective and acting upon it today will ensure that we are better able to use these technologies to achieve greater inclusion and growth by 2030.
   - img_path: /assets/images/TEDxSydney 2016.jpg
-    text: At ii2030, we will co-create technology-led solutions to global challenges by bringing the right set of actors into a design thinking process. It will be fun, it will be interactive, but, above all, it will be a powerful engine of change. 
+    heading: How to Get There
+    text: At ii2030, we will co-create technology-led solutions to global challenges by bringing the right set of actors into a design thinking process. It will be fun, it will be interactive, but, above all, it will be a powerful engine of change.
 
 tour_agenda:
   name: Inclusive Innovation Tour
@@ -27,7 +30,7 @@ factory_agenda:
   <section id="landing">
     <div class="outer-container vert-center">
       <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-1-2 vert-center">
+        <div class="pure-u-1 pure-u-md-1-2 vert-center on-top">
           <div class="horiz-spacing vert-spacing">
             <h1 class="underlined">Innovating for a more inclusive 2030</h1>
             <div class="vert-spacing">
@@ -70,6 +73,7 @@ factory_agenda:
           </div>
           <div class="pure-u-1 pure-u-md-1-2 vert-center">
             <div class="text horiz-spacing vert-spacing">
+              <h2>{{ slide.heading }}</h2>
               <p>{{ slide.text }}</p>
             </div>
           </div>
@@ -95,6 +99,12 @@ factory_agenda:
       </div>
       <div class="slide factory-agenda">
         {% include factory_agenda.html %}
+      </div>
+    </div>
+    <div class="headline">
+      <div class="day-selector">
+        <button data-day="day-1" class="btn btn-day1 white active day-1">Day 1: Tour</button>
+        <button data-day="day-2" class="btn btn-day2 white day-2">Day 2: Factory</button>
       </div>
     </div>
   </section>
@@ -133,7 +143,7 @@ factory_agenda:
       <h2 class="subtitle"><span class="underlined">Partners</span></h2>
     </header>
     <div class="host partner-group headline">
-      <h3>An <a href="http://www.endeva.org/"><img id="endeva-logo" src="{{ site.github.url }}/assets/images/logos/endeva.png" alt="Endeva logo"></a> initiative</h3>
+      <h3>An <a href="http://www.endeva.org/" target="_blank"><img id="endeva-logo" src="{{ site.github.url }}/assets/images/logos/endeva.png" alt="Endeva logo"></a> initiative</h3>
     </div>
     <div class="partner-group headline">
       <h3>Co-hosted by </h3>
@@ -159,7 +169,7 @@ factory_agenda:
   $('#agenda .slide-container').slick({
     prevArrow: $("#agenda .day-selector .day-1"),
     nextArrow: $("#agenda .day-selector .day-2"),
-    swipe: true,
+    swipe: false,
     infinite: false,
     arrows: true,
     adaptiveHeight: true,
@@ -170,7 +180,8 @@ factory_agenda:
     infinite: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
     swipe: true,
   });
 

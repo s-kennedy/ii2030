@@ -50,6 +50,20 @@
     .agenda-item {
       max-width: 100vw;
     }
+
+    .factory-agenda {
+      .schedule {
+        .schedule-grid {
+          .side-program {
+            .side-program-inner {
+              .background-container {
+                margin-left: 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   footer {

@@ -1,7 +1,12 @@
 
-function activateButton() {
+function activateDay1Button() {
   $('.day-selector button').removeClass('active');
-  $(this).addClass('active');
+  $('.day-selector button.btn-day1').addClass('active');
+};
+
+function activateDay2Button() {
+  $('.day-selector button').removeClass('active');
+  $('.day-selector button.btn-day2').addClass('active');
 };
 
 function activateTrack() {
@@ -22,17 +27,18 @@ function activateAnimation() {
 }
 
 $(function(){
-  $('.day-selector button').on('click', activateButton);
+  $('.day-selector button.btn-day1').on('click', activateDay1Button);
+  $('.day-selector button.btn-day2').on('click', activateDay2Button);
   $('.track').on('mouseover', activateTrack);
   $('#agenda .day-selector .btn').on('click', activateAnimation);
 
   $('#tour-factory .factory-button .next-btn').on('click', function() {
     $('.day-selector button').removeClass('active');
-    $('.day-selector button.btn-day2').addClass('active');
+    activateDay2Button();
   })
 
   $('#tour-factory .factory-button .prev-btn').on('click', function() {
     $('.day-selector button').removeClass('active');
-    $('.day-selector button.btn-day1').addClass('active');
+    activateDay1Button();
   })
 });
