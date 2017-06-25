@@ -599,6 +599,11 @@
     appendDots: $('#tour-stops .stop-dots')
   });
 
+  $('#tour-stops .slick-dots li').on('click', function() {
+    $(this).prevAll().addClass('still-active');
+    $(this).nextAll().removeClass('still-active');
+  })
+
 
 </script>
 
