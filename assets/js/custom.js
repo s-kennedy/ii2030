@@ -2,11 +2,13 @@
 function activateDay1Button() {
   $('.day-selector button').removeClass('active');
   $('.day-selector button.btn-day1').addClass('active');
+  smoothScroll.animateScroll(document.querySelector( '#agenda' ));
 };
 
 function activateDay2Button() {
   $('.day-selector button').removeClass('active');
   $('.day-selector button.btn-day2').addClass('active');
+  smoothScroll.animateScroll(document.querySelector( '#agenda' ));
 };
 
 function activateTrack() {
