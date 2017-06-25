@@ -172,3 +172,13 @@ button {
   z-index: 1 !important;
 }
 
+i.fa.pause-btn, i.fa.play-btn {
+  margin-right: 12px;
+  margin-left: 0;
+}
+
+.slide {
+  &:focus {
+    outline: none;
+  }
+}

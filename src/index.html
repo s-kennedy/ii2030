@@ -2,7 +2,7 @@
 layout: default
 title: Inclusive Innovation 2030 | ii2030
 overview_slides:
-  - img_path: /assets/images/sdgs-2.jpg
+  - img_path: /assets/images/sdgs-4.png
     heading: The Challenge
     text: Inclusion is the Number 1 challenge of tomorrow. Increasing inequality reduces growth and leads to social and economic instability. Climate change creates risks for many of the worlds poorest. Population growth exacerbates present issues of access to basic services and income. We need to innovate to create opportunity for all.
   - img_path: /assets/images/circuit board.jpg
@@ -62,9 +62,9 @@ factory_agenda:
         </span>
       </div>
     </header>
-    <div class="outer-container slide-container">
+    <div class="outer-container slide-container background-container dark">
       {% for slide in page.overview_slides %}
-      <div class="slide background-container dark">
+      <div class="slide">
         <div class="pure-g">
           <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
             <div class="image oversize">
@@ -76,8 +76,8 @@ factory_agenda:
               <h2>{{ slide.heading }}</h2>
               <p>{{ slide.text }}</p>
               <p>
-                <i class="fa fa-play-circle play-btn" aria-hidden="true"></i>
-                <i class="fa fa-pause-circle pause-btn" aria-hidden="true"></i>
+                <i class="fa fa-pause pause-btn" aria-hidden="true"></i>
+                <i class="fa fa-step-forward play-btn" aria-hidden="true"></i>
               </p>
             </div>
           </div>
@@ -163,6 +163,7 @@ factory_agenda:
     </div>
   </section>
 
+  {% if site.data.participants %}
   <section id="participants">
     <header>
       <h2 class="subtitle"><span class="underlined">Participants</span></h2>
@@ -177,6 +178,7 @@ factory_agenda:
       {% endfor %}
     </div>
   </section>
+  {% endif %}
 
 </main>
 
