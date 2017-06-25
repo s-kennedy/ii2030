@@ -148,6 +148,11 @@ section#tour-factory {
 
 #tour {
   section#tour-stops {
+    .timeline {
+      margin-top: $lg-spacing;
+      margin-bottom: $md-spacing;
+    }
+
     .slick-dots {
       position: relative;
       bottom: 0;
@@ -156,64 +161,84 @@ section#tour-factory {
         padding: 0 10%;
 
         button {
-          background-color: $dark-red;
+          background-color: $off-white;
           border-radius: 50%;
+
+          &:before {
+            font-size: $h2-size;
+            top: -60px;
+            font-family: $title-font;
+            color: $orange;
+            left: 50%;
+            margin-left: -10px;
+            font-family: $title-font;
+          }
+        }
+
+        &:before {
+          content: '';
+          width: 0%;
+          outline: 2px solid $off-white;
+          position: absolute;
+          z-index: -1;
+          top: 50%;
+          left: -51%;
+        }
+
+        &:after {
+          content: '';
+          width: 0%;
+          outline: 2px solid $dark-red;
+          position: absolute;
+          z-index: -1;
+          top: 50%;
+          transition: width 0.5s ease-in-out;
+          left: -51%;
         }
 
         &:nth-of-type(1) {
+          &:after {
+            content: none;
+          }
+
           button {
             &:before {
               content: '1';
-              font-size: 20px;
-              top: -40px;
-              font-family: $title-font;
-              left: 50%;
-              margin-left: -10px;
             }
-          }
-
-          &:after {
-            content: '';
-            width: 105%;
-            outline: 2px solid $dark-red;
-            position: absolute;
-            z-index: -1;
-            top: 50%;
           }
         }
 
         &:nth-of-type(2) {
+          &:before {
+            width: 100%;
+          }
+
           button {
             &:before {
               content: '2';
-              font-size: 20px;
-              top: -40px;
-              font-family: $title-font;
-              left: 50%;
-              margin-left: -10px;
             }
-          }
-
-          &:after {
-            content: '';
-            width: 105%;
-            outline: 2px solid $dark-red;
-            position: absolute;
-            z-index: -1;
-            top: 50%;
           }
         }
 
         &:nth-of-type(3) {
+          &:before {
+            width: 100%;
+          }
+
           button {
             &:before {
               content: '3';
-              font-family: $title-font;
-              font-size: 20px;
-              top: -40px;
-              left: 50%;
-              margin-left: -10px;
             }
+          }
+        }
+
+        &.slick-active, &.still-active {
+          button {
+            background-color: $dark-red;
+          }
+
+          &:after {
+            width: 100%;
           }
         }
       }

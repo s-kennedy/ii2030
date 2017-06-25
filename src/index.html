@@ -159,6 +159,21 @@ factory_agenda:
     </div>
   </section>
 
+  <section id="participants">
+    <header>
+      <h2 class="subtitle"><span class="underlined">Participants</span></h2>
+    </header>
+    <div class="participants-slider slide-container">
+      {% for participant in site.data.participants %}
+        <div class="slide">
+          <a href="{{ participant.url }}" target="_blank">
+            <img src="{{ site.github.url }}/assets/images/logos/{{ participant.logo }}" alt="{{ participant.name }}" class="pure-img" />
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
 </main>
 
 <script>
@@ -184,6 +199,41 @@ factory_agenda:
     pauseOnHover: true,
     swipe: true,
   });
+
+  $('#participants .slide-container').slick({
+    dots: false,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    swipe: true,
+    infinite: true,
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 922,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+    ]
+  })
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) || $(window).width() < 480) {
 

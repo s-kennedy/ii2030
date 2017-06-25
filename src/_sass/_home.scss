@@ -363,6 +363,24 @@ section#partners {
   }
 }
 
+section#participants {
+  padding-bottom: $xl-spacing;
+
+  .participants-slider {
+    .slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        filter: grayscale(1);
+        width: 80px;
+        margin: $sm-spacing;
+      }
+    }
+  }
+}
+
 .background-container-sm {
   background: $off-white;
   width: 100%;
