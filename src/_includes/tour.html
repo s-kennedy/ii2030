@@ -37,14 +37,14 @@
       </h2>
       <p class="headline vert-spacing">{{ page.tour_stops_headline }}</p>
     </header>
-    <div class="pure-g tour-stops">
+    <div class="timeline">
+      <div class="stop-dots">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="pure-g tour-stops slide-container">
       {% for tour_stop in page.tour_stops %}
-      <div class="pure-u-1 pure-u-md-1-3">
-        <div class="track-container">
-          <div class="background-image">
-          </div>
-          <div class="overlay"><h2>{{ forloop.index }}</h2></div>
-        </div>
+      <div class="pure-u-1 slide">
         <div class="content-container">
           <h3>{{ tour_stop.organization }}</h3>
           <p>{{ tour_stop.description }}</p>
