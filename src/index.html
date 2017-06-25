@@ -2,7 +2,7 @@
 layout: default
 title: Inclusive Innovation 2030 | ii2030
 overview_slides:
-  - img_path: /assets/images/SDGS.png
+  - img_path: /assets/images/sdgs-2.jpg
     heading: The Challenge
     text: Inclusion is the Number 1 challenge of tomorrow. Increasing inequality reduces growth and leads to social and economic instability. Climate change creates risks for many of the worlds poorest. Population growth exacerbates present issues of access to basic services and income. We need to innovate to create opportunity for all.
   - img_path: /assets/images/circuit board.jpg
@@ -72,9 +72,13 @@ factory_agenda:
             </div>
           </div>
           <div class="pure-u-1 pure-u-md-1-2 vert-center">
-            <div class="text horiz-spacing vert-spacing">
+            <div class="text horiz-spacing vert-spacing-lg">
               <h2>{{ slide.heading }}</h2>
               <p>{{ slide.text }}</p>
+              <p>
+                <i class="fa fa-play-circle play-btn" aria-hidden="true"></i>
+                <i class="fa fa-pause-circle pause-btn" aria-hidden="true"></i>
+              </p>
             </div>
           </div>
         </div>
@@ -191,13 +195,12 @@ factory_agenda:
   });
 
   $('#overview .slide-container').slick({
-    dots: true,
     infinite: true,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 4000,
-    pauseOnHover: true,
     swipe: true,
+    pauseOnHover: false,
   });
 
   $('#participants .slide-container').slick({
@@ -233,6 +236,15 @@ factory_agenda:
         }
       },
     ]
+  })
+
+  $('#overview .slide-container .play-btn').on('click', function() {
+    $('#overview .slide-container').slick('slickNext')
+    $('#overview .slide-container').slick('slickPlay')
+  })
+
+  $('#overview .slide-container .pause-btn').on('click', function() {
+    $('#overview .slide-container').slick('slickPause')
   })
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) || $(window).width() < 480) {

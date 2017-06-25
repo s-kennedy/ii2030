@@ -54,7 +54,6 @@ section#landing {
 }
 
 section#overview {
-
   .background-container {
     .outer-container {
       margin: $lg-spacing 0;
@@ -70,8 +69,18 @@ section#overview {
   }
 
   .slide {
+    &:focus {
+      outline: none;
+    }
+
     h2 {
       text-transform: none;
+    }
+
+    .play-btn, .pause-btn {
+      &:hover, &:focus {
+        transform: scale(1.1);
+      }
     }
   }
 }
@@ -82,7 +91,7 @@ section#agenda {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateX(40px);
+    transform: translateX(100px);
 
     img {
       position: relative;

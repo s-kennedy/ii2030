@@ -245,8 +245,19 @@ section#tour-factory {
     }
 
     .content-container {
-      text-align: center;
       padding: $sm-spacing;
+
+      &.centered {
+        text-align: center;
+      }
+
+      .image {
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -294,6 +305,12 @@ section.intro {
 
     img {
       max-width: 350px;
+    }
+  }
+
+  .slide {
+    &:focus {
+      outline: none;
     }
   }
 }

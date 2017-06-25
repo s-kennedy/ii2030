@@ -14,11 +14,7 @@ title: FAQs
           {{ section.name }}
         </h3>
         {% for faq in section.questions %}
-          {% if forloop.first %}
-          <div class="faq-container faq-open">
-          {% else %}
           <div class="faq-container faq-closed">
-          {% endif %}
             <div class="question">
               <h3>{{ faq.question }}</h3>
               <a class="show-answer"><i class="fa fa-plus" aria-hidden="true"></i></a>

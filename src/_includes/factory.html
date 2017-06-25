@@ -21,6 +21,10 @@
           {% for slide in page.factory_slides %}
             <div class="slide text horiz-spacing vert-spacing">
               <p>{{ slide.text }}</p>
+              <p>
+                <i class="fa fa-play-circle play-btn" aria-hidden="true"></i>
+                <i class="fa fa-pause-circle pause-btn" aria-hidden="true"></i>
+              </p>
             </div>
           {% endfor %}
         </div>

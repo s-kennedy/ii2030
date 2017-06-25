@@ -294,13 +294,17 @@
         <div class="pure-g">
           <div class="pure-u-1 pure-u-md-1-2 vert-center horiz-center">
             <div class="image oversize">
-              <img src="/assets/images/SDGS.png" alt="ii2030" class="pure-img">
+              <img src="/assets/images/sdgs-2.jpg" alt="ii2030" class="pure-img">
             </div>
           </div>
           <div class="pure-u-1 pure-u-md-1-2 vert-center">
-            <div class="text horiz-spacing vert-spacing">
+            <div class="text horiz-spacing vert-spacing-lg">
               <h2>The Challenge</h2>
               <p>Inclusion is the Number 1 challenge of tomorrow. Increasing inequality reduces growth and leads to social and economic instability. Climate change creates risks for many of the worlds poorest. Population growth exacerbates present issues of access to basic services and income. We need to innovate to create opportunity for all.</p>
+              <p>
+                <i class="fa fa-play-circle play-btn" aria-hidden="true"></i>
+                <i class="fa fa-pause-circle pause-btn" aria-hidden="true"></i>
+              </p>
             </div>
           </div>
         </div>
@@ -314,9 +318,13 @@
             </div>
           </div>
           <div class="pure-u-1 pure-u-md-1-2 vert-center">
-            <div class="text horiz-spacing vert-spacing">
+            <div class="text horiz-spacing vert-spacing-lg">
               <h2>The Solution</h2>
               <p>Coupling inclusive innovation with technological advances can unlock opportunities that enable companies and other actors and to turn global challenges into opportunities for growth. Taking a future perspective and acting upon it today will ensure that we are better able to use these technologies to achieve greater inclusion and growth by 2030.</p>
+              <p>
+                <i class="fa fa-play-circle play-btn" aria-hidden="true"></i>
+                <i class="fa fa-pause-circle pause-btn" aria-hidden="true"></i>
+              </p>
             </div>
           </div>
         </div>
@@ -330,9 +338,13 @@
             </div>
           </div>
           <div class="pure-u-1 pure-u-md-1-2 vert-center">
-            <div class="text horiz-spacing vert-spacing">
+            <div class="text horiz-spacing vert-spacing-lg">
               <h2>How to Get There</h2>
               <p>At ii2030, we will co-create technology-led solutions to global challenges by bringing the right set of actors into a design thinking process. It will be fun, it will be interactive, but, above all, it will be a powerful engine of change.</p>
+              <p>
+                <i class="fa fa-play-circle play-btn" aria-hidden="true"></i>
+                <i class="fa fa-pause-circle pause-btn" aria-hidden="true"></i>
+              </p>
             </div>
           </div>
         </div>
@@ -801,13 +813,12 @@
   });
 
   $('#overview .slide-container').slick({
-    dots: true,
     infinite: true,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 4000,
-    pauseOnHover: true,
     swipe: true,
+    pauseOnHover: false,
   });
 
   $('#participants .slide-container').slick({
@@ -843,6 +854,15 @@
         }
       },
     ]
+  })
+
+  $('#overview .slide-container .play-btn').on('click', function() {
+    $('#overview .slide-container').slick('slickNext')
+    $('#overview .slide-container').slick('slickPlay')
+  })
+
+  $('#overview .slide-container .pause-btn').on('click', function() {
+    $('#overview .slide-container').slick('slickPause')
   })
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) || $(window).width() < 480) {

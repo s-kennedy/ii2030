@@ -103,13 +103,13 @@ layout: default
 
 <script>
   $('.intro .slide-container').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 4000,
     swipe: true,
-    pauseOnHover: true,
+    pauseOnHover: false,
   });
 
   $('#track-description .slide-container').slick({
@@ -144,6 +144,19 @@ layout: default
   $('#tour-stops .slick-dots li').on('click', function() {
     $(this).prevAll().addClass('still-active');
     $(this).nextAll().removeClass('still-active');
+  })
+
+  $('#tour-factory .next-btn, #tour-factory .prev-btn').on('click', function() {
+    smoothScroll.animateScroll(document.querySelector( '#tour-factory' ));
+  })
+
+  $('.intro .slide-container .play-btn').on('click', function() {
+    $('.intro .slide-container').slick('slickNext')
+    $('.intro .slide-container').slick('slickPlay')
+  })
+
+  $('.intro .slide-container .pause-btn').on('click', function() {
+    $('.intro .slide-container').slick('slickPause')
   })
 
 
