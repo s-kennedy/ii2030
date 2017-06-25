@@ -76,12 +76,6 @@ section#overview {
     h2 {
       text-transform: none;
     }
-
-    .play-btn, .pause-btn {
-      &:hover, &:focus {
-        transform: scale(1.1);
-      }
-    }
   }
 }
 

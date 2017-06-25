@@ -172,9 +172,13 @@ button {
   z-index: 1 !important;
 }
 
-i.fa.pause-btn, i.fa.play-btn {
+i.pause-btn, i.play-btn {
   margin-right: 12px;
   margin-left: 0;
+
+  &:hover, &:focus {
+    transform: scale(1.1);
+  }
 }
 
 .slide {
