@@ -1,44 +1,44 @@
 sections:
-    - name: 'General Information'
+    - name: General Information
     questions:
     - question: What is ii2030 about?
       answer: 
         paras:
-        - 'The Inclusive Innovation 2030 (ii2030) event will bring together leading innovators from corporates, startups, the public sector, NGOs and science to co-create solutions to achieve a more inclusive society by 2030. Over the course of this interactive, highly-curated event, participants will collaborate in sector-focused tracks and manufacture disruptive solutions that employ cutting-edge technology.'
-      - question: Who is hosting ii2030? 
+        - The Inclusive Innovation 2030 (ii2030) event will bring together leading innovators from corporates, startups, the public sector, NGOs and science to co-create solutions to achieve a more inclusive society by 2030. Over the course of this interactive, highly-curated event, participants will collaborate in sector-focused tracks and manufacture disruptive solutions that employ cutting-edge technology.
+    - question: Who is hosting ii2030? 
       answer: 
         paras:
-        - 'Inclusive Innovation 2030 is an initiative by <a href="http://www.endeva.org/">Endeva</a>.
-        - ii2030 is co-hosted by the <a href="https://iba.ventures/">Inclusive Business Accelerator</a>, the <a href="http://www.inclusivebusinesshub.org/micro-site/inclusive-business-action-network/">Inclusive Business Action Network</a> and <a href="https://www.ixds.com/">IXDS</a>.' 
-      - question: When does ii2030 take place? 
+        - Inclusive Innovation 2030 is an initiative by <a href="http://www.endeva.org/">Endeva</a>.
+        - ii2030 is co-hosted by the <a href="https://iba.ventures/">Inclusive Business Accelerator</a>, the <a href="http://www.inclusivebusinesshub.org/micro-site/inclusive-business-action-network/">Inclusive Business Action Network</a> and <a href="https://www.ixds.com/">IXDS</a>. 
+    - question: When does ii2030 take place? 
       answer: 
         paras:
-        - 'ii2030 is two-day event and will take place on October 18 – 19, 2017. On October 18, on-site registration for the inclusive innovation tour kicks off at 12:30pm. On October 19, the Opening Ceremony of the factory will start at 9:30am.'
-      - question: Where does ii2030 take place? 
+        - ii2030 is two-day event and will take place on October 18 – 19, 2017. On October 18, on-site registration for the inclusive innovation tour kicks off at 12:30pm. On October 19, the Opening Ceremony of the factory will start at 9:30am.
+    - question: Where does ii2030 take place? 
       answer: 
         paras:
-        - 'The inclusive innovation tour on October 18 will take you all around Berlin with stops at the city’s most exiting hubs for innovative and inclusive development. Upon arriving at the registration venue, you will receive its itinerary with information on the locations of all tour stops.
-        - The factory on October 19 will take place at Neue Mälzerei in Friedenstraße 91, 10249 Berlin.'
-      - question: Where can I find the program of the event? 
+        - The inclusive innovation tour on October 18 will take you all around Berlin with stops at the city’s most exiting hubs for innovative and inclusive development. Upon arriving at the registration venue, you will receive its itinerary with information on the locations of all tour stops.
+        - The factory on October 19 will take place at Neue Mälzerei in Friedenstraße 91, 10249 Berlin.
+    - question: Where can I find the program of the event? 
       answer: 
         paras:
-        - 'The agenda of ii2030 can be found <a href="http://www.ii2030.com/#agenda">here</a>.'
+        - The agenda of ii2030 can be found <a href="http://www.ii2030.com/#agenda">here</a>.
   - name: Registration
     questions:
     - question: How do I register for ii2030?
       answer:
         paras:
-        - 'For more information on applying or registering for ii2030, please visit our <a href="https://iba.ventures/inclusive-innovation-factory/">registration page</a>.'
+        - For more information on applying or registering for ii2030, please visit our <a href="https://iba.ventures/inclusive-innovation-factory/">registration page</a>.
     - question: How many people can join the event from my company/organization?
       answer:
         paras:
-        - 'In our experience, co-creation workshops work most efficiently and effectively with small groups (between 6-10 individuals) consisting of representatives from diverse backgrounds. Thus, it is suggested that each company or organization sends one representative to the event in Berlin.
-        - However, if you believe it would add value to have additional representatives from your organisation because they would bring a skillset that would otherwise be missing, please contact us to buy more than one ticket for your organization.'
+        - In our experience, co-creation workshops work most efficiently and effectively with small groups (between 6-10 individuals) consisting of representatives from diverse backgrounds. Thus, it is suggested that each company or organization sends one representative to the event in Berlin.
+        - However, if you believe it would add value to have additional representatives from your organisation because they would bring a skillset that would otherwise be missing, please contact us to buy more than one ticket for your organization.
     - question: I don’t have an invitation for ii2030, how can I participate?
       answer:
         paras:
-          - 'Inclusive Innovation 2030 is a curated, invitation-only event. However, the organizers of ii2030 actively seek relevant participants who contribute to the vision and goals of the event. If you do not have an invitation, but are interested in taking part, you may request an invitation by completing the application form here: <a href="https://iba.ventures/inclusive-innovation-factory">https://iba.ventures/inclusive-innovation-factory</a>.'
-          - We will review each application in detail and look forward to reading about your efforts to achieve a more inclusive society by 2030.
+          - 'Inclusive Innovation 2030 is a curated, invitation-only event. However, the organizers of ii2030 actively seek relevant participants who contribute to the vision and goals of the event. If you do not have an invitation, but are interested in taking part, you may request an invitation by completing the application form here: <a href="https://iba.ventures/inclusive-innovation-factory">https://iba.ventures/inclusive-innovation-factory</a>.
+          - We will review each application in detail and look forward to reading about your efforts to achieve a more inclusive society by 2030.'
   - name: Tickets
     questions:
     - question: How much do tickets cost?
@@ -50,18 +50,42 @@ sections:
         - 'Early bird – corporate (before July 31): €800'
         - 'Standard – non-profit (from August 1): €500'
         - 'Standard – corporate (from August 1): €1,000'
-  - name: Partners & Sponsorship
-    questions:
-     - question: I am/my company or organization is interested in sponsoring this event, how can I find out more?
+    - question: What is included in my ticket?  
+      answer:
+        paras: 
+        - By purchasing the ii2030 ticket, you will have full access to the Inclusive Innovation Tour, the Factory, as well as the event’s side program. The ticket price includes the costs of food and drinks for both days.
+        - Travel and accommodation costs are not included in the ticket price. If you, however, have been invited and cannot make it to the event without a travel reimbursement, please let us know and we’ll try to find a solution. 
+    - question: Until when can I purchase my ticket?  
+      answer:
+        paras: 
+        - Early bird tickets can be purchased until July 31. Thereafter, you can purchase standard tickets until September 30, 2017.
+    - question: Is it possible to get a refund if I am not able to attend?
       answer:
         paras:
-          -     
+        - ii2030 is seeking to bring together leading innovators that are committed and able to partake in both the inclusive innovation tour and the factory to manufacture disruptive solutions for a more inclusive society by 2030.
+        - Nevertheless, we understand that unforeseen circumstances can occur. Thus, if you are unable to attend the event due to unexpected circumstances, please get in touch with us and we’ll try to find a solution.
+  - name: Partners & Sponsorship
+    questions:
+    - question: Is it possible to become a partner of the ii2030?
+      answer:
+        paras:
+          - 'Yes! At the ii2030 event, we are seeking to partner with visionary organizations and companies that are working on innovative and inclusive solutions in one of the sectors that are the focus areas of the five tracks.
+          - ii2030 offers three partnership models. You can become:'
+          list: 
+          - 'a track leader and shape the content and team of a co-creation workshop;'
+          - 'an event sponsor and be a visible part of the event with an own format; or' 
+          - 'a co-host and have the opportunity to shape the event and be a visible part of it both online and at the venue in Berlin.'  
     - question: I am/my company or organization is interested in sponsoring this event, how can I find out more?
       answer:
         paras:
           - 'We’re happy to tell you more about the event (both online and in Berlin) and how you might be able to contribute in a personal email or call. Please get in touch with us by sending an email to: m.leahy@endeva.org'
-      - question: I am/my company or organization is interested in sponsoring this event, how can I find out more?
+    - question: Are there opportunities for sponsors to partake in the event?
       answer:
         paras:
-          -     
+          - 'Endeva offers multiple opportunities for sponsors to participate in the event, both at the venue in Berlin as well as online. The opportunities to partake vary in correspondence to the three sponsorship levels.'
+          list: 
+          - 'As a track sponsor, you will have the opportunity to shape the content and team of a co-creation workshop with support from Endeva and design thinking experts as well as the follow-up support of the solution.'
+          - 'As event sponsor, you will have your own format (e.g. networking lunch, Meet & Greet dinner, or exhibition), a speaking slot, and present your product in the event’s goodie bag.' 
+          - 'As co-host, you will have the opportunity to shape the event, be included in external communications and press releases, have a speaking slot, and present your product in the event’s goodie bag.'
+        - All sponsors will receive partner tickets, have their logo featured on our website and sponsor wall and, most importantly, be a visible part of an event producing impactful solutions.
 
