@@ -1,4 +1,26 @@
 sections:
+    - name: General Information
+    questions:
+    - question: What is ii2030 about?
+      answer: 
+        paras:
+        - 'The Inclusive Innovation 2030 (ii2030) event will bring together leading innovators from corporates, startups, the public sector, NGOs and science to co-create solutions to achieve a more inclusive society by 2030. Over the course of this interactive, highly-curated event, participants will collaborate in sector-focused tracks and manufacture disruptive solutions that employ cutting-edge technology.'
+      - question: Who is hosting ii2030? 
+      answer: 
+        paras:
+        - 'Inclusive Innovation 2030 is an initiative by <a href="http://www.endeva.org/">Endeva</a>.<b><b> ii2030 is co-hosted by the <a href="https://iba.ventures/">Inclusive Business Accelerator</a>, the <a href="http://www.inclusivebusinesshub.org/micro-site/inclusive-business-action-network/">Inclusive Business Action Network</a> and <a href="https://www.ixds.com/">IXDS</a>.' 
+      - question: When does ii2030 take place? 
+      answer: 
+        paras:
+        - 'ii2030 is two-day event and will take place on October 18 – 19, 2017. On October 18, on-site registration for the inclusive innovation tour kicks off at 12:30pm. On October 19, the Opening Ceremony of the factory will start at 9:30am.'
+      - question: Where does ii2030 take place? 
+      answer: 
+        paras:
+        - 'The inclusive innovation tour on October 18 will take you all around Berlin with stops at the city’s most exiting hubs for innovative and inclusive development. Upon arriving at the registration venue, you will receive its itinerary with information on the locations of all tour stops.<b><b>The factory on October 19 will take place at Neue Mälzerei in Friedenstraße 91, 10249 Berlin.'
+      - question: Where can I find the program of the event? 
+      answer: 
+        paras:
+        - 'The agenda of ii2030 can be found <a href="http://www.ii2030.com/#agenda">here</a>.'
   - name: Registration
     questions:
     - question: How do I register for ii2030?
@@ -26,11 +48,18 @@ sections:
         - 'Early bird – corporate (before July 31): €800'
         - 'Standard – non-profit (from August 1): €500'
         - 'Standard – corporate (from August 1): €1,000'
-  - name: Sponsorship
+  - name: Partners & Sponsorship
     questions:
+     - question: I am/my company or organization is interested in sponsoring this event, how can I find out more?
+      answer:
+        paras:
+          - 'We’r'    
     - question: I am/my company or organization is interested in sponsoring this event, how can I find out more?
       answer:
         paras:
           - 'We’re happy to tell you more about the event (both online and in Berlin) and how you might be able to contribute in a personal email or call. Please get in touch with us by sending an email to: m.leahy@endeva.org'
-
+      - question: I am/my company or organization is interested in sponsoring this event, how can I find out more?
+      answer:
+        paras:
+          - 'We’re ha'     
 
