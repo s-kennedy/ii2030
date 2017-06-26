@@ -1,5 +1,5 @@
 sections:
-    - name: General Information
+  - name: General Information
     questions:
     - question: What is ii2030 about?
       answer: 
