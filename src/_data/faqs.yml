@@ -8,7 +8,8 @@ sections:
       - question: Who is hosting ii2030? 
       answer: 
         paras:
-        - 'Inclusive Innovation 2030 is an initiative by <a href="http://www.endeva.org/">Endeva</a>.<b><b> ii2030 is co-hosted by the <a href="https://iba.ventures/">Inclusive Business Accelerator</a>, the <a href="http://www.inclusivebusinesshub.org/micro-site/inclusive-business-action-network/">Inclusive Business Action Network</a> and <a href="https://www.ixds.com/">IXDS</a>.' 
+        - 'Inclusive Innovation 2030 is an initiative by <a href="http://www.endeva.org/">Endeva</a>.
+        - ii2030 is co-hosted by the <a href="https://iba.ventures/">Inclusive Business Accelerator</a>, the <a href="http://www.inclusivebusinesshub.org/micro-site/inclusive-business-action-network/">Inclusive Business Action Network</a> and <a href="https://www.ixds.com/">IXDS</a>.' 
       - question: When does ii2030 take place? 
       answer: 
         paras:
@@ -16,7 +17,8 @@ sections:
       - question: Where does ii2030 take place? 
       answer: 
         paras:
-        - 'The inclusive innovation tour on October 18 will take you all around Berlin with stops at the city’s most exiting hubs for innovative and inclusive development. Upon arriving at the registration venue, you will receive its itinerary with information on the locations of all tour stops.<b><b>The factory on October 19 will take place at Neue Mälzerei in Friedenstraße 91, 10249 Berlin.'
+        - 'The inclusive innovation tour on October 18 will take you all around Berlin with stops at the city’s most exiting hubs for innovative and inclusive development. Upon arriving at the registration venue, you will receive its itinerary with information on the locations of all tour stops.
+        - The factory on October 19 will take place at Neue Mälzerei in Friedenstraße 91, 10249 Berlin.'
       - question: Where can I find the program of the event? 
       answer: 
         paras:
@@ -26,12 +28,12 @@ sections:
     - question: How do I register for ii2030?
       answer:
         paras:
-        - For more information on applying or registering for ii2030, please visit our <a href="https://iba.ventures/inclusive-innovation-factory/">registration page</a>.
+        - 'For more information on applying or registering for ii2030, please visit our <a href="https://iba.ventures/inclusive-innovation-factory/">registration page</a>.'
     - question: How many people can join the event from my company/organization?
       answer:
         paras:
-        - In our experience, co-creation workshops work most efficiently and effectively    with small groups (between 6-10 individuals) consisting of representatives from diverse backgrounds. Thus, it is suggested that each company or organization sends one representative to the event in Berlin.
-        - However, if you believe it would add value to have additional representatives from your organisation because they would bring a skillset that would otherwise be missing, please contact us to buy more than one ticket for your organisation.
+        - 'In our experience, co-creation workshops work most efficiently and effectively with small groups (between 6-10 individuals) consisting of representatives from diverse backgrounds. Thus, it is suggested that each company or organization sends one representative to the event in Berlin.
+        - However, if you believe it would add value to have additional representatives from your organisation because they would bring a skillset that would otherwise be missing, please contact us to buy more than one ticket for your organization.'
     - question: I don’t have an invitation for ii2030, how can I participate?
       answer:
         paras:
@@ -53,7 +55,7 @@ sections:
      - question: I am/my company or organization is interested in sponsoring this event, how can I find out more?
       answer:
         paras:
-          - 'We’r'    
+          -     
     - question: I am/my company or organization is interested in sponsoring this event, how can I find out more?
       answer:
         paras:
@@ -61,5 +63,5 @@ sections:
       - question: I am/my company or organization is interested in sponsoring this event, how can I find out more?
       answer:
         paras:
-          - 'We’re ha'     
+          -     
 
