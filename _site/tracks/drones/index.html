@@ -378,6 +378,7 @@
         </button>
       </div>
     </div>
+
     <div class="slide-container page-slide">
       <div class="slide">
         <div id="tour">
@@ -439,15 +440,6 @@
   </section>
 
   
-
-  <section>
-    <div class="factory-button">
-      <button class="btn animate orange next-btn" onClick="$('#tour-factory .page-slide.slide-container').slick('slickNext')">
-        Day 2: Factory
-        <img src="/assets/images/factory-icon.png" alt="tour icon">
-      </button>
-    </div>
-  </section>
 </div>
 
       </div>
@@ -534,16 +526,20 @@
       
     </div>
   </section>
-
-  <section>
-    <div class="factory-button">
-        <button class="btn animate orange prev-btn" onClick="$('#tour-factory .page-slide.slide-container').slick('slickPrev')">
-        Day 1: Tour
-        <img src="/assets/images/tour-icon.png" alt="tour icon">
-      </button>
-    </div>
-  </section>
 </div>
+      </div>
+    </div>
+
+    <div class="headline">
+      <div class="day-selector">
+        <button data-day="day-1" class="btn btn-day1 white active day-1">
+          <img src="/assets/images/tour-icon.png" alt="tour icon">
+          Day 1: Tour
+        </button>
+        <button data-day="day-2" class="btn btn-day2 white day-2">
+          Day 2: Factory
+          <img src="/assets/images/factory-icon.png" alt="tour icon">
+        </button>
       </div>
     </div>
   </section>

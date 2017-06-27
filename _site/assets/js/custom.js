@@ -2,13 +2,15 @@
 function activateDay1Button() {
   $('.day-selector button').removeClass('active');
   $('.day-selector button.btn-day1').addClass('active');
-  smoothScroll.animateScroll(document.querySelector( '#agenda' ));
+  var parentSection = $('.day-selector button').closest('section')[0];
+  smoothScroll.animateScroll(parentSection);
 };
 
 function activateDay2Button() {
   $('.day-selector button').removeClass('active');
   $('.day-selector button.btn-day2').addClass('active');
-  smoothScroll.animateScroll(document.querySelector( '#agenda' ));
+  var parentSection = $('.day-selector button').closest('section')[0];
+  smoothScroll.animateScroll(parentSection);
 };
 
 function activateTrack() {

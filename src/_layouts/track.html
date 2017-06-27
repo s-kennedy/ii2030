@@ -87,12 +87,26 @@ layout: default
         </button>
       </div>
     </div>
+
     <div class="slide-container page-slide">
       <div class="slide">
         {% include tour.html %}
       </div>
       <div class="slide">
         {% include factory.html %}
+      </div>
+    </div>
+
+    <div class="headline">
+      <div class="day-selector">
+        <button data-day="day-1" class="btn btn-day1 white active day-1">
+          <img src="{{ site.github.url }}/assets/images/tour-icon.png" alt="tour icon">
+          Day 1: Tour
+        </button>
+        <button data-day="day-2" class="btn btn-day2 white day-2">
+          Day 2: Factory
+          <img src="{{ site.github.url }}/assets/images/factory-icon.png" alt="tour icon">
+        </button>
       </div>
     </div>
   </section>
