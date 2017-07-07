@@ -154,6 +154,7 @@ GEM
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0)
+    json (2.0.2)
     kramdown (1.13.2)
     liquid (3.0.6)
     listen (3.0.6)
@@ -201,12 +202,13 @@ DEPENDENCIES
   github-pages (= 140)
   jekyll (= 3.4.3)
   jekyll-feed (~> 0.6)
+  json
   minima (~> 2.0)
   octopress-autoprefixer
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.2.6p396
+   ruby 2.3.0p0
 
 BUNDLED WITH
    1.15.1
