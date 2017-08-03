@@ -13,13 +13,14 @@
   tech: Drones
   link: '/tracks/drones'
   icon: '/assets/icons/drone-red.svg'
+- topic: How can deep learning transform healthcare?
+  title: Intelligent Diagnosis in Healthcare
+  tech: Intelligent Diagnosis 
+  link: '/tracks/health'
+  icon: '/assets/icons/eye-red.svg'
 - topic: How can we localize manufacturing in Africa with 3D printing?
   title: 3D Printing for Localized Manufacturing
   tech: 3D Printing
   link:
   icon: '/assets/icons/3d-red.svg'
-- topic: How can we improve remote diagnosis through image recognition?
-  title: Remote Diagnosis through Image Recognition
-  tech: Image Recognition
-  link:
-  icon: '/assets/icons/eye-red.svg'
+
