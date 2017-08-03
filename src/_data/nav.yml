@@ -21,12 +21,13 @@
       - name: Drones
         icon: '/assets/icons/drone-red.svg'
         link: /tracks/drones
-      - name: 3D Printing
+      - name: Intelligent Diagnosis
+        icon: '/assets/icons/eye-red.svg'
+        link: /tracks/health
+      - name: Blockchain and Finance
         icon: '/assets/icons/3d-red.svg'
         link:
-      - name: Remote Diagnosis
-        icon: '/assets/icons/eye-red.svg'
-        link:
+
 - navs:
   - name: FAQs
     link: /faqs
