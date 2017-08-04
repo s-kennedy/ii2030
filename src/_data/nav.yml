@@ -26,7 +26,7 @@
         link: /tracks/health
       - name: Blockchain and Finance
         icon: '/assets/icons/3d-red.svg'
-        link:
+        link: /tracks/blockchain-finance
 
 - navs:
   - name: FAQs
