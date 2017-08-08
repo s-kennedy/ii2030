@@ -27,6 +27,9 @@
       - name: Blockchain and Finance
         icon: '/assets/icons/3d-red.svg'
         link: /tracks/blockchain-finance
+      - name: Blockchain and Food Supply
+        icon: '/assets/icons/agri-red.svg'
+        link: /tracks/blockchain-agri
 
 - navs:
   - name: FAQs

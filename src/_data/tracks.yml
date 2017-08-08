@@ -23,6 +23,11 @@
   tech: Blockchain and Finance
   link: '/tracks/blockchain-finance'
   icon: '/assets/icons/3d-red.svg'
+- topic: How can we ensure sustainable consumption and production processes through blockchain technology?
+  title: Accelerating SDG12 with Blockchain Technology 
+  tech: Blockchain and Food Supply
+  link: '/tracks/blockchain-agri'
+  icon: '/assets/icons/agri-red.svg'
 
 
 
