@@ -37,7 +37,7 @@ sections:
     - question: I don’t have an invitation for ii2030, how can I participate?
       answer:
         paras:
-          - 'Inclusive Innovation 2030 is a curated, invitation-only event. However, the organizers of ii2030 actively seek relevant participants who contribute to the vision and goals of the event. If you do not have an invitation, but are interested in taking part, you may request an invitation by completing the application form here: <a href="https://iba.ventures/inclusive-innovation-factory">https://iba.ventures/inclusive-innovation-factory</a>.
+          - 'Inclusive Innovation 2030 is a curated event. However, the organizers of ii2030 actively seek relevant participants who contribute to the vision and goals of the event. If you are interested in taking part, you may request an invitation by completing the application form here: <a href="https://iba.ventures/inclusive-innovation-factory">https://iba.ventures/inclusive-innovation-factory</a>.
           - We will review each application in detail and look forward to reading about your efforts to achieve a more inclusive society by 2030.'
   - name: Tickets
     questions:

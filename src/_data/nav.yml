@@ -24,12 +24,13 @@
       - name: Intelligent Diagnosis
         icon: '/assets/icons/eye-red.svg'
         link: /tracks/health
-      - name: Blockchain and Finance
-        icon: '/assets/icons/3d-red.svg'
-        link: /tracks/blockchain-finance
       - name: Blockchain and Food Supply
         icon: '/assets/icons/agri-red.svg'
         link: /tracks/blockchain-agri
+      - name: Blockchain and Finance
+        icon: '/assets/icons/3d-red.svg'
+        link: /tracks/blockchain-finance
+
 
 - navs:
   - name: FAQs
