@@ -23,6 +23,14 @@ sections:
       answer: 
         paras:
         - The agenda of ii2030 can be found <a href="http://www.ii2030.com/#agenda">here</a>.
+    - question: What activities will take place before and after the event in Berlin?
+      answer: 
+        paras:
+        - <b>Before the ii2030<b> <br>
+        Four weeks ahead of the ii2030, we will kick off the co-creation process online. Together with fellow participants, you will have the chance to connect with a community of social innovators and entrepreneurs on the online platform IBA ventures. Get valuable input from experts in your field and inspiration for the Inclusive Innovation Factory! 
+        <br><br>
+        <b>After the ii2030<b> <br>
+        Following the ii2030, you will have the opportunity to continue the co-creation process and implement your solution with guidance and follow-up support from Endeva and its partners. As a team, you will move from refining your innovative prototypes towards realizing a pilot project within a year of the ii2030.
   - name: Registration
     questions:
     - question: How do I register for ii2030?
@@ -37,8 +45,12 @@ sections:
     - question: I don’t have an invitation for ii2030, how can I participate?
       answer:
         paras:
-          - 'Inclusive Innovation 2030 is a curated event. However, the organizers of ii2030 actively seek relevant participants who contribute to the vision and goals of the event. If you are interested in taking part, you may request an invitation by completing the application form here: <a href="https://iba.ventures/inclusive-innovation-factory">https://iba.ventures/inclusive-innovation-factory</a>.
-          - We will review each application in detail and look forward to reading about your efforts to achieve a more inclusive society by 2030.'
+          - 'Inclusive Innovation 2030 is a curated event. However, the organizers of ii2030 actively seek relevant participants who contribute to the vision and goals of the event. If you are interested in taking part, you may request an invitation by completing the application form <a href="here">https://iba.ventures/inclusive-innovation-factory</a>.
+          <br><br> We will review each application in detail and look forward to reading about your efforts to achieve a more inclusive society by 2030.'
+      - question: I won’t be able to attend the ii2030. Can I still get involved?
+      answer:
+        paras:
+          - Yes! We are always keen to hear from social innovators and thought leaders interested in our goal of creating a more inclusive society by 2030. We therefore invite you to join the ii2030 online discussion, amongst a wider community of social innovators and experts on this topic. We will kick off the discussion five weeks ahead of the ii2030. On the online platform <a href="IBA Ventures">https://iba.ventures/inclusive-innovation-factory</a>, you will have the chance to share your expertise in track-specific groups, get inspired and connect with participants of the ii2030.
   - name: Tickets
     questions:
     - question: How much do tickets cost?
