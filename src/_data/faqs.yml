@@ -26,10 +26,10 @@ sections:
     - question: What activities will take place before and after the event in Berlin?
       answer: 
         paras:
-        - <b>Before the ii2030<b> <br>
+        - <b>Before the ii2030<b> <br><br>
         Four weeks ahead of the ii2030, we will kick off the co-creation process online. Together with fellow participants, you will have the chance to connect with a community of social innovators and entrepreneurs on the online platform IBA ventures. Get valuable input from experts in your field and inspiration for the Inclusive Innovation Factory! 
         <br><br>
-        <b>After the ii2030<b> <br>
+        <b>After the ii2030<b><br><br>
         Following the ii2030, you will have the opportunity to continue the co-creation process and implement your solution with guidance and follow-up support from Endeva and its partners. As a team, you will move from refining your innovative prototypes towards realizing a pilot project within a year of the ii2030.
   - name: Registration
     questions:
