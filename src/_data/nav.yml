@@ -21,7 +21,7 @@
       - name: Drones
         icon: '/assets/icons/drone-red.svg'
         link: /tracks/drones
-      - name: Intelligent Diagnosis
+      - name: Intelligent Diagnosis and Treatment
         icon: '/assets/icons/eye-red.svg'
         link: /tracks/health
       - name: Blockchain and Food Supply

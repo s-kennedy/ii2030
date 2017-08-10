@@ -14,8 +14,8 @@
   link: '/tracks/drones'
   icon: '/assets/icons/drone-red.svg'
 - topic: How can deep learning transform healthcare?
-  title: Intelligent Diagnosis in Healthcare
-  tech: Intelligent Diagnosis 
+  title: Intelligent Diagnosis and Treatment
+  tech: Intelligent Diagnosis and Treatment
   link: '/tracks/health'
   icon: '/assets/icons/eye-red.svg'
 - topic: How can we ensure sustainable consumption & production processes with blockchain?
