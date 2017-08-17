@@ -11,8 +11,6 @@ co_hosts:
 content_partners:
   - name: eKutir
     logo: ekutir.png
-  - name: Airbus
-    logo: AIRBUS_RGB.jpg
   - name: Inlusive/Rising North
     logo: inclusive-rising-north.jpg
   - name: betterplace lab
