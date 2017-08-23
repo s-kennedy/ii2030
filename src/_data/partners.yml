@@ -1,11 +1,14 @@
 hosts:
   - name: Endeva
     logo: endeva.png
+    url: www.endeva.org
 co_hosts:
   - name: IBA
     logo: iba.jpg
+    url: https://iba.ventures/
   - name: IBAN
     logo: IBAN-Logo.png
+    url: http://www.inclusivebusinesshub.org/micro-site/inclusive-business-action-network/
   - name: IXDS
     logo: ixds.png
 content_partners:
@@ -13,9 +16,22 @@ content_partners:
     logo: ekutir.png
   - name: Inlusive/Rising North
     logo: inclusive-rising-north.jpg
+    url: http://www.risingnorth.org/funded-projects/2017/5/12/inclusive-north
+  - name: Airbus BizLab
+    logo: BizLab.png
+    url: https://www.airbus-bizlab.com/
+  - name: Make-IT in Africa
+    logo: MakeIT2.jpg
+    url: 
   - name: betterplace lab
     logo: bplab.jpg
+    url: http://www.betterplace-lab.org/en/
   - name: DFKI
     logo: dfki.jpg
+    url: https://www.dfki.de/web
   - name: UN SDG Action Campaign
     logo: UNSDG.png
+    url: http://sdgactioncampaign.org/
+  - name: Airbus
+    logo: airbus_logo1.png
+    url: http://www.airbus.com/

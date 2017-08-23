@@ -3,3 +3,33 @@
 # - name: Example 1
 #   logo: endeva.png
 #   url: www.endeva.org
+ - name: M-Payg
+   logo: M-Payg.png
+   url: www.mpayg.com/
+ - name: HERi Madagascar
+   logo: HERi.jpg
+   url: www.beheri.com/NL
+ - name: Maternity Foundation
+   logo: MaternityFdn.png
+   url: http://www.maternity.dk/
+ - name: ADA 
+   logo: ada-logo.png
+   url: https://ada.com/
+ - name: John Deere
+   logo: JohnDeere.jpg
+   url: https://www.deere.com/en/
+ - name: Impact Roasters
+   logo: ImpactRoasters.png
+   url: http://impactroasters.dk/
+ - name: GIZ
+   logo: GIZ.jpg
+   url: www.giz.de
+ - name: ReStock
+   logo: Restock.png
+   url: https://restockclub.jimdo.com/
+ - name: Hencol
+   logo: Hencol.jpg
+   url: http://www.hencol.com/en/startpage/
+ - name: UNUMED
+   logo: Unumed.png
+   url: http://www.unumed.com/
