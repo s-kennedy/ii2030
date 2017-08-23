@@ -17,17 +17,17 @@
   title: Intelligent Diagnosis and Treatment
   tech: Intelligent Diagnosis and Treatment
   link: '/tracks/health'
-  icon: '/assets/icons/eye-red.svg'
+  icon: '/assets/icons/health_red.svg'
 - topic: How can we ensure sustainable consumption & production processes with blockchain?
   title: Accelerating SDG12 with Blockchain Technology 
   tech: Blockchain and Food Supply
   link: '/tracks/blockchain-agri'
-  icon: '/assets/icons/agri-red.svg'
+  icon: '/assets/icons/blockchainagri_red.svg'
 - topic: How can blockchain technology enable entrepreneurs to access global markets?
   title: Blockchain as a Financial Enabler
   tech: Blockchain and Finance
   link: '/tracks/blockchain-finance'
-  icon: '/assets/icons/3d-red.svg'
+  icon: '/assets/icons/blockchainfin_red.svg'
 
 
 

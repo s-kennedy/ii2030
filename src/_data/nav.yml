@@ -22,13 +22,13 @@
         icon: '/assets/icons/drone-red.svg'
         link: /tracks/drones
       - name: Intelligent Diagnosis and Treatment
-        icon: '/assets/icons/eye-red.svg'
+        icon: '/assets/icons/health_red.svg'
         link: /tracks/health
       - name: Blockchain and Food Supply
-        icon: '/assets/icons/agri-red.svg'
+        icon: '/assets/icons/blockchainagri_red.svg'
         link: /tracks/blockchain-agri
       - name: Blockchain and Finance
-        icon: '/assets/icons/3d-red.svg'
+        icon: '/assets/icons/blockchainfin_red.svg'
         link: /tracks/blockchain-finance
 
 
