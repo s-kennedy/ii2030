@@ -27,9 +27,19 @@
  - name: ReStock
    logo: Restock.png
    url: https://restockclub.jimdo.com/
- - name: Hencol
-   logo: Hencol.jpg
-   url: http://www.hencol.com/en/startpage/
  - name: UNUMED
    logo: Unumed.png
    url: http://www.unumed.com/
+ - name: Boond
+   logo: Boond.jpg
+   url: http://boond.net/
+ - name: Micro Energy
+   logo: MicroNRG.jpg
+   url: http://www.microenergy-international.com/
+ - name: Reiner-Lemoine Institute
+   logo: RLI_Logo.png
+   url: http://reiner-lemoine-institut.de/
+ - name: Reiner-Lemoine Institute
+   logo: RLI_Logo.png
+   url: http://reiner-lemoine-institut.de/
+
