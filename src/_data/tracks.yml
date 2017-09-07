@@ -18,11 +18,6 @@
   tech: Intelligent Diagnosis and Treatment
   link: '/tracks/health'
   icon: '/assets/icons/health_red.svg'
-- topic: How can we ensure sustainable consumption & production processes with blockchain?
-  title: Accelerating SDG12 with Blockchain Technology 
-  tech: Blockchain and Food Supply
-  link: '/tracks/blockchain-agri'
-  icon: '/assets/icons/blockchainagri_red.svg'
 - topic: How can blockchain technology enable entrepreneurs to access global markets?
   title: Blockchain as a Financial Enabler
   tech: Blockchain and Finance

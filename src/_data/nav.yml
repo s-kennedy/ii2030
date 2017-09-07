@@ -24,9 +24,6 @@
       - name: Intelligent Diagnosis and Treatment
         icon: '/assets/icons/health_red.svg'
         link: /tracks/health
-      - name: Blockchain and Food Supply
-        icon: '/assets/icons/blockchainagri_red.svg'
-        link: /tracks/blockchain-agri
       - name: Blockchain and Finance
         icon: '/assets/icons/blockchainfin_red.svg'
         link: /tracks/blockchain-finance
