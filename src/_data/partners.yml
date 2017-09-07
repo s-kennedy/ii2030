@@ -41,4 +41,7 @@ content_partners:
   - name: UN SDG Action Campaign
     logo: UNSDG.png
     url: http://sdgactioncampaign.org/
+  - name: VisitBerlin
+    logo: Visit_Berlin.jpg
+    url: https://www.visitberlin.de/de
 

@@ -156,12 +156,13 @@ factory_agenda:
       {% endfor %}
     </div>
     <div class="partner-group headline">
-      <h3>Content Partners</h3>
+      <h3>Partners</h3>
       {% for content_partner in site.data.partners.content_partners %}
         <img src="{{ site.github.url }}/assets/images/logos/{{ content_partner.logo }}" alt="{{ content_partner.name }} logo"/>
       {% endfor %}
     </div>
   </section>
+
 
   {% if site.data.participants %}
   <section id="participants">
