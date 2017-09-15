@@ -12,32 +12,39 @@ co_hosts:
   - name: IXDS
     logo: ixds.png
 content_partners:
-  - name: eKutir
-    logo: ekutir.png
-  - name: Inlusive/Rising North
-    logo: inclusive-rising-north.jpg
-    url: http://www.risingnorth.org/funded-projects/2017/5/12/inclusive-north
+  - name: Airbus
+    logo: airbus_logo1.png
+    url: http://www.airbus.com/ 
   - name: Airbus BizLab
     logo: BizLab.png
     url: https://www.airbus-bizlab.com/
-  - name: Airbus
-    logo: airbus_logo1.png
-    url: http://www.airbus.com/
+  - name: Bayer
+    logo: Bayer-hr.jpg
+    url: 
   - name: Mozilla
     logo: moz.png
     url: https://www.mozilla.org/en-US/
+  - name: Blank Space
+    logo: blankspace.png
   - name: Make-IT in Africa
     logo: MakeIT2.jpg
     url: 
   - name: GIZ
     logo: gizlogo.jpg
     url: 
-  - name: betterplace lab
-    logo: bplab.jpg
-    url: http://www.betterplace-lab.org/en/
   - name: DFKI
     logo: dfki.jpg
     url: https://www.dfki.de/web
+  - name: Inlusive/Rising North
+    logo: inclusive-rising-north.jpg
+    url: http://www.risingnorth.org/funded-projects/2017/5/12/inclusive-north
+  - name: Blank Space
+    logo: blankspace.png
+  - name: eKutir
+    logo: ekutir.png
+  - name: betterplace lab
+    logo: bplab.jpg
+    url: http://www.betterplace-lab.org/en/
   - name: UN SDG Action Campaign
     logo: UNSDG.png
     url: http://sdgactioncampaign.org/

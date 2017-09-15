@@ -72,7 +72,15 @@
  - name: eKutir
    logo: ekutir.png
    url: http://www.ekutirsb.com/
-
+ - name: Micro Drones
+   logo: microdrones.png
+   url: https://www.microdrones.com/en/home/
+ - name: Jumeme
+   logo: Jumeme_logo.jpg
+   url: http://www.jumeme.com/
+ - name: Bayer
+   logo: Bayer-hr.jpg
+   url: https://www.bayer.com/
 
 
 
