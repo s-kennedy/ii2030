@@ -152,10 +152,10 @@ section#agenda {
 
             &.midday {
               svg {
-                transform: rotate(-75deg); /*hour starting point from 3:00 - (360/12 * hour) */
+                transform: rotate(-120deg); /*hour starting point from 3:00 - (360/12 * hour) */
 
                 circle {
-                  stroke-dasharray: 4 100; /*duration as percentage: 100/12 * hours */
+                  stroke-dasharray: 25 100; /*duration as percentage: 100/12 * hours */
                 }
               }
             }
@@ -242,10 +242,10 @@ section#agenda {
 
             &.morning {
               svg {
-                transform: rotate(-165deg); /*hour starting point from 3:00 - (360/12 * hour) */
+                transform: rotate(-180deg); /*hour starting point from 3:00 - (360/12 * hour) */
 
                 circle {
-                  stroke-dasharray: 29 100; /*duration as percentage: 100/12 * hours */
+                  stroke-dasharray: 33 100; /*duration as percentage: 100/12 * hours */
                 }
               }
             }
