@@ -18,6 +18,9 @@ content_partners:
   - name: Airbus BizLab
     logo: BizLab.png
     url: https://www.airbus-bizlab.com/
+  - name: Bayer
+    logo: Bayer-hr.jpg
+    url: https://www.bayer.com
   - name: Mozilla
     logo: moz.png
     url: https://www.mozilla.org/en-US/
