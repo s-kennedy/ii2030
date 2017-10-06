@@ -15,7 +15,7 @@
       - name: Precision Agriculture
         icon: /assets/icons/agri-red.svg
         link: /tracks/precision-agriculture
-      - name: Artificial Intelligence
+      - name: BoP Market Data
         icon: '/assets/icons/ai-red.svg'
         link: /tracks/artificial-intelligence
       - name: Drones
