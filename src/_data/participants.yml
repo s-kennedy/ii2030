@@ -21,6 +21,9 @@
  - name: SAP
    logo: SAP-Logo.png
    url: http://www.sap.com/
+ - name: Bitwala
+   logo: bitwala_logo.png
+   url: https://www.bitwala.com/
  - name: M-Payg
    logo: M-Payg.png
    url: http://www.mpayg.com/
@@ -28,11 +31,14 @@
    logo: SinUGer.png
    url: http://www.singularityugermanysummit.org/
  - name: ADA 
-   logo: ada-logo.png
+   logo: Ada_logo2.png
    url: https://ada.com/
  - name: ReStock
    logo: Restock.png
    url: https://restockclub.jimdo.com/
+ - name: HEKS
+   logo: HEKS_logo.png
+   url: https://www.heks.ch
  - name: Boond
    logo: Boond.jpg
    url: http://boond.net/
@@ -63,6 +69,9 @@
  - name: Airbus
    logo: BizLab.png
    url: https://www.airbus-bizlab.com/
+ - name: Coinify
+   logo: coinify_logo.png
+   url: https://www.coinify.com/
  - name: GIZ
    logo: gizlogo.jpg
    url: http://www.giz.de
@@ -81,7 +90,18 @@
  - name: Bayer
    logo: Bayer-hr.jpg
    url: https://www.bayer.com/
-
-
-
-
+ - name: Fisofa
+   logo: fisofa_logo.jpg
+   url: http://fisofa.org/
+ - name: Mambu
+   logo: mambu_logo.png
+   url: https://www.mambu.com/
+ - name: 
+   logo: 
+   url: 
+ - name: 
+   logo: 
+   url: 
+ - name: 
+   logo: 
+   url:       
