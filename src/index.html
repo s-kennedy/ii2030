@@ -255,6 +255,11 @@ cocreation_process:
     appendDots: $('#timeline .stop-dots')
   });
 
+  $('#timeline .slick-dots li').on('click', function() {
+    $(this).prevAll().addClass('still-active');
+    $(this).nextAll().removeClass('still-active');
+  })
+
   $('#participants .slide-container').slick({
     dots: false,
     arrows: true,
