@@ -38,7 +38,7 @@ sass:
 source: src
 markdown: kramdown
 permalink: pretty
-gems:
+plugins:
   - jekyll-feed
   - octopress-autoprefixer
 exclude:

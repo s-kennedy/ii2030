@@ -111,4 +111,17 @@
     padding-top: $md-spacing;
     padding-bottom: $md-spacing;
   }
+
+  section#timeline {
+    .slick-dots {
+      li {
+        button {
+          &:before {
+            font-size: $base-size;
+            font-weight: $extrabold;
+          }
+        }
+      }
+    }
+  }
 }

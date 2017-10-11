@@ -25,6 +25,17 @@ factory_agenda:
   location: Neue Mälzerei, Berlin
   description: In design-thinking workshops of up to 10 participants, we will work out how technology can drive inclusive innovation, and what is needed to realize solutions. Participants are carefully selected to bring together those actors who can make the change - and only those.
   link: /factory
+
+cocreation_process:
+  - image: chat.png
+    title: Before the ii2030
+    description: Four weeks ahead of the ii2030, we will kick off the co-creation process online. Together with fellow participants, you will have the chance to connect with a community of social innovators and entrepreneurs on the online platform <a href='https://iba.ventures/' target='_blank'>IBA ventures</a>. Get valuable input from experts in your field and inspiration for the Inclusive Innovation Factory!
+  - image: group.png
+    title: During the ii2030
+    description: At ii2030, we will co-create technology-led solutions to global challenges by bringing the right set of actors together in a design thinking process. It will be fun, it will be interactive, but above all, it will be a powerful engine of change.
+  - image: rocket.png
+    title: After the ii2030
+    description: Following the ii2030, you will have the opportunity to continue the co-creation process and implement your solution with guidance and follow-up support from Endeva and its partners. As a team, you will move from refining your innovative prototypes towards realizing a pilot project within a year of the ii2030.
 ---
 <main>
   <section id="landing">
@@ -142,6 +153,36 @@ factory_agenda:
     </div>
   </section>
 
+  <section id="timeline">
+    <header>
+      <h2 class="subtitle">
+        <span class="underlined">Co-creation process</span>
+      </h2>
+    </header>
+    <div class="timeline">
+      <div class="stop-dots">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="pure-g tour-stops slide-container">
+      {% for slide in page.cocreation_process %}
+      <div class="pure-u-1 slide">
+        <div class="content-container pure-g centered">
+          <div class="pure-u-1 pure-u-md-2-3">
+            {% if slide.image %}
+            <div class="image">
+              <img src="{{ site.github.url }}/assets/images/{{ slide.image }}" alt="{{ slide.title }}" class="pure-img">
+            </div>
+            {% endif %}
+            <h3 class="title">{{ slide.title }}</h3>
+            <p class="description">{{ slide.description }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
   <section id="partners">
     <header>
       <h2 class="subtitle"><span class="underlined">Partners</span></h2>
@@ -204,6 +245,14 @@ factory_agenda:
     autoplaySpeed: 4000,
     swipe: true,
     pauseOnHover: false,
+  });
+
+  $('#timeline .slide-container').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    swipe: true,
+    appendDots: $('#timeline .stop-dots')
   });
 
   $('#participants .slide-container').slick({
