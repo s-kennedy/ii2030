@@ -40,11 +40,14 @@ content_partners:
     url: http://www.risingnorth.org/funded-projects/2017/5/12/inclusive-north
   - name: Blank Space
     logo: blankspace.png
-  - name: eKutir
-    logo: ekutir.png
   - name: betterplace lab
     logo: bplab.jpg
     url: http://www.betterplace-lab.org/en/
+  - name: eKutir
+    logo: ekutir.png
+  - name: Samsung
+    logo: samsung_logo_small.png
+    url: http://www.samsung.com/
   - name: UN SDG Action Campaign
     logo: UNSDG.png
     url: http://sdgactioncampaign.org/
