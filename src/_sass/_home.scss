@@ -245,14 +245,14 @@ section#agenda {
                 transform: rotate(-180deg); /*hour starting point from 3:00 - (360/12 * hour) */
 
                 circle {
-                  stroke-dasharray: 33 100; /*duration as percentage: 100/12 * hours */
+                  stroke-dasharray: 25 100; /*duration as percentage: 100/12 * hours */
                 }
               }
             }
 
             &.lunch {
               svg {
-                transform: rotate(-60deg);
+                transform: rotate(-90deg);
 
                 circle {
                   stroke-dasharray: 13 100;
@@ -262,7 +262,7 @@ section#agenda {
 
             &.afternoon {
               svg {
-                transform: rotate(-15deg);
+                transform: rotate(-45deg);
 
                 circle {
                   stroke-dasharray: 29 100;
@@ -272,10 +272,10 @@ section#agenda {
 
             &.evening {
               svg {
-                transform: rotate(90deg);
+                transform: rotate(60deg);
 
                 circle {
-                  stroke-dasharray: 33 100;
+                  stroke-dasharray: 17 100;
                 }
               }
             }
