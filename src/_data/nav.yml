@@ -3,16 +3,17 @@
     sub_navs:
       - name: Event Overview
         link: /#overview
-      - name: Agenda
-        link: /#agenda
+      - name: Process
+        link: /#timeline
       - name: Tracks
         link: /#tracks
-      - name: Co-Creation Process
-        link: /#timeline
+      - name: Agenda
+        link: /#agenda
       - name: Partners
         link: /#partners
+
 - navs:
-  - name: Tracks
+  - name: 2017 Tracks
     sub_navs:
       - name: Precision Agriculture
         icon: /assets/icons/agri-red.svg
