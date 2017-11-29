@@ -3,7 +3,7 @@
     sub_navs:
       - name: Event Overview
         link: /#overview
-      - name: Process
+      - name: Testimonials
         link: /#timeline
       - name: Tracks
         link: /#tracks
