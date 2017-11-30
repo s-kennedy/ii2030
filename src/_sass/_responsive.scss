@@ -124,4 +124,17 @@
       }
     }
   }
+  
+  section#cocreation_process {
+    .slick-dots {
+      li {
+        button {
+          &:before {
+            font-size: $base-size;
+            font-weight: $extrabold;
+          }
+        }
+      }
+    }
+  }
 }

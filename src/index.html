@@ -37,6 +37,17 @@ testimonials_2017:
     title: 
     description: ii2030 delivered on what most events don't - <br> the conceptualization of concrete innovation initiatives for development.
 
+cocreation_process:
+  - image: chat.png
+    title: Before ii2030
+    description: Four weeks ahead of ii2030, we kick off the co-creation process online. Together with fellow participants, you have the chance to connect with a community of social innovators and entrepreneurs. Get valuable input from experts in your field and inspiration for the Inclusive Innovation Factory!
+  - image: group.png
+    title: During ii2030
+    description: ii2030 draws inspiration from a hyper-focused and intensive service design process created by IXDS. This process, aided by mapping and storytelling, fosters the creation of technology-led solutions to address the SDGs. The methodology guides participants in their understanding of the challenges future users face. Through techniques that enhance their creativity, participants co-create new, holistic solutions that involve all needed stakeholders. The end-product of the workshop is a minimum viable prototype and a concrete roadmap to success.
+  - image: rocket.png
+    title: After ii2030
+    description: Following ii2030, you have the opportunity to continue the co-creation process and implement your solution with guidance and follow-up support from Endeva and its partners. As a team, we move from refining our innovative visions towards realizing a pilot project within a year of ii2030.
+
 ---
 <main>
   <section id="landing">
@@ -157,7 +168,7 @@ testimonials_2017:
 
   <section id="agenda">
     <header>
-      <h2 class="subtitle"><span class="underlined">Agenda</span></h2>
+      <h2 class="subtitle"><span class="underlined">Program</span></h2>
       <div class="headline">
         <div class="day-selector">
           <button data-day="day-1" class="btn btn-day1 white active day-1">Day 1: Tour</button>
@@ -173,11 +184,35 @@ testimonials_2017:
         {% include factory_agenda.html %}
       </div>
     </div>
-    <div class="headline">
-      <div class="day-selector">
-        <button data-day="day-1" class="btn btn-day1 white active day-1">Day 1: Tour</button>
-        <button data-day="day-2" class="btn btn-day2 white day-2">Day 2: Factory</button>
+  </section>
+
+    <section id="cocreation_process">
+    <header>
+      <h2 class="subtitle">
+        <span class="underlined">ii2030 Co-creation Process</span>
+      </h2>
+    </header>
+    <div class="cocreation_process">
+      <div class="stop-dots">
+        <div class="line"></div>
       </div>
+    </div>
+    <div class="pure-g tour-stops slide-container">
+      {% for slide in page.cocreation_process %}
+      <div class="pure-u-1 slide">
+        <div class="content-container pure-g centered">
+          <div class="pure-u-1 pure-u-md-2-3">
+            {% if slide.image %}
+            <div class="image">
+              <img src="{{ site.github.url }}/assets/images/{{ slide.image }}" alt="{{ slide.title }}" class="pure-img">
+            </div>
+            {% endif %}
+            <h3 class="title">{{ slide.title }}</h3>
+            <p class="description">{{ slide.description }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
     </div>
   </section>
 
